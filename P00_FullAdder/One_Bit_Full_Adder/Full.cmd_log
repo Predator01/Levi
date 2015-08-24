@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full.xst" -ofn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full.xst" -ofn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full.xst" -ofn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full.xst" -ofn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full.syr" 

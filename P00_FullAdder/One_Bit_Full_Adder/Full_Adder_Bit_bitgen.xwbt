@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\P00_FullAdder\One_Bit_Full_Adder\Full_Adder_Bit.ncd
+OUTFILE=D:\ProySisDigAva\P00_FullAdder\One_Bit_Full_Adder\Full_Adder_Bit.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\P00_FullAdder\One_Bit_Full_Adder
+LICENSE=WebPack
+USER_INFO=211076419_0_0_317
