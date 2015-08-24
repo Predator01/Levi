@@ -1,0 +1,46 @@
+vhdtdtfi -lib work Prime_Detector.vhd -prj P02_Prime_Detector -o Prime_Detector.spl -module Prime_Detector -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 Prime_Detector.spl D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.sym 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Prime_Detector.ngc Prime_Detector.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Prime_Detector_map.ncd Prime_Detector.ngd Prime_Detector.pcf 
+par -w -intstyle ise -ol high -mt off Prime_Detector_map.ncd Prime_Detector.ncd Prime_Detector.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Prime_Detector.twx Prime_Detector.ncd -o Prime_Detector.twr Prime_Detector.pcf 
+bitgen -intstyle ise -f Prime_Detector.ut Prime_Detector.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Prime_Detector.ngc Prime_Detector.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Prime_Detector_map.ncd Prime_Detector.ngd Prime_Detector.pcf 
+par -w -intstyle ise -ol high -mt off Prime_Detector_map.ncd Prime_Detector.ncd Prime_Detector.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Prime_Detector.twx Prime_Detector.ncd -o Prime_Detector.twr Prime_Detector.pcf 
+bitgen -intstyle ise -f Prime_Detector.ut Prime_Detector.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Prime_Detector.ngc Prime_Detector.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Prime_Detector_map.ncd Prime_Detector.ngd Prime_Detector.pcf 
+par -w -intstyle ise -ol high -mt off Prime_Detector_map.ncd Prime_Detector.ncd Prime_Detector.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Prime_Detector.twx Prime_Detector.ncd -o Prime_Detector.twr Prime_Detector.pcf 
+bitgen -intstyle ise -f Prime_Detector.ut Prime_Detector.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Prime_Detector.ngc Prime_Detector.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Prime_Detector_map.ncd Prime_Detector.ngd Prime_Detector.pcf 
+par -w -intstyle ise -ol high -mt off Prime_Detector_map.ncd Prime_Detector.ncd Prime_Detector.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Prime_Detector.twx Prime_Detector.ncd -o Prime_Detector.twr Prime_Detector.pcf 
+bitgen -intstyle ise -f Prime_Detector.ut Prime_Detector.ncd 
+netgen -intstyle ise -ar Structure -tm Prime_Detector -w -dir netgen/synthesis -ofmt vhdl -sim Prime_Detector.ngc Prime_Detector_synthesis.vhd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Prime_Detector.ngc Prime_Detector.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Prime_Detector_map.ncd Prime_Detector.ngd Prime_Detector.pcf 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Prime_Detector.ucf -p xc6slx16-csg324-3 Prime_Detector.ngc Prime_Detector.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Prime_Detector_map.ncd Prime_Detector.ngd Prime_Detector.pcf 
+par -w -intstyle ise -ol high -mt off Prime_Detector_map.ncd Prime_Detector.ncd Prime_Detector.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Prime_Detector.twx Prime_Detector.ncd -o Prime_Detector.twr Prime_Detector.pcf -ucf Prime_Detector.ucf 
+bitgen -intstyle ise -f Prime_Detector.ut Prime_Detector.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.xst" -ofn "D:/ProySisDigAva/P02_Prime_Detector/Prime_Detector.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Prime_Detector.ucf -p xc6slx16-csg324-3 Prime_Detector.ngc Prime_Detector.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Prime_Detector_map.ncd Prime_Detector.ngd Prime_Detector.pcf 
+par -w -intstyle ise -ol high -mt off Prime_Detector_map.ncd Prime_Detector.ncd Prime_Detector.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Prime_Detector.twx Prime_Detector.ncd -o Prime_Detector.twr Prime_Detector.pcf -ucf Prime_Detector.ucf 
+bitgen -intstyle ise -f Prime_Detector.ut Prime_Detector.ncd 

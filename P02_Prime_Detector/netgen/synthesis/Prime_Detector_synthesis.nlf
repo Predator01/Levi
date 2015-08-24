@@ -1,0 +1,21 @@
+Release 14.7 - netgen P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm Prime_Detector -w -dir
+netgen/synthesis -ofmt vhdl -sim Prime_Detector.ngc Prime_Detector_synthesis.vhd
+ 
+
+Reading design 'Prime_Detector.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'D:\ProySisDigAva\P02_Prime_Detector\netgen\synthesis\Prime_Detector_synthesis.v
+hd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 125960 kilobytes

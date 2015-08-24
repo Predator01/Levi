@@ -1,0 +1,6 @@
+NET "A" LOC = V9;
+NET "B" LOC = T9;
+NET "C" LOC = T10;
+NET "Dout" LOC = U16;
+NET "Eout" LOC = V16;
+NET "Fout" LOC = U15;

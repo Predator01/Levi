@@ -1,0 +1,9 @@
+[Inputs]
+A
+B
+C
+[Outputs]
+Dout
+Eout
+Fout
+[BiDir]
