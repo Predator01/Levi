@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-08-24T16:06:06</DateModified>
+  <DateModified>2015-08-25T13:09:16</DateModified>
   <ModuleName>Prime_Detector</ModuleName>
   <SummaryTimeStamp>2015-08-24T16:01:37</SummaryTimeStamp>
-  <SavedFilePath>D:/ProySisDigAva/P02_Prime_Detector/iseconfig/Prime_Detector.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/ProySisDigAva/P02_Prime_Detector</ImplementationReportsDirectory>
+  <SavedFilePath>D:/ProySisDigAva/Levi/P02_Prime_Detector/iseconfig/Prime_Detector.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P02_Prime_Detector\</ImplementationReportsDirectory>
   <DateInitialized>2015-08-24T15:17:18</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

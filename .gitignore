@@ -30,3 +30,7 @@
 
 # Debug files
 *.dSYM/
+
+#ignore Reports
+/Reports
+*.zip

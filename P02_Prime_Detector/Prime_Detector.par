@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PREDATOR::  Mon Aug 24 16:20:58 2015
+PREDATOR::  Tue Aug 25 12:28:14 2015
 
 par -w -intstyle ise -ol high -mt off Prime_Detector_map.ncd Prime_Detector.ncd
 Prime_Detector.pcf 
@@ -89,11 +89,11 @@ Finished initial Timing Analysis.  REAL time: 4 secs
 Starting Router
 
 
-Phase  1  : 7 unrouted;      REAL time: 5 secs 
+Phase  1  : 7 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 7 unrouted;      REAL time: 5 secs 
+Phase  2  : 7 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 5 unrouted;      REAL time: 5 secs 
+Phase  3  : 5 unrouted;      REAL time: 4 secs 
 
 Phase  4  : 5 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
@@ -133,7 +133,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 6 secs 
 Total CPU time to PAR completion: 6 secs 
 
-Peak Memory Usage:  259 MB
+Peak Memory Usage:  252 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: Prime_Detector.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "D:\ProySisDigAva\P02_Prime_Detector\Prime_Detector.vhd" into library work
+Parsing VHDL file "D:\ProySisDigAva\Levi\P02_Prime_Detector\Prime_Detector.vhd" into library work
 Parsing entity <Prime_Detector>.
 Parsing architecture <Behavioral> of entity <prime_detector>.
 
@@ -120,7 +120,7 @@ Elaborating entity <Prime_Detector> (architecture <Behavioral>) from library <wo
 =========================================================================
 
 Synthesizing Unit <Prime_Detector>.
-    Related source file is "D:\ProySisDigAva\P02_Prime_Detector\Prime_Detector.vhd".
+    Related source file is "D:\ProySisDigAva\Levi\P02_Prime_Detector\Prime_Detector.vhd".
     Summary:
 	no macro.
 Unit <Prime_Detector> synthesized.
@@ -274,7 +274,7 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.64 secs
+Total CPU time to Xst completion: 5.49 secs
  
 --> 
 
