@@ -30,12 +30,12 @@ architecture Behavioral of Basic_Gates is
 
 begin
 	-- 1 Buffer gate 
-	--Y <= A;
-		-- comment B bcuz we are not using it.
+	-- Y <= A;
+	-- comment B bcuz we are not using it.
 	-- 1.2 Buffer gate as a truth table
 	-- Y <= '1' when A = '1' 
 	--			else '0';
-			-- Single Quote
+	-- Single Quote
 	
 	-- 2 NOT
 	-- Y <= not A;
@@ -45,34 +45,36 @@ begin
 	-- 3 AND equation
 	-- Y <= A and B;
 	-- 3.2 AND truth table
---	Y <= '0' when (A = '0' or B = '0') else '1';
+	--	Y <= '0' when (A = '0' or B = '0') else '1';
 	
 	-- 4 NAND 
 	-- Y <= A nand B;
 	-- 4.2 Truth table
---	 Y <= '1' when (A = '0' or B = '0') else '0';
+	--	 Y <= '1' when (A = '0' or B = '0') else '0';
 	
 	-- 5 OR
 	-- Y <= A or B;
 	-- 5.2 Truth Table
---	 Y <= '1' when (A = '1' or B = '1') else '0';
-	 --Y <= '0' when (A = '0' and B = '0') else '1';
---	 Y <= '0' when not (A = '0' and B = '0') else '1';
+	--	Y <= '1' when (A = '1' or B = '1') else '0';
+	-- Y <= '0' when (A = '0' and B = '0') else '1';
+		
 	
 	-- 6 NOR 
 	-- Y <= A nor B;
 	
 	-- 6.2 Truth table
---	 Y <= '0' when (A = '1' or B = '1') else '1';
+	--	Y <= '0' when (A = '1' or B = '1') else '1';
+	-- Y <= '0' when not (A = '0' and B = '0') else '1';
+	
 	
 	-- 7 xor
 	-- Y <= A xor B;
 	-- 7.2 Truth table
---	Y <= '0' when (A = '0' and B ='0') or (A ='1' and B = '1' ) else '1';
+	--	Y <= '0' when (A = '0' and B ='0') or (A ='1' and B = '1' ) else '1';
 	
 	-- 8 xnor 
 	-- Y <= A xnor B;
---	Y <= '1' when (A = '0' and B ='0') or (A ='1' and B = '1' ) else '0';
+		Y <= '1' when (A = '0' and B ='0') or (A ='1' and B = '1' ) else '0';
 	
 
 	

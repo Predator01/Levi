@@ -67,11 +67,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1440168785" xil_pn:in_ck="-5337267098899548795" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1062659592206571106" xil_pn:start_ts="1440168779">
+    <transform xil_pn:end_ts="1440527416" xil_pn:in_ck="-5337267098899548795" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1062659592206571106" xil_pn:start_ts="1440527409">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Basic_Gates.lso"/>
       <outfile xil_pn:name="Basic_Gates.ngc"/>
       <outfile xil_pn:name="Basic_Gates.ngr"/>

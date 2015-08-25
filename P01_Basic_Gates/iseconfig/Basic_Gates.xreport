@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-08-24T15:04:19</DateModified>
+  <DateModified>2015-08-25T13:17:43</DateModified>
   <ModuleName>Basic_Gates</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/ProySisDigAva/P01_Basic_Gates/iseconfig/Basic_Gates.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/ProySisDigAva/P01_Basic_Gates\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/ProySisDigAva/Levi/P01_Basic_Gates/iseconfig/Basic_Gates.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P01_Basic_Gates\</ImplementationReportsDirectory>
   <DateInitialized>2015-08-21T08:55:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
