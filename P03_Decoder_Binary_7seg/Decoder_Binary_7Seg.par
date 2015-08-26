@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PREDATOR::  Wed Aug 26 11:55:27 2015
+PREDATOR::  Wed Aug 26 12:31:12 2015
 
 par -w -intstyle ise -ol high -mt off Decoder_Binary_7Seg_map.ncd
 Decoder_Binary_7Seg.ncd Decoder_Binary_7Seg.pcf 
@@ -91,26 +91,26 @@ Starting Router
 
 Phase  1  : 31 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 28 unrouted;      REAL time: 4 secs 
+Phase  2  : 28 unrouted;      REAL time: 3 secs 
 
 Phase  3  : 7 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 7 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  4  : 7 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
 Updating file: Decoder_Binary_7Seg.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
-Total REAL time to Router completion: 5 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Total REAL time to Router completion: 4 secs 
 Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
@@ -130,10 +130,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 6 secs 
+Total REAL time to PAR completion: 5 secs 
 Total CPU time to PAR completion: 5 secs 
 
-Peak Memory Usage:  250 MB
+Peak Memory Usage:  257 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

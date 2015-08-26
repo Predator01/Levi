@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Decoder_Binary_7Seg.prj
 
@@ -121,16 +121,17 @@ Elaborating entity <Decoder_Binary_7Seg> (architecture <Behavioral>) from librar
 
 Synthesizing Unit <Decoder_Binary_7Seg>.
     Related source file is "D:\ProySisDigAva\Levi\P03_Decoder_Binary_7seg\Decoder_Binary_7Seg.vhd".
+    Found 16x8-bit Read Only RAM for signal <Seg>
     Summary:
-	inferred  14 Multiplexer(s).
+	inferred   1 RAM(s).
 Unit <Decoder_Binary_7Seg> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Multiplexers                                         : 14
- 8-bit 2-to-1 multiplexer                              : 14
+# RAMs                                                 : 1
+ 16x8-bit single-port Read Only RAM                    : 1
 
 =========================================================================
 
@@ -139,12 +140,26 @@ Macro Statistics
 =========================================================================
 
 
+Synthesizing (advanced) Unit <Decoder_Binary_7Seg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Seg> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(D,C,B,A)>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Seg>           |          |
+    -----------------------------------------------------------------------
+Unit <Decoder_Binary_7Seg> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Multiplexers                                         : 14
- 8-bit 2-to-1 multiplexer                              : 14
+# RAMs                                                 : 1
+ 16x8-bit single-port distributed Read Only RAM        : 1
 
 =========================================================================
 
@@ -266,7 +281,7 @@ Delay:               5.595ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             7   1.222   1.021  B_IBUF (B_IBUF)
-     LUT4:I0->O            1   0.203   0.579  Mmux_Seg71 (Seg_6_OBUF)
+     LUT4:I0->O            1   0.203   0.579  Mram_Seg61 (Seg_6_OBUF)
      OBUF:I->O                 2.571          Seg_6_OBUF (Seg<6>)
     ----------------------------------------
     Total                      5.595ns (3.996ns logic, 1.600ns route)
@@ -281,7 +296,7 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.92 secs
+Total CPU time to Xst completion: 3.87 secs
  
 --> 
 
@@ -289,5 +304,5 @@ Total memory usage is 204188 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 
