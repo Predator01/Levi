@@ -136,6 +136,8 @@
     <transform xil_pn:end_ts="1440611230" xil_pn:in_ck="3509907271632345393" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1440611224">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Decoder_Binary_7Seg.pcf"/>
       <outfile xil_pn:name="Decoder_Binary_7Seg_map.map"/>
       <outfile xil_pn:name="Decoder_Binary_7Seg_map.mrp"/>

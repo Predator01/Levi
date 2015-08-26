@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-08-26T11:34:34</DateModified>
+  <DateModified>2015-08-26T17:49:12</DateModified>
   <ModuleName>Decoder_Binary_7Seg</ModuleName>
   <SummaryTimeStamp>2015-08-26T11:29:17</SummaryTimeStamp>
   <SavedFilePath>D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg/iseconfig/Decoder_Binary_7Seg.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg\</ImplementationReportsDirectory>
   <DateInitialized>2015-08-26T10:59:32</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
