@@ -33,8 +33,7 @@ begin
 	-- Y <= A;
 	-- comment B bcuz we are not using it.
 	-- 1.2 Buffer gate as a truth table
-	-- Y <= '1' when A = '1' 
-	--			else '0';
+	-- Y <= '1' when A = '1' else '0';
 	-- Single Quote
 	
 	-- 2 NOT
@@ -61,7 +60,6 @@ begin
 	
 	-- 6 NOR 
 	-- Y <= A nor B;
-	
 	-- 6.2 Truth table
 	--	Y <= '0' when (A = '1' or B = '1') else '1';
 	-- Y <= '0' when not (A = '0' and B = '0') else '1';
@@ -74,7 +72,7 @@ begin
 	
 	-- 8 xnor 
 	-- Y <= A xnor B;
-		Y <= '1' when (A = '0' and B ='0') or (A ='1' and B = '1' ) else '0';
+	--	Y <= '1' when (A = '0' and B ='0') or (A ='1' and B = '1' ) else '0';
 	
 
 	

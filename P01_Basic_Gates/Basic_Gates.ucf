@@ -1,0 +1,3 @@
+NET "A" LOC = T9; 
+NET "B" LOC = T10;
+NET "Y" LOC = U16;
