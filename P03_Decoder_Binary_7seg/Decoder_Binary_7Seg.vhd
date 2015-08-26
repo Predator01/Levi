@@ -58,27 +58,51 @@ begin
 	-- Using embedded signal
 
 	-- Group input signals into a vector using aggregate
-	
+--	Ent <= D & C & B & A;
+--	--.gfedcba
+--   Seg <= "11000000" when Ent="0000" else --0
+--          "11111001" when Ent="0001" else --1
+--			 "10100100" when Ent="0010" else --2
+--			 "10110000" when Ent="0011" else --3 
+--			 "10011001" when Ent="0100" else --4
+--			 "10010010" when Ent="0101" else --5
+--			 "10000010" when Ent="0110" else --6
+--			 "11111000" when Ent="0111" else --7
+--			 "10000000" when Ent="1000" else --8
+--			 "10011000" when Ent="1001" else --9
+--			 "10001000" when Ent="1010" else --10 A
+--			 "10000011" when Ent="1011" else --11 B
+--			 "11000110" when Ent="1100" else --12 C
+--			 "10100001" when Ent="1101" else --13 D
+--			 "10000110" when Ent="1110" else --14 E
+--			 "10001110"; --15 F
+--	--select display
+
+			
+	-- Behavioral Concurrent implementation using select / when
+	-- Using embedded signal
 	
 	Ent <= D & C & B & A;
-	--.gfedcba
-   Seg <= "11000000" when Ent="0000" else --0
-          "11111001" when Ent="0001" else --1
-			 "10100100" when Ent="0010" else --2
-			 "10110000" when Ent="0011" else --3 
-			 "10011001" when Ent="0100" else --4
-			 "10010010" when Ent="0101" else --5
-			 "10000010" when Ent="0110" else --6
-			 "11111000" when Ent="0111" else --7
-			 "10000000" when Ent="1000" else --8
-			 "10011000" when Ent="1001" else --9
-			 "10001000" when Ent="1010" else --10 A
-			 "10000011" when Ent="1011" else --11 B
-			 "11000110" when Ent="1100" else --12 C
-			 "10100001" when Ent="1101" else --13 D
-			 "10000110" when Ent="1110" else --14 E
-			 "10001110"; --15 F
-	--select display
+   with Ent select
+      Seg <= "11000000" when "0000",
+				"11111001" when "0001", --1
+				"10100100" when "0010", --2
+				"10110000" when "0011", --3 
+				"10011001" when "0100", --4
+				"10010010" when "0101", --5
+				"10000010" when "0110", --6
+				"11111000" when "0111", --7
+				"10000000" when "1000", --8
+				"10011000" when "1001", --9
+				"10001000" when "1010", --10 A
+				"10000011" when "1011", --11 B
+				"11000110" when "1100", --12 C
+				"10100001" when "1101", --13 D
+				"10000110" when "1110", --14 E
+				"10001110" when others ; --15 F
+ 
+			
+
 	
 	Disp <= "1110";
 	

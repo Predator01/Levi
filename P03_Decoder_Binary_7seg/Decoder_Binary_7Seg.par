@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PREDATOR::  Wed Aug 26 12:31:12 2015
+PREDATOR::  Wed Aug 26 12:47:11 2015
 
 par -w -intstyle ise -ol high -mt off Decoder_Binary_7Seg_map.ncd
 Decoder_Binary_7Seg.ncd Decoder_Binary_7Seg.pcf 
@@ -95,22 +95,22 @@ Phase  2  : 28 unrouted;      REAL time: 3 secs
 
 Phase  3  : 7 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 7 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  4  : 7 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
 Updating file: Decoder_Binary_7Seg.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
-Total REAL time to Router completion: 4 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Total REAL time to Router completion: 5 secs 
 Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
