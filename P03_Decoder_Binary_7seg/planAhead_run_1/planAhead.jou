@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sun Aug 30 16:50:14 2015
+# Process ID: 9780
+# Log file: D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg/planAhead_run_1/planAhead.log
+# Journal file: D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg/pa.fromNetlist.tcl
