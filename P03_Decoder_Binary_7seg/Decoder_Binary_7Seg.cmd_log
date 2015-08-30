@@ -33,3 +33,10 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off Decoder_Binary_7Seg_map.ncd Decoder_Binary_7Seg.ncd Decoder_Binary_7Seg.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Decoder_Binary_7Seg.twx Decoder_Binary_7Seg.ncd -o Decoder_Binary_7Seg.twr Decoder_Binary_7Seg.pcf -ucf Decoder_Binary_7Seg.ucf 
 bitgen -intstyle ise -f Decoder_Binary_7Seg.ut Decoder_Binary_7Seg.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg/Decoder_Binary_7Seg.xst" -ofn "D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg/Decoder_Binary_7Seg.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg/Decoder_Binary_7Seg.xst" -ofn "D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg/Decoder_Binary_7Seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Decoder_Binary_7Seg.ucf -p xc6slx16-csg324-3 Decoder_Binary_7Seg.ngc Decoder_Binary_7Seg.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Decoder_Binary_7Seg_map.ncd Decoder_Binary_7Seg.ngd Decoder_Binary_7Seg.pcf 
+par -w -intstyle ise -ol high -mt off Decoder_Binary_7Seg_map.ncd Decoder_Binary_7Seg.ncd Decoder_Binary_7Seg.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Decoder_Binary_7Seg.twx Decoder_Binary_7Seg.ncd -o Decoder_Binary_7Seg.twr Decoder_Binary_7Seg.pcf -ucf Decoder_Binary_7Seg.ucf 
+bitgen -intstyle ise -f Decoder_Binary_7Seg.ut Decoder_Binary_7Seg.ncd 

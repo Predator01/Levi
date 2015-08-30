@@ -57,3 +57,13 @@ No Unisim elements were transformed.
 
 Phase 0 | Netlist Checksum: 384c72bd
 link_design: Time (s): elapsed = 00:00:17 . Memory (MB): peak = 508.012 ; gain = 108.031
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg\planAhead_pid9780.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Aug 30 17:33:25 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

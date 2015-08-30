@@ -54,3 +54,7 @@ No Unisim elements were transformed.
 
 Phase 0 | Netlist Checksum: 384c72bd
 link_design: Time (s): elapsed = 00:00:17 . Memory (MB): peak = 508.012 ; gain = 108.031
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Aug 30 17:33:25 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

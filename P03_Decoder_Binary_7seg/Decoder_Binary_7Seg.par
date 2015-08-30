@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PREDATOR::  Wed Aug 26 12:47:11 2015
+PREDATOR::  Sun Aug 30 17:32:44 2015
 
 par -w -intstyle ise -ol high -mt off Decoder_Binary_7Seg_map.ncd
 Decoder_Binary_7Seg.ncd Decoder_Binary_7Seg.pcf 
@@ -130,7 +130,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 5 secs 
+Total REAL time to PAR completion: 6 secs 
 Total CPU time to PAR completion: 5 secs 
 
 Peak Memory Usage:  257 MB

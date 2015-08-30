@@ -106,7 +106,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1440611220" xil_pn:in_ck="-6544635721569081217" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2905937609368798168" xil_pn:start_ts="1440611213">
+    <transform xil_pn:end_ts="1440973934" xil_pn:in_ck="-6544635721569081217" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2905937609368798168" xil_pn:start_ts="1440973926">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -127,7 +127,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1440611224" xil_pn:in_ck="2238103521227137616" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5856753072768787082" xil_pn:start_ts="1440611220">
+    <transform xil_pn:end_ts="1440973946" xil_pn:in_ck="2238103521227137616" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5856753072768787082" xil_pn:start_ts="1440973935">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Decoder_Binary_7Seg.bld"/>
@@ -136,11 +136,9 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1440611230" xil_pn:in_ck="3509907271632345393" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1440611224">
+    <transform xil_pn:end_ts="1440973963" xil_pn:in_ck="3509907271632345393" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1440973946">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Decoder_Binary_7Seg.pcf"/>
       <outfile xil_pn:name="Decoder_Binary_7Seg_map.map"/>
       <outfile xil_pn:name="Decoder_Binary_7Seg_map.mrp"/>
@@ -151,7 +149,7 @@
       <outfile xil_pn:name="Decoder_Binary_7Seg_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1440611244" xil_pn:in_ck="7175659367706358570" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1440611230">
+    <transform xil_pn:end_ts="1440973977" xil_pn:in_ck="7175659367706358570" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1440973963">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Decoder_Binary_7Seg.ncd"/>
@@ -165,7 +163,7 @@
       <outfile xil_pn:name="Decoder_Binary_7Seg_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1440611260" xil_pn:in_ck="-6544635721569090094" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1440611244">
+    <transform xil_pn:end_ts="1440973995" xil_pn:in_ck="-6544635721569090094" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1440973977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Decoder_Binary_7Seg.ut"/>
@@ -177,7 +175,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1440611244" xil_pn:in_ck="1652508881530883373" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1440611238">
+    <transform xil_pn:end_ts="1440973977" xil_pn:in_ck="1652508881530883373" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1440973972">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Decoder_Binary_7Seg.twr"/>
