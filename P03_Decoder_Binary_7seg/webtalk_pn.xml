@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sun Aug 30 17:32:43 2015">
+<application name="pn" timeStamp="Tue Sep 01 13:07:51 2015">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="AF282B563B3C4B6FB75CDD303D4021A1" type="project"/>
-<property name="ProjectIteration" value="4" type="project"/>
+<property name="ProjectIteration" value="26" type="project"/>
 <property name="ProjectFile" value="D:/ProySisDigAva/Levi/P03_Decoder_Binary_7seg/P03_Decoder_Binary_7seg.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2015-08-26T10:54:00" type="project"/>
 </section>
@@ -24,7 +24,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2015-08-26T10:54:00" type="design"/>
 <property name="PROP_intWbtProjectID" value="AF282B563B3C4B6FB75CDD303D4021A1" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="4" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="26" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
