@@ -1,0 +1,29 @@
+Command line:
+   DM74LS151_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  48020
+
+Wed Sep 02 22:09:32 2015
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 519.18 Meg
+
+ Total Signals          : 15
+ Total Nets             : 17
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 4
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 377
+Total Line Count : 24
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 519.18 Meg
+
+Wed Sep 02 23:12:21 2015
+

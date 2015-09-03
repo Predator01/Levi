@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/ProySisDigAva/Levi/P04_SN74LS138/SN74LS138_TB_isim_beh.exe" -prj "D:/ProySisDigAva/Levi/P04_SN74LS138/SN74LS138_TB_beh.prj" "work.SN74LS138_TB" 
