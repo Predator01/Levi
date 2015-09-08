@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt64)
+Release 14.7 Map P.20131013 (nt)
 Xilinx Mapping Report File for Design 'DM74LS151'
 
 Design Information
@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Sep 02 21:58:28 2015
+Mapped Date    : Fri Sep 04 14:27:27 2015
 
 Design Summary
 --------------
@@ -44,6 +44,7 @@ Slice Logic Distribution:
 
 IO Utilization:
   Number of bonded IOBs:                        14 out of     232    6%
+    Number of LOCed IOBs:                       14 out of      14  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -70,8 +71,8 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                1.94
 
-Peak Memory Usage:  372 MB
-Total REAL time to MAP completion:  14 secs 
+Peak Memory Usage:  278 MB
+Total REAL time to MAP completion:  6 secs 
 Total CPU time to MAP completion:   6 secs 
 
 Table of Contents

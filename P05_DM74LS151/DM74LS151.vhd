@@ -21,10 +21,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity DM74LS151 is
-    Port ( A : in  STD_LOGIC;
-           B : in  STD_LOGIC;
-           C : in  STD_LOGIC;
+    Port ( -- select lines
+				A : in  STD_LOGIC;
+				B : in  STD_LOGIC;
+				C : in  STD_LOGIC;
+				-- data input
            D : in  STD_LOGIC_VECTOR (0 to 7);
+			  -- output
            Y : out  STD_LOGIC;
            W : out  STD_LOGIC;
            STROBE : in  STD_LOGIC);

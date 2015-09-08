@@ -1,9 +1,10 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt64)
+Release 14.7 Trace  (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
--n 3 -fastpaths -xml DM74LS151.twx DM74LS151.ncd -o DM74LS151.twr DM74LS151.pcf
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml DM74LS151.twx DM74LS151.ncd -o DM74LS151.twr DM74LS151.pcf
+-ucf DM74LS151.ucf
 
 Design file:              DM74LS151.ncd
 Physical constraint file: DM74LS151.pcf
@@ -35,41 +36,41 @@ Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-A              |W              |    7.582|
-A              |Y              |    7.599|
-B              |W              |    7.652|
-B              |Y              |    7.328|
-C              |W              |    7.423|
-C              |Y              |    7.127|
-D<0>           |W              |    7.419|
-D<0>           |Y              |    7.364|
-D<1>           |W              |    7.782|
-D<1>           |Y              |    7.364|
-D<2>           |W              |    7.538|
-D<2>           |Y              |    6.956|
-D<3>           |W              |    7.750|
-D<3>           |Y              |    7.074|
-D<4>           |W              |    7.299|
-D<4>           |Y              |    7.220|
-D<5>           |W              |    7.947|
-D<5>           |Y              |    6.883|
-D<6>           |W              |    7.633|
-D<6>           |Y              |    7.104|
-D<7>           |W              |    7.428|
-D<7>           |Y              |    7.081|
-STROBE         |W              |    6.651|
-STROBE         |Y              |    6.378|
+A              |W              |   12.027|
+A              |Y              |   11.928|
+B              |W              |   12.118|
+B              |Y              |   11.391|
+C              |W              |   12.549|
+C              |Y              |   11.955|
+D<0>           |W              |   11.024|
+D<0>           |Y              |   10.841|
+D<1>           |W              |   10.733|
+D<1>           |Y              |    9.972|
+D<2>           |W              |   10.120|
+D<2>           |Y              |    9.848|
+D<3>           |W              |   10.252|
+D<3>           |Y              |    9.793|
+D<4>           |W              |   10.310|
+D<4>           |Y              |   10.063|
+D<5>           |W              |   10.315|
+D<5>           |Y              |    9.766|
+D<6>           |W              |    9.952|
+D<6>           |Y              |    9.691|
+D<7>           |W              |   10.616|
+D<7>           |Y              |   10.369|
+STROBE         |W              |   10.859|
+STROBE         |Y              |   10.537|
 ---------------+---------------+---------+
 
 
-Analysis completed Wed Sep 02 21:59:01 2015 
+Analysis completed Fri Sep 04 14:27:49 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 241 MB
+Peak Memory Usage: 168 MB
 
 
 
