@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter_TB_isim_beh.exe" -prj "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter_TB_beh.prj" "work.Binary_to_Gray_Code_Converter_TB" 

@@ -55,6 +55,10 @@
     <transform xil_pn:end_ts="1441743816" xil_pn:in_ck="8106741837098918363" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1441743816">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Priority_Encoder.vhd"/>
       <outfile xil_pn:name="Priority_Encoder_op.vhd"/>
       <outfile xil_pn:name="Priority_Encoder_op_TB.vhd"/>
@@ -75,6 +79,11 @@
     <transform xil_pn:end_ts="1441743822" xil_pn:in_ck="8106741837098918363" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1441743822">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Priority_Encoder.vhd"/>
       <outfile xil_pn:name="Priority_Encoder_op.vhd"/>
       <outfile xil_pn:name="Priority_Encoder_op_TB.vhd"/>
@@ -83,6 +92,12 @@
     <transform xil_pn:end_ts="1441743825" xil_pn:in_ck="8106741837098918363" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1386121708292423628" xil_pn:start_ts="1441743822">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Priority_Encoder_op_TB_beh.prj"/>
       <outfile xil_pn:name="Priority_Encoder_op_TB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -93,51 +108,13 @@
     <transform xil_pn:end_ts="1441743825" xil_pn:in_ck="-1574969387203805615" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-617916613049965695" xil_pn:start_ts="1441743825">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Priority_Encoder_op_TB_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-    </transform>
-    <transform xil_pn:end_ts="1441743808" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="2710483413921098592" xil_pn:start_ts="1441743808">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1441743808" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8845184831838721647" xil_pn:start_ts="1441743808">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1441743808" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1441743808">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1441743808" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1445637651459437474" xil_pn:start_ts="1441743808">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1441743808" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1441743808">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1441743808" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5317961878808079687" xil_pn:start_ts="1441743808">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1441743815" xil_pn:in_ck="6660501021160113280" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1396955755019969976" xil_pn:start_ts="1441743808">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Priority_Encoder_op.lso"/>
-      <outfile xil_pn:name="Priority_Encoder_op.ngc"/>
-      <outfile xil_pn:name="Priority_Encoder_op.ngr"/>
-      <outfile xil_pn:name="Priority_Encoder_op.prj"/>
-      <outfile xil_pn:name="Priority_Encoder_op.stx"/>
-      <outfile xil_pn:name="Priority_Encoder_op.syr"/>
-      <outfile xil_pn:name="Priority_Encoder_op.xst"/>
-      <outfile xil_pn:name="Priority_Encoder_op_TB_beh.prj"/>
-      <outfile xil_pn:name="Priority_Encoder_op_xst.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
     </transform>
   </transforms>
 
