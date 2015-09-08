@@ -57,14 +57,5 @@ begin
 			"11111011" when Sel = "101" else
 			"11111101" when Sel = "110" else
 			"11111110";
-			
-		
-	
-	
-	
-	
-	
-
-
 end Behavioral;
 
