@@ -1,0 +1,2 @@
+vhdl isim_temp "Binary_Gray_Converter.vhd"
+vhdl isim_temp "Binary_Gray_Converter_TB.vhd"
