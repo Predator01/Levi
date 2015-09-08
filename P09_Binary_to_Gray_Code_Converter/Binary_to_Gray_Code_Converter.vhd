@@ -30,12 +30,19 @@ end Binary_to_Gray_Code_Converter;
 architecture Behavioral of Binary_to_Gray_Code_Converter is
 
 begin
+	
+	--First 
 	Gray(n-1) <= Binary(n-1);
-	xor_for:
-   for index in n-2 downto 0 generate
-      begin
-         Gray(index) <= Binary(index+1) xor Binary(index);
-	   end generate;
+	Gray(n-2 downto 0) <= Binary(n-2 downto 0) xor Binary(n-1 downto 1);
+	
+	-- Generic
+
+--	Gray(n-1) <= Binary(n-1);
+--	xor_for:
+--   for index in n-2 downto 0 generate
+--      begin
+--         Gray(index) <= Binary(index+1) xor Binary(index);
+--	   end generate;
 			
 end Behavioral;
 

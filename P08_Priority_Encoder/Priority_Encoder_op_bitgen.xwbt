@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\Levi\P08_Priority_Encoder\Priority_Encoder_op.ncd
+OUTFILE=D:\ProySisDigAva\Levi\P08_Priority_Encoder\Priority_Encoder_op.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\Levi\P08_Priority_Encoder
+LICENSE=WebPack
+USER_INFO=211076419_0_0_317

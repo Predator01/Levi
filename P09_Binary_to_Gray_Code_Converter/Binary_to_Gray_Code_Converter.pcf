@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Sep 08 17:01:51 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Gray<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "Gray<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "Gray<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "Gray<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "Binary<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Binary<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "Binary<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "Binary<3>" LOCATE = SITE "M8" LEVEL 1;
+SCHEMATIC END;
+

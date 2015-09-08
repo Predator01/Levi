@@ -11,8 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter_TB.vhd&quot; into library work</arg>
-</msg>
-
 </messages>
 

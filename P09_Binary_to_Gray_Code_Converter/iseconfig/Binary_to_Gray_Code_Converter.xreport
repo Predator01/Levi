@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-09-08T15:49:32</DateModified>
+  <DateModified>2015-09-08T16:35:28</DateModified>
   <ModuleName>Binary_to_Gray_Code_Converter</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-09-08T15:54:46</SummaryTimeStamp>
   <SavedFilePath>D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/iseconfig/Binary_to_Gray_Code_Converter.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter</ImplementationReportsDirectory>
   <DateInitialized>2015-09-08T15:49:32</DateInitialized>

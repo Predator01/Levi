@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Sep 08 16:26:57 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "input<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "input<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "input<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "output<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "output<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "output<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "input<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "input<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "input<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "input<3>" LOCATE = SITE "M8" LEVEL 1;
+SCHEMATIC END;
+

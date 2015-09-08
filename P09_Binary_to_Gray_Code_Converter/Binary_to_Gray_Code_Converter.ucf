@@ -1,0 +1,19 @@
+## switchs
+NET "Binary(0)" LOC = T10;
+NET "Binary(1)" LOC = T9;
+NET "Binary(2)" LOC = V9;
+NET "Binary(3)" LOC = M8;
+#NET "" LOC = N8;
+#NET "" LOC = U8;
+#NET "" LOC = V8;
+# T5
+
+## leds
+NET "Gray[0]" LOC = U16;
+NET "Gray[1]" LOC = V16;
+NET "Gray[2]" LOC = U15;
+NET "Gray[3]" LOC = V15;
+#NET "" LOC = M11;
+#NET "" LOC = N11;
+#NET "" LOC = R11;
+#NET "" LOC = T11;

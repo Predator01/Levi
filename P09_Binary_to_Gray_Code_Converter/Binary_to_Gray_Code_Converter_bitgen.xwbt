@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\Levi\P09_Binary_to_Gray_Code_Converter\Binary_to_Gray_Code_Converter.ncd
+OUTFILE=D:\ProySisDigAva\Levi\P09_Binary_to_Gray_Code_Converter\Binary_to_Gray_Code_Converter.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\Levi\P09_Binary_to_Gray_Code_Converter
+LICENSE=WebPack
+USER_INFO=211076419_0_0_317

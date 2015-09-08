@@ -1,0 +1,19 @@
+## switchs
+NET "input(0)" LOC = T10;
+NET "input(1)" LOC = T9;
+NET "input(2)" LOC = V9;
+NET "input(3)" LOC = M8;
+NET "input(4)" LOC = N8;
+NET "input(5)" LOC = U8;
+NET "input(6)" LOC = V8;
+# T5
+
+## leds
+NET "output[0]" LOC = U16;
+NET "output[1]" LOC = V16;
+NET "output[2]" LOC = U15;
+#V15;
+#M11;
+#N11;
+#R11;
+#T11;

@@ -1,0 +1,60 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Binary_to_Gray_Code_Converter.twx
+Binary_to_Gray_Code_Converter.ncd -o Binary_to_Gray_Code_Converter.twr
+Binary_to_Gray_Code_Converter.pcf -ucf Binary_to_Gray_Code_Converter.ucf
+
+Design file:              Binary_to_Gray_Code_Converter.ncd
+Physical constraint file: Binary_to_Gray_Code_Converter.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Binary<0>      |Gray<0>        |    7.351|
+Binary<1>      |Gray<0>        |    7.361|
+Binary<1>      |Gray<1>        |    7.104|
+Binary<2>      |Gray<1>        |    7.054|
+Binary<2>      |Gray<2>        |    7.272|
+Binary<3>      |Gray<2>        |    7.257|
+Binary<3>      |Gray<3>        |    6.773|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Sep 08 17:02:03 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 240 MB
+
+
+

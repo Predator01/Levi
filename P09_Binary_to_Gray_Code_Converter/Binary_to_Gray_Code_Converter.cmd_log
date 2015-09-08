@@ -1,3 +1,25 @@
 xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.xst" -ofn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.syr" 
 xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.xst" -ofn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.syr" 
 xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.xst" -ofn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.xst" -ofn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.xst" -ofn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Binary_to_Gray_Code_Converter.ngc Binary_to_Gray_Code_Converter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Binary_to_Gray_Code_Converter_map.ncd Binary_to_Gray_Code_Converter.ngd Binary_to_Gray_Code_Converter.pcf 
+par -w -intstyle ise -ol high -mt off Binary_to_Gray_Code_Converter_map.ncd Binary_to_Gray_Code_Converter.ncd Binary_to_Gray_Code_Converter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Binary_to_Gray_Code_Converter.twx Binary_to_Gray_Code_Converter.ncd -o Binary_to_Gray_Code_Converter.twr Binary_to_Gray_Code_Converter.pcf 
+bitgen -intstyle ise -f Binary_to_Gray_Code_Converter.ut Binary_to_Gray_Code_Converter.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.xst" -ofn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Binary_to_Gray_Code_Converter.ucf -p xc6slx16-csg324-3 Binary_to_Gray_Code_Converter.ngc Binary_to_Gray_Code_Converter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Binary_to_Gray_Code_Converter_map.ncd Binary_to_Gray_Code_Converter.ngd Binary_to_Gray_Code_Converter.pcf 
+par -w -intstyle ise -ol high -mt off Binary_to_Gray_Code_Converter_map.ncd Binary_to_Gray_Code_Converter.ncd Binary_to_Gray_Code_Converter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Binary_to_Gray_Code_Converter.twx Binary_to_Gray_Code_Converter.ncd -o Binary_to_Gray_Code_Converter.twr Binary_to_Gray_Code_Converter.pcf -ucf Binary_to_Gray_Code_Converter.ucf 
+bitgen -intstyle ise -f Binary_to_Gray_Code_Converter.ut Binary_to_Gray_Code_Converter.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.xst" -ofn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.xst" -ofn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.xst" -ofn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.xst" -ofn "D:/ProySisDigAva/Levi/P09_Binary_to_Gray_Code_Converter/Binary_to_Gray_Code_Converter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Binary_to_Gray_Code_Converter.ucf -p xc6slx16-csg324-3 Binary_to_Gray_Code_Converter.ngc Binary_to_Gray_Code_Converter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Binary_to_Gray_Code_Converter_map.ncd Binary_to_Gray_Code_Converter.ngd Binary_to_Gray_Code_Converter.pcf 
+par -w -intstyle ise -ol high -mt off Binary_to_Gray_Code_Converter_map.ncd Binary_to_Gray_Code_Converter.ncd Binary_to_Gray_Code_Converter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Binary_to_Gray_Code_Converter.twx Binary_to_Gray_Code_Converter.ncd -o Binary_to_Gray_Code_Converter.twr Binary_to_Gray_Code_Converter.pcf -ucf Binary_to_Gray_Code_Converter.ucf 
+bitgen -intstyle ise -f Binary_to_Gray_Code_Converter.ut Binary_to_Gray_Code_Converter.ncd 
