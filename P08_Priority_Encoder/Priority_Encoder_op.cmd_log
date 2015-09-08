@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P08_Priority_Encoder/Priority_Encoder_op.xst" -ofn "D:/ProySisDigAva/Levi/P08_Priority_Encoder/Priority_Encoder_op.syr" 

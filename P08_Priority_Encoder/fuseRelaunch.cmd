@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/ProySisDigAva/Levi/P08_Priority_Encoder/Priority_Encoder_op_TB_isim_beh.exe" -prj "D:/ProySisDigAva/Levi/P08_Priority_Encoder/Priority_Encoder_op_TB_beh.prj" "work.Priority_Encoder_op_TB" 
