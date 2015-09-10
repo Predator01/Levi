@@ -1,0 +1,55 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Challenge1.ucf -p xc6slx16-csg324-3 Challenge1.ngc Challenge1.ngd  
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Challenge1.ucf -p xc6slx16-csg324-3 Challenge1.ngc Challenge1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Challenge1_map.ncd Challenge1.ngd Challenge1.pcf 
+par -w -intstyle ise -ol high -mt off Challenge1_map.ncd Challenge1.ncd Challenge1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Challenge1.twx Challenge1.ncd -o Challenge1.twr Challenge1.pcf -ucf Challenge1.ucf 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Challenge1.ucf -p xc6slx16-csg324-3 Challenge1.ngc Challenge1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Challenge1_map.ncd Challenge1.ngd Challenge1.pcf 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Challenge1.ucf -p xc6slx16-csg324-3 Challenge1.ngc Challenge1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Challenge1_map.ncd Challenge1.ngd Challenge1.pcf 
+par -w -intstyle ise -ol high -mt off Challenge1_map.ncd Challenge1.ncd Challenge1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Challenge1.twx Challenge1.ncd -o Challenge1.twr Challenge1.pcf -ucf Challenge1.ucf 
+bitgen -intstyle ise -f Challenge1.ut Challenge1.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Challenge1.ucf -p xc6slx16-csg324-3 Challenge1.ngc Challenge1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Challenge1_map.ncd Challenge1.ngd Challenge1.pcf 
+par -w -intstyle ise -ol high -mt off Challenge1_map.ncd Challenge1.ncd Challenge1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Challenge1.twx Challenge1.ncd -o Challenge1.twr Challenge1.pcf -ucf Challenge1.ucf 
+bitgen -intstyle ise -f Challenge1.ut Challenge1.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Challenge1.ucf -p xc6slx16-csg324-3 Challenge1.ngc Challenge1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Challenge1_map.ncd Challenge1.ngd Challenge1.pcf 
+par -w -intstyle ise -ol high -mt off Challenge1_map.ncd Challenge1.ncd Challenge1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Challenge1.twx Challenge1.ncd -o Challenge1.twr Challenge1.pcf -ucf Challenge1.ucf 
+bitgen -intstyle ise -f Challenge1.ut Challenge1.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Challenge1.ucf -p xc6slx16-csg324-3 Challenge1.ngc Challenge1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Challenge1_map.ncd Challenge1.ngd Challenge1.pcf 
+par -w -intstyle ise -ol high -mt off Challenge1_map.ncd Challenge1.ncd Challenge1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Challenge1.twx Challenge1.ncd -o Challenge1.twr Challenge1.pcf -ucf Challenge1.ucf 
+bitgen -intstyle ise -f Challenge1.ut Challenge1.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.xst" -ofn "D:/ProySisDigAva/Levi/P10_Challenge1/Challenge1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Challenge1.ucf -p xc6slx16-csg324-3 Challenge1.ngc Challenge1.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Challenge1_map.ncd Challenge1.ngd Challenge1.pcf 
+par -w -intstyle ise -ol high -mt off Challenge1_map.ncd Challenge1.ncd Challenge1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Challenge1.twx Challenge1.ncd -o Challenge1.twr Challenge1.pcf -ucf Challenge1.ucf 
+bitgen -intstyle ise -f Challenge1.ut Challenge1.ncd 
