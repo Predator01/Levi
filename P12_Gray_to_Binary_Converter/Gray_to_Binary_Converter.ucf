@@ -1,0 +1,19 @@
+## switchs data input
+NET "Gray[0]" LOC = T10;
+NET "Gray[1]" LOC = T9;
+NET "Gray[2]" LOC = V9;
+NET "Gray[3]" LOC = M8;
+#NET "D[4]" LOC = N8;
+#NET "D[5]" LOC = U8;
+#NET "D[6]" LOC = V8;
+#NET "D[7]" LOC = T5;
+
+## leds output
+NET "Binary(0)" LOC = U16;
+NET "Binary(1)" LOC = V16;
+NET "Binary(2)" LOC = U15;
+NET "Binary(3)" LOC = V15;
+#NET "" LOC = M11;
+#NET "" LOC = N11;
+#NET "" LOC = R11;
+#NET "" LOC = T11;
