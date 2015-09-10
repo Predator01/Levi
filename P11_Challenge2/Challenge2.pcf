@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Sep 09 17:26:49 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Binary<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Disp<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "Seg<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "Binary<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "Disp<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "Seg<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "Binary<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "Disp<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "Seg<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "Binary<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "Disp<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "Seg<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "Binary<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "Seg<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "Binary<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "Seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "Binary<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "Seg<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "Binary<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "Seg<7>" LOCATE = SITE "M13" LEVEL 1;
+SCHEMATIC END;
+

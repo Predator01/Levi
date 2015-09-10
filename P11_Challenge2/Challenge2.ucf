@@ -1,0 +1,25 @@
+#seleccion display
+NET "Disp[3]" LOC = P17;
+NET "Disp[2]" LOC = P18;
+NET "Disp[1]" LOC = N15;
+NET "Disp[0]" LOC = N16;
+
+#display
+NET "Seg[7]" LOC = M13;
+NET "Seg[6]" LOC = L14;
+NET "Seg[5]" LOC = N14;
+NET "Seg[4]" LOC = M14;
+NET "Seg[3]" LOC = U18;
+NET "Seg[2]" LOC = u17;
+NET "Seg[1]" LOC = T18;
+NET "Seg[0]" LOC = T17;
+
+#8 swithcs
+NET "Binary(0)" LOC = T10;
+NET "Binary(1)" LOC = T9;
+NET "Binary(2)" LOC = V9;
+NET "Binary(3)" LOC = M8;
+NET "Binary(4)" LOC = N8;
+NET "Binary(5)" LOC = U8;
+NET "Binary(6)" LOC = V8;
+NET "Binary(7)" LOC = T5;
