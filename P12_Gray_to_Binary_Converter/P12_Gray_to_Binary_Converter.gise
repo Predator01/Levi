@@ -85,6 +85,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1441844432" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1441844432">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1441844578" xil_pn:in_ck="-5263337023540058187" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1441844578">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -129,6 +130,7 @@
     </transform>
     <transform xil_pn:end_ts="1441844370" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1441844370">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1441844370" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8134290460198714513" xil_pn:start_ts="1441844370">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -216,6 +218,7 @@
     <transform xil_pn:end_ts="1441844416" xil_pn:in_ck="5650624911869587795" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1441844401">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="Gray_to_Binary_Converter.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="gray_to_binary_converter.bgn"/>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-09-09T19:32:06</DateModified>
+  <DateModified>2015-09-11T08:47:48</DateModified>
   <ModuleName>Gray_to_Binary_Converter</ModuleName>
   <SummaryTimeStamp>2015-09-09T19:20:17</SummaryTimeStamp>
   <SavedFilePath>D:/ProySisDigAva/Levi/P12_Gray_to_Binary_Converter/iseconfig/Gray_to_Binary_Converter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P12_Gray_to_Binary_Converter</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P12_Gray_to_Binary_Converter\</ImplementationReportsDirectory>
   <DateInitialized>2015-09-09T18:12:03</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
