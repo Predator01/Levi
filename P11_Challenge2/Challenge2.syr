@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: Challenge2.prj
 
@@ -114,6 +114,7 @@ Parsing architecture <Behavioral> of entity <challenge2>.
 =========================================================================
 
 Elaborating entity <Challenge2> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "D:\ProySisDigAva\Levi\P11_Challenge2\Challenge2.vhd" Line 32: Using initial value 0 for res_counter since it is never assigned
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -121,33 +122,15 @@ Elaborating entity <Challenge2> (architecture <Behavioral>) from library <work>.
 
 Synthesizing Unit <Challenge2>.
     Related source file is "D:\ProySisDigAva\Levi\P11_Challenge2\Challenge2.vhd".
-    Found 2-bit adder for signal <n0049[1:0]> created at line 63.
-    Found 3-bit adder for signal <n0052[2:0]> created at line 63.
-    Found 4-bit adder for signal <n0055[3:0]> created at line 63.
-    Found 5-bit adder for signal <n0058[4:0]> created at line 63.
-    Found 6-bit adder for signal <n0061[5:0]> created at line 63.
-    Found 7-bit adder for signal <n0064[6:0]> created at line 63.
-    Found 8-bit adder for signal <n0067[7:0]> created at line 63.
+WARNING:Xst:647 - Input <Binary> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
-	inferred   7 Adder/Subtractor(s).
-	inferred   1 Multiplexer(s).
+	no macro.
 Unit <Challenge2> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
-Macro Statistics
-# Adders/Subtractors                                   : 7
- 2-bit adder                                           : 1
- 3-bit adder                                           : 1
- 4-bit adder                                           : 1
- 5-bit adder                                           : 1
- 6-bit adder                                           : 1
- 7-bit adder                                           : 1
- 8-bit adder                                           : 1
-# Multiplexers                                         : 1
- 8-bit 2-to-1 multiplexer                              : 1
-
+Found no macro
 =========================================================================
 
 =========================================================================
@@ -155,20 +138,10 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <Challenge2>.
-	The following adders/subtractors are grouped into adder tree <Madd_n0067[7:0]_Madd1> :
- 	<Madd_n0049[1:0]> in block <Challenge2>, 	<Madd_n0055[3:0]_Madd> in block <Challenge2>, 	<Madd_n0061[5:0]_Madd> in block <Challenge2>, 	<Madd_n0067[7:0]_Madd> in block <Challenge2>.
-Unit <Challenge2> synthesized (advanced).
-
 =========================================================================
 Advanced HDL Synthesis Report
 
-Macro Statistics
-# Adder Trees                                          : 1
- 8-bit / 5-inputs adder tree                           : 1
-# Multiplexers                                         : 1
- 8-bit 2-to-1 multiplexer                              : 1
-
+Found no macro
 =========================================================================
 
 =========================================================================
@@ -208,14 +181,10 @@ Top Level Output File Name         : Challenge2.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 15
+# BELS                             : 2
 #      GND                         : 1
-#      LUT4                        : 8
-#      LUT5                        : 3
-#      LUT6                        : 2
 #      VCC                         : 1
-# IO Buffers                       : 20
-#      IBUF                        : 8
+# IO Buffers                       : 12
 #      OBUF                        : 12
 
 Device utilization summary:
@@ -225,19 +194,17 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                   13  out of   9112     0%  
-    Number used as Logic:                13  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     13
-   Number with an unused Flip Flop:      13  out of     13   100%  
-   Number with an unused LUT:             0  out of     13     0%  
-   Number of fully used LUT-FF pairs:     0  out of     13     0%  
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
    Number of unique control sets:         0
 
 IO Utilization: 
  Number of IOs:                          20
- Number of bonded IOBs:                  20  out of    232     8%  
+ Number of bonded IOBs:                  12  out of    232     5%  
 
 Specific Feature Utilization:
 
@@ -272,32 +239,11 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 7.978ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 273 / 7
--------------------------------------------------------------------------
-Delay:               7.978ns (Levels of Logic = 5)
-  Source:            Binary<7> (PAD)
-  Destination:       Seg<5> (PAD)
-
-  Data Path: Binary<7> to Seg<5>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             3   1.222   0.995  Binary_7_IBUF (Binary_7_IBUF)
-     LUT5:I0->O            2   0.203   0.981  ADDERTREE_INTERNAL_Madd1_xor<1>11 (ADDERTREE_INTERNAL_Madd_11)
-     LUT6:I0->O            7   0.203   1.021  ADDERTREE_INTERNAL_Madd3_cy<0>21 (ADDERTREE_INTERNAL_Madd3_cy<0>1)
-     LUT4:I0->O            1   0.203   0.579  Mmux_Seg61 (Seg_5_OBUF)
-     OBUF:I->O                 2.571          Seg_5_OBUF (Seg<5>)
-    ----------------------------------------
-    Total                      7.978ns (4.402ns logic, 3.576ns route)
-                                       (55.2% logic, 44.8% route)
 
 =========================================================================
 
@@ -307,14 +253,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.60 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.61 secs
  
 --> 
 
 Total memory usage is 236376 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

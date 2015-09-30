@@ -77,6 +77,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1441837579" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1441837579">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1441837579" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3240139891022198762" xil_pn:start_ts="1441837579">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -102,11 +103,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1441837588" xil_pn:in_ck="-7578874187956055483" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2095020428762043710" xil_pn:start_ts="1441837579">
+    <transform xil_pn:end_ts="1441980888" xil_pn:in_ck="-7578874187956055483" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2095020428762043710" xil_pn:start_ts="1441980881">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Challenge2.lso"/>
       <outfile xil_pn:name="Challenge2.ngc"/>
       <outfile xil_pn:name="Challenge2.ngr"/>
@@ -126,6 +126,8 @@
     <transform xil_pn:end_ts="1441837597" xil_pn:in_ck="4068190443166077116" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3037292704662516720" xil_pn:start_ts="1441837588">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Challenge2.bld"/>
       <outfile xil_pn:name="Challenge2.ngd"/>
       <outfile xil_pn:name="Challenge2_ngdbuild.xrpt"/>
@@ -135,6 +137,7 @@
     <transform xil_pn:end_ts="1441837612" xil_pn:in_ck="-5827791070278910339" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1441837597">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Challenge2.pcf"/>
@@ -150,6 +153,7 @@
     <transform xil_pn:end_ts="1441837630" xil_pn:in_ck="-5424701098900686634" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1441837612">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Challenge2.ncd"/>
       <outfile xil_pn:name="Challenge2.pad"/>
       <outfile xil_pn:name="Challenge2.par"/>
@@ -164,6 +168,10 @@
     <transform xil_pn:end_ts="1441837652" xil_pn:in_ck="-7578874187956064360" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1441837630">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Challenge2.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="challenge2.bgn"/>
@@ -176,6 +184,7 @@
     <transform xil_pn:end_ts="1441837630" xil_pn:in_ck="9169683544790820601" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1441837623">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Challenge2.twr"/>
       <outfile xil_pn:name="Challenge2.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

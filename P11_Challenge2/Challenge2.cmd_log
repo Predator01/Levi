@@ -73,3 +73,11 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off Challenge2_map.ncd Challenge2.ncd Challenge2.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Challenge2.twx Challenge2.ncd -o Challenge2.twr Challenge2.pcf -ucf Challenge2.ucf 
 bitgen -intstyle ise -f Challenge2.ut Challenge2.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.xst" -ofn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.xst" -ofn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.xst" -ofn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.xst" -ofn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.xst" -ofn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.xst" -ofn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.xst" -ofn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.xst" -ofn "D:/ProySisDigAva/Levi/P11_Challenge2/Challenge2.syr" 

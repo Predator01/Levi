@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-09-09T11:54:44</DateModified>
+  <DateModified>2015-09-11T08:49:05</DateModified>
   <ModuleName>Challenge2</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/ProySisDigAva/Levi/P11_Challenge2/iseconfig/Challenge2.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P11_Challenge2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P11_Challenge2\</ImplementationReportsDirectory>
   <DateInitialized>2015-09-09T11:54:44</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -5,5 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"D:\ProySisDigAva\Levi\P11_Challenge2\Challenge2.vhd" Line 32: Using initial value <arg fmt="%s" index="1">0</arg> for <arg fmt="%s" index="2">res_counter</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Binary</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 </messages>
 

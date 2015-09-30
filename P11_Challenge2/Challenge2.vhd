@@ -20,6 +20,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
 
 entity Challenge2 is
     Port ( Binary : in  STD_LOGIC_VECTOR (7 downto 0);
@@ -28,7 +29,7 @@ entity Challenge2 is
 end Challenge2;
 
 architecture Behavioral of Challenge2 is
-	signal res_counter : Integer;
+	signal res_counter : Integer := 0;
 	signal shift : STD_LOGIC_VECTOR (7 downto 0);
 	-- signal Res: STD_LOGIC_VECTOR(3 downto 0);
 	--declaracion de los 6 sumadores
@@ -39,9 +40,23 @@ architecture Behavioral of Challenge2 is
 	-- signal Res4: STD_LOGIC_VECTOR(3 downto 0);
 	-- signal Res5: STD_LOGIC_VECTOR(3 downto 0);
 	-- signal Res6: STD_LOGIC_VECTOR(3 downto 0);
-begin
-	-- Res6 <= "000"&Num(7) + "000"&Num(6); 
 	
+	-- Declaration of Res as an array
+	-- STD_LOGIC_VECTOR
+	
+	-- and array of 6 that has an STD LOGIC VECTOR OF 3 each cell
+	type array1 is array(6 downto 0) of STD_LOGIC_VECTOR(3 downto 0);
+	signal Res: array1;
+	
+begin
+	Res(6) <=  Binary(7) + "000"&Binary(6);
+	OneCounter: process(Binary, Res)
+	begin
+		gen: for i in 5 downto 0 loop
+				Res(i) <= Res(i+1) + Binary(i); 
+		end loop;
+	end process OneCounter;
+
 	-- shifting NOT WORKING =(
 --	OneCounter: process(Binary)
 --		VARIABLE aux: Integer := 0;
@@ -53,18 +68,20 @@ begin
 --		end loop;
 --		res_counter <= aux;
 --	end process OneCounter;
+	
+	
+	-- counting ones
+	
+--	OneCounter: process(Binary)
+--		VARIABLE aux: Integer;
+--	begin
+--		aux := to_integer(unsigned(Binary(7 downto 7)));
+--		gen: for i in 6 downto 0 loop
+--				aux := aux + to_integer(unsigned(Binary(i downto i)));
+--		end loop;
+--		res_counter <= aux;
+--	end process OneCounter;
 --	
-	
-	OneCounter: process(Binary)
-		VARIABLE aux: Integer;
-	begin
-		aux := to_integer(unsigned(Binary(7 downto 7)));
-		gen: for i in 6 downto 0 loop
-				aux := aux + to_integer(unsigned(Binary(i downto i)));
-		end loop;
-		res_counter <= aux;
-	end process OneCounter;
-	
 	
 	decodercase: process(res_counter)
 		VARIABLE bufer: STD_LOGIC_VECTOR (7 downto 0);
