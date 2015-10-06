@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P15_Counters/P15_Counters.xst" -ofn "D:/ProySisDigAva/Levi/P15_Counters/P15_Counters.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P15_Counters/P15_Counters.xst" -ofn "D:/ProySisDigAva/Levi/P15_Counters/P15_Counters.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P15_Counters/P15_Counters.xst" -ofn "D:/ProySisDigAva/Levi/P15_Counters/P15_Counters.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P15_Counters.ucf -p xc6slx16-csg324-3 P15_Counters.ngc P15_Counters.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P15_Counters.ucf -p xc6slx16-csg324-3 P15_Counters.ngc P15_Counters.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P15_Counters.ucf -p xc6slx16-csg324-3 P15_Counters.ngc P15_Counters.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P15_Counters_map.ncd P15_Counters.ngd P15_Counters.pcf 
