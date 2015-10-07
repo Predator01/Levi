@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P16_Counter_0_to_19_simulated/Counter_0_to_19.xst" -ofn "D:/ProySisDigAva/Levi/P16_Counter_0_to_19_simulated/Counter_0_to_19.syr" 
