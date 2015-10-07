@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/Top.xst" -ofn "D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/Top.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/Top.xst" -ofn "D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/Top.syr" 
