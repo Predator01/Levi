@@ -127,6 +127,8 @@
     <transform xil_pn:end_ts="1444322926" xil_pn:in_ck="-3685075525260890654" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="76404214384526787" xil_pn:start_ts="1444322920">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="P15_Counters.bld"/>
       <outfile xil_pn:name="P15_Counters.ngd"/>
       <outfile xil_pn:name="P15_Counters_ngdbuild.xrpt"/>
@@ -136,6 +138,8 @@
     <transform xil_pn:end_ts="1444322934" xil_pn:in_ck="-7510404620474085405" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1444322926">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="P15_Counters.pcf"/>
       <outfile xil_pn:name="P15_Counters_map.map"/>
       <outfile xil_pn:name="P15_Counters_map.mrp"/>

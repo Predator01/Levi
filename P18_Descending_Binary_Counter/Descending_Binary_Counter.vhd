@@ -17,8 +17,13 @@
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
+
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_unsigned.all;
+
+		
 
 entity Descending_Binary_Counter is
     Port ( Clk : in  STD_LOGIC;
@@ -29,14 +34,15 @@ end Descending_Binary_Counter;
 
 architecture Behavioral of Descending_Binary_Counter is
 	signal count : STD_LOGIC_VECTOR(3 downto 0);
-	signal frequency_counter : integer range 0 to 1000000000;
+	signal frequency_counter : integer range 0 to 100000000;
 	signal one_hz : STD_LOGIC;
+	signal result : STD_LOGIC_VECTOR(3 downto 0);
 begin
 	Frequency_devider: process(Rst, Clk)
 	begin
 		if(rising_edge(Clk)) then
 			--check counter final value
-			if(frequency_counter = 1000000000) then
+			if(frequency_counter = 100000000) then
 				frequency_counter <= 1;
 				one_hz <= '1';
 			else
@@ -56,13 +62,13 @@ begin
 			count <= count + 1;
 		end if;
 	end process Binary_counter;
-		
-		
+	
+	result <= not count;
 	--Decoder
-	decodercase: process(count)
+	decoder_case: process(result)
 	VARIABLE bufer: STD_LOGIC_VECTOR (7 downto 0);
 	begin
-		case(count) is
+		case(result) is
 			when "0000" => bufer:= "11000000";
 			when "0001" => bufer:= "11111001";
 			when "0010" => bufer:= "10100100";
@@ -82,7 +88,7 @@ begin
 			when others => bufer:= "10111111";
 		end case;
 		Seg <= bufer;
-	end process decodercase;
+	end process decoder_case;
 	disp <= "1110";
 
 end Behavioral;

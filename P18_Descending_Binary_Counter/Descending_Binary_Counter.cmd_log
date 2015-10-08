@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P18_Descending_Binary_Counter/Descending_Binary_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P18_Descending_Binary_Counter/Descending_Binary_Counter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P18_Descending_Binary_Counter/Descending_Binary_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P18_Descending_Binary_Counter/Descending_Binary_Counter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P18_Descending_Binary_Counter/Descending_Binary_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P18_Descending_Binary_Counter/Descending_Binary_Counter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P18_Descending_Binary_Counter/Descending_Binary_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P18_Descending_Binary_Counter/Descending_Binary_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Descending_Binary_Counter.ucf -p xc6slx16-csg324-3 Descending_Binary_Counter.ngc Descending_Binary_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Descending_Binary_Counter_map.ncd Descending_Binary_Counter.ngd Descending_Binary_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Descending_Binary_Counter_map.ncd Descending_Binary_Counter.ncd Descending_Binary_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Descending_Binary_Counter.twx Descending_Binary_Counter.ncd -o Descending_Binary_Counter.twr Descending_Binary_Counter.pcf -ucf Descending_Binary_Counter.ucf 
+bitgen -intstyle ise -f Descending_Binary_Counter.ut Descending_Binary_Counter.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P18_Descending_Binary_Counter/Descending_Binary_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P18_Descending_Binary_Counter/Descending_Binary_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Descending_Binary_Counter.ucf -p xc6slx16-csg324-3 Descending_Binary_Counter.ngc Descending_Binary_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Descending_Binary_Counter_map.ncd Descending_Binary_Counter.ngd Descending_Binary_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Descending_Binary_Counter_map.ncd Descending_Binary_Counter.ncd Descending_Binary_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Descending_Binary_Counter.twx Descending_Binary_Counter.ncd -o Descending_Binary_Counter.twr Descending_Binary_Counter.pcf -ucf Descending_Binary_Counter.ucf 
+bitgen -intstyle ise -f Descending_Binary_Counter.ut Descending_Binary_Counter.ncd 
