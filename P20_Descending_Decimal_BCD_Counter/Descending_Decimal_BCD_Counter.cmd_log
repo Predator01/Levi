@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P20_Descending_Decimal_BCD_Counter/Descending_Decimal_BCD_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P20_Descending_Decimal_BCD_Counter/Descending_Decimal_BCD_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Descending_Decimal_BCD_Counter.ucf -p xc6slx16-csg324-3 Descending_Decimal_BCD_Counter.ngc Descending_Decimal_BCD_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Descending_Decimal_BCD_Counter_map.ncd Descending_Decimal_BCD_Counter.ngd Descending_Decimal_BCD_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Descending_Decimal_BCD_Counter_map.ncd Descending_Decimal_BCD_Counter.ncd Descending_Decimal_BCD_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Descending_Decimal_BCD_Counter.twx Descending_Decimal_BCD_Counter.ncd -o Descending_Decimal_BCD_Counter.twr Descending_Decimal_BCD_Counter.pcf -ucf Descending_Decimal_BCD_Counter.ucf 
+bitgen -intstyle ise -f Descending_Decimal_BCD_Counter.ut Descending_Decimal_BCD_Counter.ncd 

@@ -1,0 +1,37 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Ascending_Decimal_BCD_Counter.ngc Ascending_Decimal_BCD_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ngd Ascending_Decimal_BCD_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ncd Ascending_Decimal_BCD_Counter.pcf 
+bitgen -intstyle ise -f Ascending_Decimal_BCD_Counter.ut Ascending_Decimal_BCD_Counter.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Ascending_Decimal_BCD_Counter.ngc Ascending_Decimal_BCD_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ngd Ascending_Decimal_BCD_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ncd Ascending_Decimal_BCD_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ascending_Decimal_BCD_Counter.twx Ascending_Decimal_BCD_Counter.ncd -o Ascending_Decimal_BCD_Counter.twr Ascending_Decimal_BCD_Counter.pcf 
+bitgen -intstyle ise -f Ascending_Decimal_BCD_Counter.ut Ascending_Decimal_BCD_Counter.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Ascending_Decimal_BCD_Counter.ngc Ascending_Decimal_BCD_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ngd Ascending_Decimal_BCD_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ncd Ascending_Decimal_BCD_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ascending_Decimal_BCD_Counter.twx Ascending_Decimal_BCD_Counter.ncd -o Ascending_Decimal_BCD_Counter.twr Ascending_Decimal_BCD_Counter.pcf 
+bitgen -intstyle ise -f Ascending_Decimal_BCD_Counter.ut Ascending_Decimal_BCD_Counter.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Ascending_Decimal_BCD_Counter.ngc Ascending_Decimal_BCD_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ngd Ascending_Decimal_BCD_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ncd Ascending_Decimal_BCD_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ascending_Decimal_BCD_Counter.twx Ascending_Decimal_BCD_Counter.ncd -o Ascending_Decimal_BCD_Counter.twr Ascending_Decimal_BCD_Counter.pcf 
+bitgen -intstyle ise -f Ascending_Decimal_BCD_Counter.ut Ascending_Decimal_BCD_Counter.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascending_Decimal_BCD_Counter.ucf -p xc6slx16-csg324-3 Ascending_Decimal_BCD_Counter.ngc Ascending_Decimal_BCD_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ngd Ascending_Decimal_BCD_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ncd Ascending_Decimal_BCD_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ascending_Decimal_BCD_Counter.twx Ascending_Decimal_BCD_Counter.ncd -o Ascending_Decimal_BCD_Counter.twr Ascending_Decimal_BCD_Counter.pcf -ucf Ascending_Decimal_BCD_Counter.ucf 
+bitgen -intstyle ise -f Ascending_Decimal_BCD_Counter.ut Ascending_Decimal_BCD_Counter.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.xst" -ofn "D:/ProySisDigAva/Levi/P19_Ascending_Decimal_BCD_Counter/Ascending_Decimal_BCD_Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Ascending_Decimal_BCD_Counter.ucf -p xc6slx16-csg324-3 Ascending_Decimal_BCD_Counter.ngc Ascending_Decimal_BCD_Counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ngd Ascending_Decimal_BCD_Counter.pcf 
+par -w -intstyle ise -ol high -mt off Ascending_Decimal_BCD_Counter_map.ncd Ascending_Decimal_BCD_Counter.ncd Ascending_Decimal_BCD_Counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Ascending_Decimal_BCD_Counter.twx Ascending_Decimal_BCD_Counter.ncd -o Ascending_Decimal_BCD_Counter.twr Ascending_Decimal_BCD_Counter.pcf -ucf Ascending_Decimal_BCD_Counter.ucf 
+bitgen -intstyle ise -f Ascending_Decimal_BCD_Counter.ut Ascending_Decimal_BCD_Counter.ncd 
