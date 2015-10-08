@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.52 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.52 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: P15_Counters.prj
 
@@ -114,7 +114,7 @@ Parsing architecture <Behavioral> of entity <p15_counters>.
 =========================================================================
 
 Elaborating entity <P15_Counters> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\P15_Counters\P15_Counters.vhd" Line 108. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\P15_Counters\P15_Counters.vhd" Line 107. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -124,14 +124,14 @@ Synthesizing Unit <P15_Counters>.
     Related source file is "D:\ProySisDigAva\Levi\P15_Counters\P15_Counters.vhd".
     Found 4-bit register for signal <count>.
     Found 1-bit register for signal <onehz>.
-    Found 30-bit register for signal <frequency_counter>.
-    Found 30-bit adder for signal <frequency_counter[29]_GND_6_o_add_1_OUT> created at line 50.
-    Found 4-bit adder for signal <count[3]_GND_6_o_add_4_OUT> created at line 81.
+    Found 27-bit register for signal <frequency_counter>.
+    Found 27-bit adder for signal <frequency_counter[26]_GND_6_o_add_1_OUT> created at line 49.
+    Found 4-bit adder for signal <count[3]_GND_6_o_add_4_OUT> created at line 80.
     Found 16x8-bit Read Only RAM for signal <Seg>
     Summary:
 	inferred   1 RAM(s).
 	inferred   2 Adder/Subtractor(s).
-	inferred  35 D-type flip-flop(s).
+	inferred  32 D-type flip-flop(s).
 Unit <P15_Counters> synthesized.
 
 =========================================================================
@@ -141,11 +141,11 @@ Macro Statistics
 # RAMs                                                 : 1
  16x8-bit single-port Read Only RAM                    : 1
 # Adders/Subtractors                                   : 2
- 30-bit adder                                          : 1
+ 27-bit adder                                          : 1
  4-bit adder                                           : 1
 # Registers                                            : 3
  1-bit register                                        : 1
- 30-bit register                                       : 1
+ 27-bit register                                       : 1
  4-bit register                                        : 1
 
 =========================================================================
@@ -178,7 +178,7 @@ Macro Statistics
 # RAMs                                                 : 1
  16x8-bit single-port distributed Read Only RAM        : 1
 # Counters                                             : 2
- 30-bit up counter                                     : 1
+ 27-bit up counter                                     : 1
  4-bit up counter                                      : 1
 # Registers                                            : 1
  Flip-Flops                                            : 1
@@ -201,8 +201,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 35
- Flip-Flops                                            : 35
+# Registers                                            : 32
+ Flip-Flops                                            : 32
 
 =========================================================================
 
@@ -225,20 +225,20 @@ Top Level Output File Name         : P15_Counters.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 139
+# BELS                             : 132
 #      GND                         : 1
 #      INV                         : 2
-#      LUT1                        : 29
-#      LUT2                        : 31
-#      LUT3                        : 1
+#      LUT1                        : 26
+#      LUT2                        : 1
+#      LUT3                        : 4
 #      LUT4                        : 8
 #      LUT5                        : 1
-#      LUT6                        : 6
-#      MUXCY                       : 29
+#      LUT6                        : 35
+#      MUXCY                       : 26
 #      VCC                         : 1
-#      XORCY                       : 30
-# FlipFlops/Latches                : 35
-#      FD                          : 31
+#      XORCY                       : 27
+# FlipFlops/Latches                : 32
+#      FD                          : 28
 #      FDCE                        : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -253,15 +253,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              35  out of  18224     0%  
- Number of Slice LUTs:                   78  out of   9112     0%  
-    Number used as Logic:                78  out of   9112     0%  
+ Number of Slice Registers:              32  out of  18224     0%  
+ Number of Slice LUTs:                   77  out of   9112     0%  
+    Number used as Logic:                77  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     78
-   Number with an unused Flip Flop:      43  out of     78    55%  
-   Number with an unused LUT:             0  out of     78     0%  
-   Number of fully used LUT-FF pairs:    35  out of     78    44%  
+ Number of LUT Flip Flop pairs used:     77
+   Number with an unused Flip Flop:      45  out of     77    58%  
+   Number with an unused LUT:             0  out of     77     0%  
+   Number of fully used LUT-FF pairs:    32  out of     77    41%  
    Number of unique control sets:         2
 
 IO Utilization: 
@@ -292,7 +292,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk                                | BUFGP                  | 35    |
+Clk                                | BUFGP                  | 32    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -303,7 +303,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.087ns (Maximum Frequency: 244.657MHz)
+   Minimum period: 3.248ns (Maximum Frequency: 307.910MHz)
    Minimum input arrival time before clock: 2.335ns
    Maximum output required time after clock: 4.930ns
    Maximum combinational path delay: No path found
@@ -314,27 +314,26 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 4.087ns (frequency: 244.657MHz)
-  Total number of paths / destination ports: 1409 / 39
+  Clock period: 3.248ns (frequency: 307.910MHz)
+  Total number of paths / destination ports: 1148 / 36
 -------------------------------------------------------------------------
-Delay:               4.087ns (Levels of Logic = 3)
-  Source:            frequency_counter_18 (FF)
-  Destination:       frequency_counter_0 (FF)
+Delay:               3.248ns (Levels of Logic = 2)
+  Source:            frequency_counter_7 (FF)
+  Destination:       frequency_counter_21 (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: frequency_counter_18 to frequency_counter_0
+  Data Path: frequency_counter_7 to frequency_counter_21
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.447   0.961  frequency_counter_18 (frequency_counter_18)
-     LUT5:I0->O            2   0.203   0.961  PWR_6_o_frequency_counter[29]_equal_1_o<29>6 (PWR_6_o_frequency_counter[29]_equal_1_o<29>5)
-     LUT6:I1->O           16   0.203   1.005  PWR_6_o_frequency_counter[29]_equal_1_o<29>7 (PWR_6_o_frequency_counter[29]_equal_1_o)
-     LUT2:I1->O            1   0.205   0.000  frequency_counter_0_glue_set (frequency_counter_0_glue_set)
-     FD:D                      0.102          frequency_counter_0
+     FD:C->Q               3   0.447   1.015  frequency_counter_7 (frequency_counter_7)
+     LUT6:I0->O           13   0.203   1.277  PWR_6_o_frequency_counter[26]_equal_1_o<26>4_1 (PWR_6_o_frequency_counter[26]_equal_1_o<26>41)
+     LUT6:I1->O            1   0.203   0.000  frequency_counter_21_rstpot (frequency_counter_21_rstpot)
+     FD:D                      0.102          frequency_counter_21
     ----------------------------------------
-    Total                      4.087ns (1.160ns logic, 2.927ns route)
-                                       (28.4% logic, 71.6% route)
+    Total                      3.248ns (0.955ns logic, 2.293ns route)
+                                       (29.4% logic, 70.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
@@ -385,14 +384,14 @@ Clock to Setup on destination clock Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    4.087|         |         |         |
+Clk            |    3.248|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.92 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.71 secs
  
 --> 
 

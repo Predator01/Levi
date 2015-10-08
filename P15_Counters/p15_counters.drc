@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Oct 08 11:49:10 2015
+
+drc -z P15_Counters.ncd P15_Counters.pcf
+
+DRC detected 0 errors and 0 warnings.

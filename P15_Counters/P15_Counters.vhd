@@ -33,9 +33,8 @@ architecture Behavioral of P15_Counters is
 -- embedded signal for the counter
 signal count : STD_LOGIC_VECTOR (3 downto 0);
 -- embedded signal used by frequency devider
-signal frequency_counter : integer range 0 to 1000000000;
+signal frequency_counter : integer range 0 to 100000000;
 signal onehz: STD_LOGIC;
-
 begin
 -- define a frequency devider for 100,000,000 to 1
 
@@ -43,7 +42,7 @@ Frequency_devider: process(Rst, Clk)
 begin
 	if(rising_edge(Clk)) then
 		--check if a counter has reached final value
-		if(frequency_counter = 1000000000) then
+		if(frequency_counter = 100000000) then
 			frequency_counter <= 1;
 			onehz <= '1';
 		else
