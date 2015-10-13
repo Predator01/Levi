@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/ProySisDigAva/Levi/P22_Shift_Register_8_bit_SN74164/Shift_Register_TB_isim_beh.exe" -prj "D:/ProySisDigAva/Levi/P22_Shift_Register_8_bit_SN74164/Shift_Register_TB_beh.prj" "work.Shift_Register_TB" 
