@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
--- Company: 			ITESM
+-- Company: 			ITESM CQ
 -- Engineer: 		Miguel Gonzalez A01203712
 -- 
 -- Create Date:    11:27:11 10/08/2015 
@@ -38,7 +38,7 @@ architecture Behavioral of Descending_Binary_Counter is
 	signal one_hz : STD_LOGIC;
 	signal result : STD_LOGIC_VECTOR(3 downto 0);
 begin
-	Frequency_devider: process(Rst, Clk)
+	Frequency_divider: process(Rst, Clk)
 	begin
 		if(rising_edge(Clk)) then
 			--check counter final value
@@ -50,7 +50,7 @@ begin
 				one_hz <= '0';
 			end if;
 		end if;
-	end process Frequency_devider;
+	end process Frequency_divider;
 	
 	Binary_counter: process(Rst, Clk, one_hz)
 	begin

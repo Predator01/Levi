@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: Top.prj
 
@@ -108,9 +108,15 @@ Slice Utilization Ratio Delta      : 5
 Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\DecBCD7Seg.vhd" into library work
 Parsing entity <DecBCD7Seg>.
 Parsing architecture <Behavioral> of entity <decbcd7seg>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a9.vhd" into library work
+Parsing entity <Cont0a9>.
+Parsing architecture <Behavioral> of entity <cont0a9>.
 Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a5.vhd" into library work
 Parsing entity <Cont0a5>.
 Parsing architecture <Behavioral> of entity <cont0a5>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Clk1Hz.vhd" into library work
+Parsing entity <Clk1Hz>.
+Parsing architecture <Behavioral> of entity <clk1hz>.
 Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" into library work
 Parsing entity <Top>.
 Parsing architecture <Behavioral> of entity <top>.
@@ -120,8 +126,10 @@ Parsing architecture <Behavioral> of entity <top>.
 =========================================================================
 
 Elaborating entity <Top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:89 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" Line 42: <clk1hz> remains a black-box since it has no binding entity.
-WARNING:HDLCompiler:89 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" Line 51: <cont0a9> remains a black-box since it has no binding entity.
+
+Elaborating entity <Clk1Hz> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Cont0a9> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <Cont0a5> (architecture <Behavioral>) from library <work>.
 WARNING:HDLCompiler:89 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" Line 76: <cont0a23> remains a black-box since it has no binding entity.
@@ -145,10 +153,31 @@ WARNING:Xst:653 - Signal <Tiempo_int> is used but never assigned. This sourceles
 	no macro.
 Unit <Top> synthesized.
 
+Synthesizing Unit <Clk1Hz>.
+    Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Clk1Hz.vhd".
+    Found 27-bit register for signal <Cont>.
+    Found 1-bit register for signal <ClkOut>.
+    Found 27-bit adder for signal <Cont[26]_GND_6_o_add_1_OUT> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Clk1Hz> synthesized.
+
+Synthesizing Unit <Cont0a9>.
+    Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a9.vhd".
+    Found 4-bit register for signal <Cont>.
+    Found 4-bit adder for signal <Cont[3]_GND_7_o_add_1_OUT> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <Cont0a9> synthesized.
+
 Synthesizing Unit <Cont0a5>.
     Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a5.vhd".
     Found 4-bit register for signal <Cont>.
-    Found 4-bit adder for signal <Cont[3]_GND_10_o_add_1_OUT> created at line 50.
+    Found 4-bit adder for signal <Cont[3]_GND_12_o_add_1_OUT> created at line 50.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   4 D-type flip-flop(s).
@@ -165,12 +194,16 @@ Unit <DecBCD7Seg> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
- 4-bit adder                                           : 2
-# Registers                                            : 2
- 4-bit register                                        : 2
-# Multiplexers                                         : 4
- 4-bit 2-to-1 multiplexer                              : 4
+# Adders/Subtractors                                   : 5
+ 27-bit adder                                          : 1
+ 4-bit adder                                           : 4
+# Registers                                            : 6
+ 1-bit register                                        : 1
+ 27-bit register                                       : 1
+ 4-bit register                                        : 4
+# Multiplexers                                         : 9
+ 27-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 8
 
 =========================================================================
 
@@ -179,16 +212,22 @@ Macro Statistics
 =========================================================================
 
 
+Synthesizing (advanced) Unit <Clk1Hz>.
+The following registers are absorbed into counter <Cont>: 1 register on signal <Cont>.
+Unit <Clk1Hz> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
- 4-bit adder                                           : 2
-# Registers                                            : 8
- Flip-Flops                                            : 8
-# Multiplexers                                         : 4
- 4-bit 2-to-1 multiplexer                              : 4
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 4
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+# Multiplexers                                         : 8
+ 4-bit 2-to-1 multiplexer                              : 8
 
 =========================================================================
 
@@ -199,19 +238,17 @@ Macro Statistics
 Optimizing unit <Top> ...
 
 Optimizing unit <Cont0a5> ...
+
+Optimizing unit <Cont0a9> ...
 WARNING:Xst:1293 - FF/Latch <U3/Cont_3> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
-WARNING:Xst:2036 - Inserting OBUF on port <SegOut<3>> driven by black box <Cont0a9>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <SegOut<2>> driven by black box <Cont0a9>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <SegOut<1>> driven by black box <Cont0a9>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <SegOut<0>> driven by black box <Cont0a9>. Possible simulation mismatch.
 WARNING:Xst:2036 - Inserting OBUF on port <Disp<3>> driven by black box <SelAnodo>. Possible simulation mismatch.
 WARNING:Xst:2036 - Inserting OBUF on port <Disp<2>> driven by black box <SelAnodo>. Possible simulation mismatch.
 WARNING:Xst:2036 - Inserting OBUF on port <Disp<1>> driven by black box <SelAnodo>. Possible simulation mismatch.
 WARNING:Xst:2036 - Inserting OBUF on port <Disp<0>> driven by black box <SelAnodo>. Possible simulation mismatch.
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -219,8 +256,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 7
- Flip-Flops                                            : 7
+# Registers                                            : 43
+ Flip-Flops                                            : 43
 
 =========================================================================
 
@@ -243,27 +280,30 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 18
+# BELS                             : 141
 #      GND                         : 1
-#      LUT2                        : 2
-#      LUT3                        : 4
+#      INV                         : 2
+#      LUT1                        : 26
+#      LUT2                        : 1
+#      LUT3                        : 8
 #      LUT4                        : 2
-#      LUT5                        : 3
-#      LUT6                        : 5
+#      LUT5                        : 6
+#      LUT6                        : 41
+#      MUXCY                       : 26
 #      VCC                         : 1
-# FlipFlops/Latches                : 7
-#      FDC                         : 4
-#      FDCE                        : 3
+#      XORCY                       : 27
+# FlipFlops/Latches                : 43
+#      FDC                         : 27
+#      FDCE                        : 15
+#      FDE                         : 1
 # Clock Buffers                    : 1
 #      BUFG                        : 1
 # IO Buffers                       : 32
 #      IBUF                        : 12
 #      OBUF                        : 20
-# Others                           : 8
-#      Clk1Hz                      : 1
+# Others                           : 5
 #      Cont0a23                    : 1
 #      Cont0a3                     : 1
-#      Cont0a9                     : 2
 #      Mux4to1                     : 1
 #      RefreshDisplay              : 1
 #      SelAnodo                    : 1
@@ -275,16 +315,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:               7  out of  18224     0%  
- Number of Slice LUTs:                   16  out of   9112     0%  
-    Number used as Logic:                16  out of   9112     0%  
+ Number of Slice Registers:              43  out of  18224     0%  
+ Number of Slice LUTs:                   86  out of   9112     0%  
+    Number used as Logic:                86  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     16
-   Number with an unused Flip Flop:       9  out of     16    56%  
-   Number with an unused LUT:             0  out of     16     0%  
-   Number of fully used LUT-FF pairs:     7  out of     16    43%  
-   Number of unique control sets:         2
+ Number of LUT Flip Flop pairs used:     86
+   Number with an unused Flip Flop:      43  out of     86    50%  
+   Number with an unused LUT:             0  out of     86     0%  
+   Number of fully used LUT-FF pairs:    43  out of     86    50%  
+   Number of unique control sets:         6
 
 IO Utilization: 
  Number of IOs:                          32
@@ -314,7 +354,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk100MHz                          | IBUF+BUFG              | 7     |
+Clk100MHz                          | IBUF+BUFG              | 43    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -325,9 +365,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 2.601ns (Maximum Frequency: 384.490MHz)
-   Minimum input arrival time before clock: 3.637ns
-   Maximum output required time after clock: 3.762ns
+   Minimum period: 3.618ns (Maximum Frequency: 276.369MHz)
+   Minimum input arrival time before clock: 4.720ns
+   Maximum output required time after clock: 3.791ns
    Maximum combinational path delay: 3.150ns
 
 Timing Details:
@@ -336,81 +376,81 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk100MHz'
-  Clock period: 2.601ns (frequency: 384.490MHz)
-  Total number of paths / destination ports: 35 / 7
+  Clock period: 3.618ns (frequency: 276.369MHz)
+  Total number of paths / destination ports: 1277 / 58
 -------------------------------------------------------------------------
-Delay:               2.601ns (Levels of Logic = 2)
-  Source:            U5/Cont_2 (FF)
+Delay:               3.618ns (Levels of Logic = 2)
+  Source:            U4/Cont_2 (FF)
   Destination:       U5/Cont_3 (FF)
   Source Clock:      Clk100MHz rising
   Destination Clock: Clk100MHz rising
 
-  Data Path: U5/Cont_2 to U5/Cont_3
+  Data Path: U4/Cont_2 to U5/Cont_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              5   0.447   0.962  U5/Cont_2 (U5/Cont_2)
-     LUT6:I2->O            1   0.203   0.684  U5/Cont[3]_Valor[3]_mux_4_OUT<3>1 (U5/Cont[3]_Valor[3]_mux_4_OUT<3>)
-     LUT3:I1->O            1   0.203   0.000  U5/Cont_3_rstpot (U5/Cont_3_rstpot)
-     FDC:D                     0.102          U5/Cont_3
+     FDCE:C->Q             4   0.447   0.912  U4/Cont_2 (U4/Cont_2)
+     LUT4:I1->O            2   0.205   0.845  U4/TCO<3>1 (TCOUniMin_int)
+     LUT5:I2->O            4   0.205   0.683  U5/_n0020_inv1 (U5/_n0020_inv)
+     FDCE:CE                   0.322          U5/Cont_0
     ----------------------------------------
-    Total                      2.601ns (0.955ns logic, 1.646ns route)
-                                       (36.7% logic, 63.3% route)
+    Total                      3.618ns (1.179ns logic, 2.439ns route)
+                                       (32.6% logic, 67.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk100MHz'
-  Total number of paths / destination ports: 49 / 17
+  Total number of paths / destination ports: 95 / 73
 -------------------------------------------------------------------------
-Offset:              3.637ns (Levels of Logic = 3)
+Offset:              4.720ns (Levels of Logic = 3)
   Source:            MinEn (PAD)
-  Destination:       U5/Cont_0 (FF)
+  Destination:       U3/Cont_2 (FF)
   Destination Clock: Clk100MHz rising
 
-  Data Path: MinEn to U5/Cont_0
+  Data Path: MinEn to U3/Cont_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            10   1.222   1.221  MinEn_IBUF (MinEn_IBUF)
-     LUT6:I0->O            4   0.203   0.684  U5/_n0020_inv1 (U5/_n0020_inv)
-     LUT3:I2->O            1   0.205   0.000  U5/Cont_3_rstpot (U5/Cont_3_rstpot)
-     FDC:D                     0.102          U5/Cont_3
+     IBUF:I->O            19   1.222   1.176  MinEn_IBUF (MinEn_IBUF)
+     LUT2:I0->O            1   0.203   0.944  EnSeg_int1 (EnSeg_int)
+     LUT6:I0->O            3   0.203   0.650  U3/_n0020_inv1 (U3/_n0020_inv)
+     FDCE:CE                   0.322          U3/Cont_0
     ----------------------------------------
-    Total                      3.637ns (1.732ns logic, 1.905ns route)
-                                       (47.6% logic, 52.4% route)
+    Total                      4.720ns (1.950ns logic, 2.770ns route)
+                                       (41.3% logic, 58.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk100MHz'
-  Total number of paths / destination ports: 17 / 9
+  Total number of paths / destination ports: 31 / 16
 -------------------------------------------------------------------------
-Offset:              3.762ns (Levels of Logic = 1)
-  Source:            U3/Cont_0 (FF)
-  Destination:       SegOut<4> (PAD)
+Offset:              3.791ns (Levels of Logic = 1)
+  Source:            U2/Cont_0 (FF)
+  Destination:       SegOut<0> (PAD)
   Source Clock:      Clk100MHz rising
 
-  Data Path: U3/Cont_0 to SegOut<4>
+  Data Path: U2/Cont_0 to SegOut<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             6   0.447   0.744  U3/Cont_0 (U3/Cont_0)
-     OBUF:I->O                 2.571          SegOut_4_OBUF (SegOut<4>)
+     FDCE:C->Q             7   0.447   0.773  U2/Cont_0 (U2/Cont_0)
+     OBUF:I->O                 2.571          SegOut_0_OBUF (SegOut<0>)
     ----------------------------------------
-    Total                      3.762ns (3.018ns logic, 0.744ns route)
-                                       (80.2% logic, 19.8% route)
+    Total                      3.791ns (3.018ns logic, 0.773ns route)
+                                       (79.6% logic, 20.4% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 59 / 55
+  Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
 Delay:               3.150ns (Levels of Logic = 1)
-  Source:            U2:Cuenta<3> (PAD)
-  Destination:       SegOut<3> (PAD)
+  Source:            U10:Anodo<3> (PAD)
+  Destination:       Disp<3> (PAD)
 
-  Data Path: U2:Cuenta<3> to SegOut<3>
+  Data Path: U10:Anodo<3> to Disp<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    Cont0a9:Cuenta<3>      1   0.000   0.579  U2 (SegOut_3_OBUF)
-     OBUF:I->O                 2.571          SegOut_3_OBUF (SegOut<3>)
+    SelAnodo:Anodo<3>      1   0.000   0.579  U10 (Disp_3_OBUF)
+     OBUF:I->O                 2.571          Disp_3_OBUF (Disp<3>)
     ----------------------------------------
     Total                      3.150ns (2.571ns logic, 0.579ns route)
                                        (81.6% logic, 18.4% route)
@@ -425,20 +465,20 @@ Clock to Setup on destination clock Clk100MHz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk100MHz      |    2.601|         |         |         |
+Clk100MHz      |    3.618|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.64 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.28 secs
  
 --> 
 
 Total memory usage is 236372 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   18 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

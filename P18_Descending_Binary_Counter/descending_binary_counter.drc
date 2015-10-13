@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Oct 08 12:00:56 2015
+Thu Oct 08 17:32:34 2015
 
 drc -z Descending_Binary_Counter.ncd Descending_Binary_Counter.pcf
 

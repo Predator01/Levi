@@ -22,6 +22,18 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="P17_Structural_Full_Clock.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Clk1Hz.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Clk1Hz.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Clk1Hz.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Cont0a9.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Cont0a9.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Cont0a9.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mux4to1.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Mux4to1.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Mux4to1.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RefreshDisplay.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RefreshDisplay.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="RefreshDisplay.xst"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Top.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Top.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Top.ngc"/>
@@ -30,6 +42,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Top.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Top.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Top.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Top_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Top_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -66,10 +79,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444240052" xil_pn:in_ck="4635272715873853640" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1484822076542432612" xil_pn:start_ts="1444240040">
+    <transform xil_pn:end_ts="1444400015" xil_pn:in_ck="8115476741150107379" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1484822076542432612" xil_pn:start_ts="1444400004">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Top.lso"/>
       <outfile xil_pn:name="Top.ngc"/>
       <outfile xil_pn:name="Top.ngr"/>

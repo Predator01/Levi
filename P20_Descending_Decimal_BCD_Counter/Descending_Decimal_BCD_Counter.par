@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-PREDATOR::  Thu Oct 08 12:48:01 2015
+PREDATOR::  Thu Oct 08 17:39:32 2015
 
 par -w -intstyle ise -ol high -mt off Descending_Decimal_BCD_Counter_map.ncd
 Descending_Decimal_BCD_Counter.ncd Descending_Decimal_BCD_Counter.pcf 
@@ -158,8 +158,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 4 secs 
-Total CPU time to PAR completion: 4 secs 
+Total REAL time to PAR completion: 5 secs 
+Total CPU time to PAR completion: 5 secs 
 
 Peak Memory Usage:  321 MB
 

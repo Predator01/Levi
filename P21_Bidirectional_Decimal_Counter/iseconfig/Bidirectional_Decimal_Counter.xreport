@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-10-08T12:54:20</DateModified>
+  <DateModified>2015-10-09T08:49:07</DateModified>
   <ModuleName>Bidirectional_Decimal_Counter</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-10-08T16:59:03</SummaryTimeStamp>
   <SavedFilePath>D:/ProySisDigAva/Levi/P21_Bidirectional_Decimal_Counter/iseconfig/Bidirectional_Decimal_Counter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P21_Bidirectional_Decimal_Counter</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P21_Bidirectional_Decimal_Counter\</ImplementationReportsDirectory>
   <DateInitialized>2015-10-08T12:54:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

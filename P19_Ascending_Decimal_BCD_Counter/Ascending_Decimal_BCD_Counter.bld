@@ -31,7 +31,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 177440 kilobytes
+Total memory usage is 177456 kilobytes
 
 Writing NGD file "Ascending_Decimal_BCD_Counter.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

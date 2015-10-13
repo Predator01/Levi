@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Oct 08 12:48:16 2015
+Thu Oct 08 17:39:48 2015
 
 drc -z Descending_Decimal_BCD_Counter.ncd Descending_Decimal_BCD_Counter.pcf
 

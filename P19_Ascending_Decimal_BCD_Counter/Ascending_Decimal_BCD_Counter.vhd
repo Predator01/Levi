@@ -34,9 +34,9 @@ architecture Behavioral of Ascending_Decimal_BCD_Counter is
 	signal frequency_counter : integer range 0 to 100000000;
 	signal one_hz : STD_LOGIC;
 	signal result : STD_LOGIC_VECTOR(3 downto 0);
-	signal limit : STD_LOGIC_VECTOR(3 downto 0) := "1001";
+	constant limit : STD_LOGIC_VECTOR(3 downto 0) := "1001";
 begin
-	Frequency_devider: process(Rst, Clk)
+	Frequency_divider: process(Rst, Clk)
 	begin
 		if(rising_edge(Clk)) then
 			--check counter final value
@@ -48,9 +48,9 @@ begin
 				one_hz <= '0';
 			end if;
 		end if;
-	end process Frequency_devider;
+	end process Frequency_divider;
 	
-	Binary_counter: process(Rst, Clk, one_hz, limit)
+	Binary_counter: process(Rst, Clk, one_hz)
 	begin
 		--Async reset
 		if (Rst = '1') then
