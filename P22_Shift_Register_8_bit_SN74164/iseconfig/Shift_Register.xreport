@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-10-13T09:13:49</DateModified>
+  <DateModified>2015-10-14T10:19:40</DateModified>
   <ModuleName>Shift_Register</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/ProySisDigAva/Levi/P22_Shift_Register_8_bit_SN74164/iseconfig/Shift_Register.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P22_Shift_Register_8_bit_SN74164</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P22_Shift_Register_8_bit_SN74164\</ImplementationReportsDirectory>
   <DateInitialized>2015-10-13T09:13:49</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

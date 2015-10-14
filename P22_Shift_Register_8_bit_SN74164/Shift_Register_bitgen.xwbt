@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\Levi\P22_Shift_Register_8_bit_SN74164\Shift_Register.ncd
+OUTFILE=D:\ProySisDigAva\Levi\P22_Shift_Register_8_bit_SN74164\Shift_Register.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\Levi\P22_Shift_Register_8_bit_SN74164
+LICENSE=WebPack
+USER_INFO=211076419_0_0_317
