@@ -146,8 +146,8 @@ architecture Behavioral of Top is
 
   
   --Señales embebidas de mas de 1-bit
-  signal Hor_int        : STD_LOGIC_VECTOR (7 downto 0);  
-  signal DecMin_int     : STD_LOGIC_VECTOR (3 downto 0);
+  signal Hor_int : STD_LOGIC_VECTOR (7 downto 0);  
+  signal DecMin_int : STD_LOGIC_VECTOR (3 downto 0);
   signal UniMin_int : STD_LOGIC_VECTOR (3 downto 0);
   signal Tiempo_int : STD_LOGIC_VECTOR (3 downto 0);
   signal Sel_int : STD_LOGIC_VECTOR (1 downto 0);
@@ -231,7 +231,8 @@ begin
 		Hor_int(3 downto 0),
 		DecMin_int,
 		UniMin_int,
-		Sel_int);
+		Sel_int,
+		Tiempo_int);
 	
 	U10 : SelAnodo
 		port map(
@@ -245,8 +246,8 @@ begin
 
 		
   --Instanciar las compuertas
-  EnHoras_int  <= EnDecMin_int  and TCODecMin_int and Clk1Hz_int;
-  EnDecMin_int <= EnUniMin_int  and TCOUniMin_int and Clk1Hz_int;
+   EnHoras_int  <= EnDecMin_int  and TCODecMin_int and Clk1Hz_int;
+   EnDecMin_int <= EnUniMin_int  and TCOUniMin_int and Clk1Hz_int;
 	EnUniMin_int <= Clk1Hz_int and TCODecSeg_int and TCOUniSeg_int;
 	EnSeg_int <= MinEn or HorEn;
 	EnDecSeg_int <= Clk1Hz_int and TCOUniSeg_int;

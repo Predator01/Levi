@@ -11,6 +11,12 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/Clk1Hz.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/Cont0a23.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/Cont0a3.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/Cont0a5.vhd&quot; into library work</arg>
 </msg>
 
@@ -24,6 +30,9 @@
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/RefreshDisplay.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/SelAnodo.vhd&quot; into library work</arg>
 </msg>
 
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/P17_Structural_Full_Clock/Top.vhd&quot; into library work</arg>

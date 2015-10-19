@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: Top.prj
 
@@ -105,6 +105,15 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\SelAnodo.vhd" into library work
+Parsing entity <SelAnodo>.
+Parsing architecture <Behavioral> of entity <selanodo>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\RefreshDisplay.vhd" into library work
+Parsing entity <RefreshDisplay>.
+Parsing architecture <Behavioral> of entity <refreshdisplay>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Mux4to1.vhd" into library work
+Parsing entity <Mux4to1>.
+Parsing architecture <Behavioral> of entity <mux4to1>.
 Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\DecBCD7Seg.vhd" into library work
 Parsing entity <DecBCD7Seg>.
 Parsing architecture <Behavioral> of entity <decbcd7seg>.
@@ -114,6 +123,12 @@ Parsing architecture <Behavioral> of entity <cont0a9>.
 Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a5.vhd" into library work
 Parsing entity <Cont0a5>.
 Parsing architecture <Behavioral> of entity <cont0a5>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a3.vhd" into library work
+Parsing entity <Cont0a3>.
+Parsing architecture <Behavioral> of entity <cont0a3>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a23.vhd" into library work
+Parsing entity <Cont0a23>.
+Parsing architecture <Behavioral> of entity <cont0a23>.
 Parsing VHDL file "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Clk1Hz.vhd" into library work
 Parsing entity <Clk1Hz>.
 Parsing architecture <Behavioral> of entity <clk1hz>.
@@ -132,14 +147,18 @@ Elaborating entity <Clk1Hz> (architecture <Behavioral>) from library <work>.
 Elaborating entity <Cont0a9> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <Cont0a5> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:89 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" Line 76: <cont0a23> remains a black-box since it has no binding entity.
-WARNING:HDLCompiler:89 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" Line 89: <refreshdisplay> remains a black-box since it has no binding entity.
-WARNING:HDLCompiler:89 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" Line 98: <cont0a3> remains a black-box since it has no binding entity.
-WARNING:HDLCompiler:89 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" Line 109: <mux4to1> remains a black-box since it has no binding entity.
-WARNING:HDLCompiler:89 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" Line 120: <selanodo> remains a black-box since it has no binding entity.
+
+Elaborating entity <Cont0a23> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RefreshDisplay> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Cont0a3> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Mux4to1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SelAnodo> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <DecBCD7Seg> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:634 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" Line 152: Net <Tiempo_int[3]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -147,8 +166,6 @@ WARNING:HDLCompiler:634 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.v
 
 Synthesizing Unit <Top>.
     Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd".
-INFO:Xst:3210 - "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Top.vhd" line 228: Output port <Tiempo> of the instance <U9> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <Tiempo_int> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <Top> synthesized.
@@ -167,43 +184,188 @@ Unit <Clk1Hz> synthesized.
 Synthesizing Unit <Cont0a9>.
     Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a9.vhd".
     Found 4-bit register for signal <Cont>.
-    Found 4-bit adder for signal <Cont[3]_GND_7_o_add_1_OUT> created at line 50.
+    Found 4-bit adder for signal <Cont[3]_GND_7_o_add_3_OUT> created at line 55.
+    Found 4-bit comparator lessequal for signal <n0000> created at line 46
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   4 D-type flip-flop(s).
-	inferred   2 Multiplexer(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
 Unit <Cont0a9> synthesized.
 
 Synthesizing Unit <Cont0a5>.
     Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a5.vhd".
-    Found 4-bit register for signal <Cont>.
-    Found 4-bit adder for signal <Cont[3]_GND_12_o_add_1_OUT> created at line 50.
+    Found 3-bit register for signal <Cont>.
+    Found 3-bit adder for signal <Cont[2]_GND_12_o_add_3_OUT> created at line 55.
+    Found 4-bit comparator lessequal for signal <n0000> created at line 46
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   4 D-type flip-flop(s).
-	inferred   2 Multiplexer(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   3 Multiplexer(s).
 Unit <Cont0a5> synthesized.
+
+Synthesizing Unit <Cont0a23>.
+    Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a23.vhd".
+    Found 5-bit register for signal <Cont>.
+    Found 6-bit subtractor for signal <GND_17_o_GND_17_o_sub_17_OUT> created at line 73.
+    Found 8-bit adder for signal <n0028> created at line 63.
+    Found 5-bit adder for signal <Cont[4]_GND_17_o_add_10_OUT> created at line 68.
+    Found 4x4-bit multiplier for signal <n0040> created at line 63.
+    Found 4-bit comparator greater for signal <GND_17_o_ValorDec[3]_LessThan_1_o> created at line 54
+    Found 4-bit comparator greater for signal <PWR_9_o_ValorUni[3]_LessThan_3_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_17_o_ValorUni[3]_LessThan_6_o> created at line 60
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <Cont0a23> synthesized.
+
+Synthesizing Unit <mod_5u_4u>.
+    Related source file is "".
+    Found 9-bit adder for signal <GND_19_o_b[3]_add_1_OUT> created at line 0.
+    Found 8-bit adder for signal <GND_19_o_b[3]_add_3_OUT> created at line 0.
+    Found 7-bit adder for signal <GND_19_o_b[3]_add_5_OUT> created at line 0.
+    Found 6-bit adder for signal <GND_19_o_b[3]_add_7_OUT> created at line 0.
+    Found 5-bit adder for signal <a[4]_b[3]_add_9_OUT> created at line 0.
+    Found 5-bit adder for signal <a[4]_GND_19_o_add_11_OUT> created at line 0.
+    Found 9-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 8-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 7-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 6-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 5-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  26 Multiplexer(s).
+Unit <mod_5u_4u> synthesized.
+
+Synthesizing Unit <div_6s_5s>.
+    Related source file is "".
+    Found 6-bit subtractor for signal <a[5]_unary_minus_1_OUT> created at line 0.
+    Found 7-bit adder for signal <GND_20_o_BUS_0001_add_18_OUT[6:0]> created at line 0.
+    Found 11-bit adder for signal <GND_20_o_b[4]_add_5_OUT> created at line 0.
+    Found 10-bit adder for signal <GND_20_o_b[4]_add_7_OUT> created at line 0.
+    Found 9-bit adder for signal <GND_20_o_b[4]_add_9_OUT> created at line 0.
+    Found 8-bit adder for signal <GND_20_o_b[4]_add_11_OUT> created at line 0.
+    Found 7-bit adder for signal <GND_20_o_b[4]_add_13_OUT> created at line 0.
+    Found 6-bit adder for signal <a[5]_b[4]_add_15_OUT[5:0]> created at line 0.
+    Found 11-bit comparator greater for signal <BUS_0001_INV_140_o> created at line 0
+    Found 10-bit comparator greater for signal <BUS_0002_INV_139_o> created at line 0
+    Found 9-bit comparator greater for signal <BUS_0003_INV_138_o> created at line 0
+    Found 8-bit comparator greater for signal <BUS_0004_INV_137_o> created at line 0
+    Found 7-bit comparator greater for signal <BUS_0005_INV_136_o> created at line 0
+    Found 6-bit comparator greater for signal <BUS_0006_INV_135_o> created at line 0
+    Found 6-bit comparator greater for signal <BUS_0007_INV_134_o> created at line 0
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+	inferred  28 Multiplexer(s).
+Unit <div_6s_5s> synthesized.
+
+Synthesizing Unit <RefreshDisplay>.
+    Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\RefreshDisplay.vhd".
+    Found 17-bit register for signal <Cont>.
+    Found 1-bit register for signal <ClkOut>.
+    Found 17-bit adder for signal <Cont[16]_GND_23_o_add_1_OUT> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <RefreshDisplay> synthesized.
+
+Synthesizing Unit <Cont0a3>.
+    Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Cont0a3.vhd".
+    Found 2-bit register for signal <Cont>.
+    Found 2-bit adder for signal <Cont[1]_GND_24_o_add_1_OUT> created at line 47.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Cont0a3> synthesized.
+
+Synthesizing Unit <Mux4to1>.
+    Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\Mux4to1.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <Tiempo> created at line 37.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux4to1> synthesized.
+
+Synthesizing Unit <SelAnodo>.
+    Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\SelAnodo.vhd".
+    Found 4x4-bit Read Only RAM for signal <Anodo>
+    Summary:
+	inferred   1 RAM(s).
+Unit <SelAnodo> synthesized.
 
 Synthesizing Unit <DecBCD7Seg>.
     Related source file is "D:\ProySisDigAva\Levi\P17_Structural_Full_Clock\DecBCD7Seg.vhd".
+    Found 16x8-bit Read Only RAM for signal <Seg>
     Summary:
-	no macro.
+	inferred   1 RAM(s).
 Unit <DecBCD7Seg> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 5
+# RAMs                                                 : 2
+ 16x8-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 1
+ 4x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 24
+ 10-bit adder                                          : 1
+ 11-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 1
  27-bit adder                                          : 1
- 4-bit adder                                           : 4
-# Registers                                            : 6
- 1-bit register                                        : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 3
+ 6-bit adder                                           : 2
+ 6-bit subtractor                                      : 2
+ 7-bit adder                                           : 3
+ 8-bit adder                                           : 3
+ 9-bit adder                                           : 2
+# Registers                                            : 10
+ 1-bit register                                        : 2
+ 17-bit register                                       : 1
+ 2-bit register                                        : 1
  27-bit register                                       : 1
- 4-bit register                                        : 4
-# Multiplexers                                         : 9
+ 3-bit register                                        : 2
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+# Comparators                                          : 20
+ 10-bit comparator greater                             : 1
+ 11-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 3
+ 4-bit comparator lessequal                            : 4
+ 5-bit comparator lessequal                            : 2
+ 6-bit comparator greater                              : 2
+ 6-bit comparator lessequal                            : 1
+ 7-bit comparator greater                              : 1
+ 7-bit comparator lessequal                            : 1
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 75
+ 1-bit 2-to-1 multiplexer                              : 49
+ 17-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 1
  27-bit 2-to-1 multiplexer                             : 1
- 4-bit 2-to-1 multiplexer                              : 8
+ 3-bit 2-to-1 multiplexer                              : 6
+ 4-bit 2-to-1 multiplexer                              : 10
+ 4-bit 4-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 3
+ 7-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
 
 =========================================================================
 
@@ -216,18 +378,88 @@ Synthesizing (advanced) Unit <Clk1Hz>.
 The following registers are absorbed into counter <Cont>: 1 register on signal <Cont>.
 Unit <Clk1Hz> synthesized (advanced).
 
+Synthesizing (advanced) Unit <Cont0a23>.
+	Multiplier <Mmult_n0040> in block <Cont0a23> and adder/subtractor <Madd_n0028_Madd> in block <Cont0a23> are combined into a MAC<Maddsub_n0040>.
+Unit <Cont0a23> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DecBCD7Seg>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Seg> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <BCD>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Seg>           |          |
+    -----------------------------------------------------------------------
+Unit <DecBCD7Seg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <RefreshDisplay>.
+The following registers are absorbed into counter <Cont>: 1 register on signal <Cont>.
+Unit <RefreshDisplay> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SelAnodo>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Anodo> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Sel>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Anodo>         |          |
+    -----------------------------------------------------------------------
+Unit <SelAnodo> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
- 4-bit adder                                           : 4
-# Counters                                             : 1
+# RAMs                                                 : 2
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 1
+ 4x4-to-5-bit MAC                                      : 1
+# Adders/Subtractors                                   : 21
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 3
+ 5-bit adder                                           : 6
+ 6-bit adder                                           : 6
+ 6-bit subtractor                                      : 2
+ 7-bit adder                                           : 1
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
  27-bit up counter                                     : 1
-# Registers                                            : 17
- Flip-Flops                                            : 17
-# Multiplexers                                         : 8
- 4-bit 2-to-1 multiplexer                              : 8
+# Registers                                            : 23
+ Flip-Flops                                            : 23
+# Comparators                                          : 20
+ 10-bit comparator greater                             : 1
+ 11-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 3
+ 4-bit comparator lessequal                            : 4
+ 5-bit comparator lessequal                            : 2
+ 6-bit comparator greater                              : 2
+ 6-bit comparator lessequal                            : 1
+ 7-bit comparator greater                              : 1
+ 7-bit comparator lessequal                            : 1
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 1
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 1
+# Multiplexers                                         : 72
+ 1-bit 2-to-1 multiplexer                              : 49
+ 3-bit 2-to-1 multiplexer                              : 6
+ 4-bit 2-to-1 multiplexer                              : 10
+ 4-bit 4-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 3
+ 7-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
 
 =========================================================================
 
@@ -239,16 +471,13 @@ Optimizing unit <Top> ...
 
 Optimizing unit <Cont0a5> ...
 
+Optimizing unit <Cont0a23> ...
+
 Optimizing unit <Cont0a9> ...
-WARNING:Xst:1293 - FF/Latch <U3/Cont_3> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
-WARNING:Xst:2036 - Inserting OBUF on port <Disp<3>> driven by black box <SelAnodo>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <Disp<2>> driven by black box <SelAnodo>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <Disp<1>> driven by black box <SelAnodo>. Possible simulation mismatch.
-WARNING:Xst:2036 - Inserting OBUF on port <Disp<0>> driven by black box <SelAnodo>. Possible simulation mismatch.
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 2.
 
 Final Macro Processing ...
 
@@ -256,8 +485,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 43
- Flip-Flops                                            : 43
+# Registers                                            : 67
+ Flip-Flops                                            : 67
 
 =========================================================================
 
@@ -280,33 +509,28 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 141
+# BELS                             : 264
 #      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 26
-#      LUT2                        : 1
-#      LUT3                        : 8
-#      LUT4                        : 2
-#      LUT5                        : 6
-#      LUT6                        : 41
-#      MUXCY                       : 26
+#      INV                         : 4
+#      LUT1                        : 42
+#      LUT2                        : 9
+#      LUT3                        : 16
+#      LUT4                        : 9
+#      LUT5                        : 17
+#      LUT6                        : 75
+#      MUXCY                       : 43
+#      MUXF7                       : 1
 #      VCC                         : 1
-#      XORCY                       : 27
-# FlipFlops/Latches                : 43
-#      FDC                         : 27
-#      FDCE                        : 15
-#      FDE                         : 1
+#      XORCY                       : 46
+# FlipFlops/Latches                : 67
+#      FDC                         : 56
+#      FDCE                        : 9
+#      FDE                         : 2
 # Clock Buffers                    : 1
-#      BUFG                        : 1
-# IO Buffers                       : 32
-#      IBUF                        : 12
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 11
 #      OBUF                        : 20
-# Others                           : 5
-#      Cont0a23                    : 1
-#      Cont0a3                     : 1
-#      Mux4to1                     : 1
-#      RefreshDisplay              : 1
-#      SelAnodo                    : 1
 
 Device utilization summary:
 ---------------------------
@@ -315,16 +539,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              43  out of  18224     0%  
- Number of Slice LUTs:                   86  out of   9112     0%  
-    Number used as Logic:                86  out of   9112     0%  
+ Number of Slice Registers:              67  out of  18224     0%  
+ Number of Slice LUTs:                  172  out of   9112     1%  
+    Number used as Logic:               172  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     86
-   Number with an unused Flip Flop:      43  out of     86    50%  
-   Number with an unused LUT:             0  out of     86     0%  
-   Number of fully used LUT-FF pairs:    43  out of     86    50%  
-   Number of unique control sets:         6
+ Number of LUT Flip Flop pairs used:    172
+   Number with an unused Flip Flop:     105  out of    172    61%  
+   Number with an unused LUT:             0  out of    172     0%  
+   Number of fully used LUT-FF pairs:    67  out of    172    38%  
+   Number of unique control sets:         5
 
 IO Utilization: 
  Number of IOs:                          32
@@ -354,7 +578,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-Clk100MHz                          | IBUF+BUFG              | 43    |
+Clk100MHz                          | BUFGP                  | 67    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -365,10 +589,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.618ns (Maximum Frequency: 276.369MHz)
-   Minimum input arrival time before clock: 4.720ns
-   Maximum output required time after clock: 3.791ns
-   Maximum combinational path delay: 3.150ns
+   Minimum period: 3.697ns (Maximum Frequency: 270.490MHz)
+   Minimum input arrival time before clock: 5.191ns
+   Maximum output required time after clock: 7.193ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
@@ -376,84 +600,73 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk100MHz'
-  Clock period: 3.618ns (frequency: 276.369MHz)
-  Total number of paths / destination ports: 1277 / 58
+  Clock period: 3.697ns (frequency: 270.490MHz)
+  Total number of paths / destination ports: 1825 / 76
 -------------------------------------------------------------------------
-Delay:               3.618ns (Levels of Logic = 2)
+Delay:               3.697ns (Levels of Logic = 3)
   Source:            U4/Cont_2 (FF)
-  Destination:       U5/Cont_3 (FF)
+  Destination:       U6/Cont_4 (FF)
   Source Clock:      Clk100MHz rising
   Destination Clock: Clk100MHz rising
 
-  Data Path: U4/Cont_2 to U5/Cont_3
+  Data Path: U4/Cont_2 to U6/Cont_4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             4   0.447   0.912  U4/Cont_2 (U4/Cont_2)
+     FDC:C->Q              6   0.447   0.973  U4/Cont_2 (U4/Cont_2)
      LUT4:I1->O            2   0.205   0.845  U4/TCO<3>1 (TCOUniMin_int)
-     LUT5:I2->O            4   0.205   0.683  U5/_n0020_inv1 (U5/_n0020_inv)
-     FDCE:CE                   0.322          U5/Cont_0
+     LUT6:I3->O            5   0.205   0.715  U6/_n0051_inv1 (U6/_n0051_inv)
+     LUT3:I2->O            1   0.205   0.000  U6/Cont_3_rstpot (U6/Cont_3_rstpot)
+     FDC:D                     0.102          U6/Cont_3
     ----------------------------------------
-    Total                      3.618ns (1.179ns logic, 2.439ns route)
-                                       (32.6% logic, 67.4% route)
+    Total                      3.697ns (1.164ns logic, 2.533ns route)
+                                       (31.5% logic, 68.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk100MHz'
-  Total number of paths / destination ports: 95 / 73
+  Total number of paths / destination ports: 203 / 93
 -------------------------------------------------------------------------
-Offset:              4.720ns (Levels of Logic = 3)
-  Source:            MinEn (PAD)
-  Destination:       U3/Cont_2 (FF)
+Offset:              5.191ns (Levels of Logic = 6)
+  Source:            DecEnt<2> (PAD)
+  Destination:       U6/Cont_4 (FF)
   Destination Clock: Clk100MHz rising
 
-  Data Path: MinEn to U3/Cont_2
+  Data Path: DecEnt<2> to U6/Cont_4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.176  MinEn_IBUF (MinEn_IBUF)
-     LUT2:I0->O            1   0.203   0.944  EnSeg_int1 (EnSeg_int)
-     LUT6:I0->O            3   0.203   0.650  U3/_n0020_inv1 (U3/_n0020_inv)
-     FDCE:CE                   0.322          U3/Cont_0
+     IBUF:I->O            12   1.222   1.156  DecEnt_2_IBUF (DecEnt_2_IBUF)
+     LUT4:I0->O            1   0.203   0.000  U6/Maddsub_n0040_Madd1_lut<3> (U6/Maddsub_n0040_Madd1_lut<3>)
+     MUXCY:S->O            0   0.172   0.000  U6/Maddsub_n0040_Madd1_cy<3> (U6/Maddsub_n0040_Madd1_cy<3>)
+     XORCY:CI->O           1   0.180   0.924  U6/Maddsub_n0040_Madd1_xor<4> (U6/Maddsub_n0040_4)
+     LUT6:I1->O            1   0.203   0.827  U6/Cont[4]_ValorDec[3]_mux_13_OUT<4>2 (U6/Cont[4]_ValorDec[3]_mux_13_OUT<4>2)
+     LUT4:I0->O            1   0.203   0.000  U6/Cont_4_rstpot (U6/Cont_4_rstpot)
+     FDC:D                     0.102          U6/Cont_4
     ----------------------------------------
-    Total                      4.720ns (1.950ns logic, 2.770ns route)
-                                       (41.3% logic, 58.7% route)
+    Total                      5.191ns (2.285ns logic, 2.906ns route)
+                                       (44.0% logic, 56.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk100MHz'
-  Total number of paths / destination ports: 31 / 16
+  Total number of paths / destination ports: 267 / 18
 -------------------------------------------------------------------------
-Offset:              3.791ns (Levels of Logic = 1)
-  Source:            U2/Cont_0 (FF)
-  Destination:       SegOut<0> (PAD)
+Offset:              7.193ns (Levels of Logic = 4)
+  Source:            U6/Cont_2 (FF)
+  Destination:       Seg<1> (PAD)
   Source Clock:      Clk100MHz rising
 
-  Data Path: U2/Cont_0 to SegOut<0>
+  Data Path: U6/Cont_2 to Seg<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             7   0.447   0.773  U2/Cont_0 (U2/Cont_0)
-     OBUF:I->O                 2.571          SegOut_0_OBUF (SegOut<0>)
+     FDC:C->Q              9   0.447   1.058  U6/Cont_2 (U6/Cont_2)
+     LUT4:I1->O            1   0.205   0.808  U9/Mmux_Tiempo31 (U9/Mmux_Tiempo3)
+     LUT5:I2->O            7   0.205   1.118  U9/Mmux_Tiempo32 (Tiempo_int<2>)
+     LUT5:I0->O            1   0.203   0.579  U11/Mram_Seg111 (Seg_1_OBUF)
+     OBUF:I->O                 2.571          Seg_1_OBUF (Seg<1>)
     ----------------------------------------
-    Total                      3.791ns (3.018ns logic, 0.773ns route)
-                                       (79.6% logic, 20.4% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 32 / 32
--------------------------------------------------------------------------
-Delay:               3.150ns (Levels of Logic = 1)
-  Source:            U10:Anodo<3> (PAD)
-  Destination:       Disp<3> (PAD)
-
-  Data Path: U10:Anodo<3> to Disp<3>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-    SelAnodo:Anodo<3>      1   0.000   0.579  U10 (Disp_3_OBUF)
-     OBUF:I->O                 2.571          Disp_3_OBUF (Disp<3>)
-    ----------------------------------------
-    Total                      3.150ns (2.571ns logic, 0.579ns route)
-                                       (81.6% logic, 18.4% route)
+    Total                      7.193ns (3.631ns logic, 3.562ns route)
+                                       (50.5% logic, 49.5% route)
 
 =========================================================================
 
@@ -465,20 +678,20 @@ Clock to Setup on destination clock Clk100MHz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk100MHz      |    3.618|         |         |         |
+Clk100MHz      |    3.697|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.28 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.36 secs
  
 --> 
 
-Total memory usage is 236372 kilobytes
+Total memory usage is 252564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   12 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

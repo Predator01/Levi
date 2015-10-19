@@ -34,7 +34,8 @@ entity Cont0a9 is
 end Cont0a9;
 
 architecture Behavioral of Cont0a9 is
-  signal Cont : integer range 0 to 9;
+	constant LIMIT : integer := 9;
+	signal Cont : integer range 0 to LIMIT;
 begin
   process (Rst,Clk,Cont)
   begin
@@ -42,9 +43,13 @@ begin
 	   Cont <= 0;
 	 elsif (rising_edge(Clk)) then
 	   if (Load = '1') then
-		  Cont <= conv_integer(Valor);
+			if Valor >= "1010" then
+				Cont <= LIMIT;
+			else
+				Cont <= conv_integer(Valor);
+			end if;
 		elsif (Enable = '1') then
-		  if Cont = 9 then
+		  if Cont = LIMIT then
 		    Cont <= 0;
 		  else
 		    Cont <= Cont + 1;
@@ -55,7 +60,7 @@ begin
   end process;
   
   --Terminal Count Out
-  TCO <= '1' when Cont = 9 else
+  TCO <= '1' when Cont = LIMIT else
          '0';
 
 end Behavioral;

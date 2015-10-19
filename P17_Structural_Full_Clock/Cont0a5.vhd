@@ -34,7 +34,8 @@ entity Cont0a5 is
 end Cont0a5;
 
 architecture Behavioral of Cont0a5 is
-  signal Cont : integer range 0 to 9;
+	constant LIMIT : integer := 5;
+	signal Cont : integer range 0 to LIMIT;
 begin
   process (Rst,Clk,Cont)
   begin
@@ -42,9 +43,13 @@ begin
 	   Cont <= 0;
 	 elsif (rising_edge(Clk)) then
 	   if (Load = '1') then
-		  Cont <= conv_integer(Valor);
+			if Valor <= "0101" then
+				Cont <= conv_integer(Valor);
+			else
+				Cont <= LIMIT;
+			end if;
 		elsif (Enable = '1') then
-		  if Cont = 5 then
+		  if Cont = LIMIT then
 		    Cont <= 0;
 		  else
 		    Cont <= Cont + 1;
@@ -55,7 +60,7 @@ begin
   end process;
   
   --Terminal Count Out
-  TCO <= '1' when Cont = 5 else
+  TCO <= '1' when Cont = LIMIT else
          '0';
 
 end Behavioral;
