@@ -30,14 +30,73 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Shift_Register.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Shift_Register.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Shift_Register.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Shift_Register_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Shift_Register_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Shift_Register_TB_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Shift_Register_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Shift_Register_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Shift_Register_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Shift_Register_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1445469617" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1445469617">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1445469617" xil_pn:in_ck="-5868895790934093799" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1445469617">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Shift_Register.vhd"/>
+      <outfile xil_pn:name="Shift_Register_TB.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1445469617" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5397564235194832723" xil_pn:start_ts="1445469617">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1445469617" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8526114386821581013" xil_pn:start_ts="1445469617">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1445469617" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5387894083936303410" xil_pn:start_ts="1445469617">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1445469617" xil_pn:in_ck="-5868895790934093799" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1445469617">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Shift_Register.vhd"/>
+      <outfile xil_pn:name="Shift_Register_TB.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1445469622" xil_pn:in_ck="-5868895790934093799" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1604245009218835226" xil_pn:start_ts="1445469617">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Shift_Register_TB_beh.prj"/>
+      <outfile xil_pn:name="Shift_Register_TB_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1445469622" xil_pn:in_ck="3791938056198431846" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2138763583022256857" xil_pn:start_ts="1445469622">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Shift_Register_TB_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
     <transform xil_pn:end_ts="1444843683" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2465785060710069885" xil_pn:start_ts="1444843683">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -62,9 +121,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1444844619" xil_pn:in_ck="-3335763338249549518" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5199706362767186485" xil_pn:start_ts="1444844612">
+    <transform xil_pn:end_ts="1445469613" xil_pn:in_ck="-3335763338249549518" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-5199706362767186485" xil_pn:start_ts="1445469598">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Shift_Register.lso"/>
       <outfile xil_pn:name="Shift_Register.ngc"/>
       <outfile xil_pn:name="Shift_Register.ngr"/>
@@ -72,6 +133,7 @@
       <outfile xil_pn:name="Shift_Register.stx"/>
       <outfile xil_pn:name="Shift_Register.syr"/>
       <outfile xil_pn:name="Shift_Register.xst"/>
+      <outfile xil_pn:name="Shift_Register_TB_beh.prj"/>
       <outfile xil_pn:name="Shift_Register_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>

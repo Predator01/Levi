@@ -1,0 +1,29 @@
+Command line:
+   Shift_Register_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  37219
+
+Wed Oct 21 18:20:23 2015
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 519.361 Meg
+
+ Total Signals          : 15
+ Total Nets             : 24
+ Total Signal Drivers   : 9
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 6
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 529
+Total Line Count : 24
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 362.066 Meg
+
+Wed Oct 21 18:22:44 2015
+

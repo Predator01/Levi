@@ -24,8 +24,8 @@ use IEEE.std_logic_unsigned.all;
 
 entity Shift_Register is
     Port ( Clk : in  STD_LOGIC;
-           --A : in  STD_LOGIC;
-           --B : in  STD_LOGIC;
+           A : in  STD_LOGIC;
+           B : in  STD_LOGIC;
            Clr : in  STD_LOGIC;
            Q : out  STD_LOGIC_VECTOR (0 to 7));
 end Shift_Register;
@@ -65,18 +65,18 @@ begin
   
   
 	-- Describe the shift-right register
---	AnB <= A and B;
---	shift_reg: process(Clk, Clr, ClkOut)
---	begin 
---		if (Clr = '0') then
---			Reg <= (others => '0');
---		elsif (rising_edge(Clk) and ClkOut='1') then
---			Reg <= (AnB & Reg(0 to 6));
---			
---		end if;
---	end process shift_reg;
---	Q <= Reg;
---	
+	AnB <= A and B;
+	shift_reg: process(Clk, Clr, ClkOut)
+	begin 
+		if (Clr = '0') then
+			Reg <= (others => '0');
+		elsif (rising_edge(Clk) and ClkOut='1') then
+			Reg <= (AnB & Reg(0 to 6));
+			
+		end if;
+	end process shift_reg;
+	Q <= Reg;
+	
 	-- Describe the shift-left register
 --	AnB <= A and B;
 --	shift_reg: process(Clk, Clr, ClkOut)
@@ -91,30 +91,30 @@ begin
 --	Q <= Reg;
 	
 	-- Describe the shift-left-rigth register
-
-	shift_reg: process(Clk, Clr, ClkOut, ret)
-	begin 
-		if (Clr = '0') then
-			Reg <= (others => '0');
-			Reg(0) <= '1';
-			ret <= '0';
-		elsif (rising_edge(Clk) and ClkOut='1') then
-			if ret = '1' then
-				Reg <= (Reg(1 to 7) & '0');
-				--Reg <= Reg sll 1;
-			else
-				Reg <= ('0' & Reg(0 to 6));
-				--Reg <= Reg srl 1;
-			end if;
-			if Reg = "00000010" then
-				ret <= '1';
-			end if;
-			if Reg = "01000000" then
-				ret <= '0';
-			end if;
-		end if;
-	end process shift_reg;
-	--Q <= To_StdLogicVector(Reg);
-	Q<= Reg;
+--
+--	shift_reg: process(Clk, Clr, ClkOut, ret)
+--	begin 
+--		if (Clr = '0') then
+--			Reg <= (others => '0');
+--			Reg(0) <= '1';
+--			ret <= '0';
+--		elsif (rising_edge(Clk) and ClkOut='1') then
+--			if ret = '1' then
+--				Reg <= (Reg(1 to 7) & '0');
+--				--Reg <= Reg sll 1;
+--			else
+--				Reg <= ('0' & Reg(0 to 6));
+--				--Reg <= Reg srl 1;
+--			end if;
+--			if Reg = "00000010" then
+--				ret <= '1';
+--			end if;
+--			if Reg = "01000000" then
+--				ret <= '0';
+--			end if;
+--		end if;
+--	end process shift_reg;
+--	--Q <= To_StdLogicVector(Reg);
+--	Q<= Reg;
 end Behavioral;
 

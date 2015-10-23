@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/ProySisDigAva/Levi/P23_Bidirectional_Universal_Shift_Register/Universal_Shift_Register_tb_isim_beh.exe" -prj "D:/ProySisDigAva/Levi/P23_Bidirectional_Universal_Shift_Register/Universal_Shift_Register_tb_beh.prj" "work.Universal_Shift_Register_tb" 
