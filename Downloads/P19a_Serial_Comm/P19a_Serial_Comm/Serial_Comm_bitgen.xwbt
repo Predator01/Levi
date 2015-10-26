@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\P19a_Serial_Comm\Serial_Comm.ncd
+OUTFILE=D:\ProySisDigAva\P19a_Serial_Comm\Serial_Comm.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\P19a_Serial_Comm
+LICENSE=WebPack
+USER_INFO=211075565_0_0_270

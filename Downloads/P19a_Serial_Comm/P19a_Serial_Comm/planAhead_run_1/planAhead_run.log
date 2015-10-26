@@ -1,0 +1,143 @@
+
+****** PlanAhead v13.2 (64-bit)
+  **** Build 131561 by hdbuild on Thu Jun 16 17:14:12 PDT 2011
+    ** Copyright 1986-1999, 2001-2011 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [ArchReader-0] Loading parts and site information from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\arch.xml
+Parsing RTL primitives file [C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+starting gui ...
+source D:/ProySisDigAva/P19a_Serial_Comm/pa.fromNetlist.tcl
+# create_project -name P19a_Serial_Comm -dir "D:/ProySisDigAva/P19a_Serial_Comm/planAhead_run_1" -part xc6slx16csg324-3
+Parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/ProySisDigAva/P19a_Serial_Comm} }
+# set_param project.pinAheadLayout  yes
+# set_param project.paUcfFile  "Serial_Comm.ucf"
+# add_files "Serial_Comm.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Design is defaulting to active srcset 'sources_1'
+INFO: Design is defaulting to active constrset 'constrs_1'
+INFO: Design is defaulting to constrset part: xc6slx16csg324-3
+Release 13.2 - ngc2edif O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design Serial_Comm.ngc ...
+WARNING:NetListWriters:298 - No output is written to Serial_Comm.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus regtemp<17 : 3> on block Serial_Comm is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file Serial_Comm.edif ...
+ngc2edif: Total memory usage is 68772 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-2880-Qalypso-PC\ngc2edif\Serial_Comm.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-2880-Qalypso-PC\ngc2edif\Serial_Comm.edif]
+INFO: [Netlist-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist-3] Netlist 'Serial_Comm' is not ideal for floorplanning, since the cellview 'Serial_Comm' defined in file 'Serial_Comm.ngc' contains large number of primitives. Please consider enabling hierarchy in synthesis before floorplan. You can enable hierarchy in XST by setting '-keep_hierarchy=yes' or '-netlist_hierarchy=rebuilt' flags.
+INFO: [ArchReader-7] Loading clock regions from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+INFO: [ArchReader-13] Loading package pin functions from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\spartan6/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+INFO: [ArchReader-4] Loading io standards from C:\Xilinx\13.2\ISE_DS\PlanAhead\./parts/xilinx/spartan6/IOStandards.xml
+INFO: [ArchReader-12] Loading device configuration modes from 
+INFO: [GDRC-0] Loading list of drcs for the architecture : C:\Xilinx\13.2\ISE_DS\PlanAhead\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:\ProySisDigAva\P19a_Serial_Comm\Serial_Comm.ucf]
+Finished Parsing UCF File [D:\ProySisDigAva\P19a_Serial_Comm\Serial_Comm.ucf]
+INFO: [Project-5] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUFG, BUFG): 1 instances
+
+open_netlist_design: Time (s): 13.404w.  Memory (MB): 689.934p 184.320g
+startgroup
+startgroup
+set_property loc PAD156 [get_ports Clk]
+set_property loc PAD156 [get_ports Clk]
+endgroup
+endgroup
+set_property loc "" [get_ports [list  DataIn]]
+set_property loc "" [get_ports [list  DataIn]]
+startgroup
+startgroup
+set_property loc PAD27 [get_ports Rst]
+set_property loc PAD27 [get_ports Rst]
+endgroup
+endgroup
+set_property loc "" [get_ports [list  DataIn]]
+set_property loc "" [get_ports [list  DataIn]]
+startgroup
+startgroup
+set_property loc PAD125 [get_ports {DataOut[0]}]
+set_property loc PAD125 [get_ports {DataOut[0]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc PAD126 [get_ports {DataOut[1]}]
+set_property loc PAD126 [get_ports {DataOut[1]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc PAD129 [get_ports {DataOut[2]}]
+set_property loc PAD129 [get_ports {DataOut[2]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc PAD130 [get_ports {DataOut[3]}]
+set_property loc PAD130 [get_ports {DataOut[3]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc PAD139 [get_ports {DataOut[4]}]
+set_property loc PAD139 [get_ports {DataOut[4]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc PAD140 [get_ports {DataOut[5]}]
+set_property loc PAD140 [get_ports {DataOut[5]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc PAD141 [get_ports {DataOut[6]}]
+set_property loc PAD141 [get_ports {DataOut[6]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc PAD142 [get_ports {DataOut[7]}]
+set_property loc PAD142 [get_ports {DataOut[7]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc PAD107 [get_ports DataIn]
+set_property loc PAD107 [get_ports DataIn]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc PAD142 [get_ports {DataOut[7]}]
+set_property loc PAD142 [get_ports {DataOut[7]}]
+endgroup
+endgroup
+save_design
+exit
+stop_gui
+INFO: [PlanAhead-261] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

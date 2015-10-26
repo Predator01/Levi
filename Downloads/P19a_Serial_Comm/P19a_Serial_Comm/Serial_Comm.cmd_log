@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.xst" -ofn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.xst" -ofn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.xst" -ofn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.xst" -ofn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.xst" -ofn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.xst" -ofn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Serial_Comm.ucf -p xc6slx16-csg324-3 Serial_Comm.ngc Serial_Comm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Serial_Comm_map.ncd Serial_Comm.ngd Serial_Comm.pcf 
+par -w -intstyle ise -ol high -mt off Serial_Comm_map.ncd Serial_Comm.ncd Serial_Comm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Serial_Comm.twx Serial_Comm.ncd -o Serial_Comm.twr Serial_Comm.pcf -ucf Serial_Comm.ucf 
+bitgen -intstyle ise -f Serial_Comm.ut Serial_Comm.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.xst" -ofn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.xst" -ofn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.xst" -ofn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Serial_Comm.ucf -p xc6slx16-csg324-3 Serial_Comm.ngc Serial_Comm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Serial_Comm_map.ncd Serial_Comm.ngd Serial_Comm.pcf 
+par -w -intstyle ise -ol high -mt off Serial_Comm_map.ncd Serial_Comm.ncd Serial_Comm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Serial_Comm.twx Serial_Comm.ncd -o Serial_Comm.twr Serial_Comm.pcf -ucf Serial_Comm.ucf 
+bitgen -intstyle ise -f Serial_Comm.ut Serial_Comm.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.xst" -ofn "D:/ProySisDigAva/P19a_Serial_Comm/Serial_Comm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Serial_Comm.ucf -p xc6slx16-csg324-3 Serial_Comm.ngc Serial_Comm.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Serial_Comm_map.ncd Serial_Comm.ngd Serial_Comm.pcf 
+par -w -intstyle ise -ol high -mt off Serial_Comm_map.ncd Serial_Comm.ncd Serial_Comm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Serial_Comm.twx Serial_Comm.ncd -o Serial_Comm.twr Serial_Comm.pcf -ucf Serial_Comm.ucf 
+bitgen -intstyle ise -f Serial_Comm.ut Serial_Comm.ncd 
