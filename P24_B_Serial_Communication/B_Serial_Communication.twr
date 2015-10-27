@@ -1,0 +1,177 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml B_Serial_Communication.twx B_Serial_Communication.ncd -o
+B_Serial_Communication.twr B_Serial_Communication.pcf -ucf
+B_Serial_Communication.ucf
+
+Design file:              B_Serial_Communication.ncd
+Physical constraint file: B_Serial_Communication.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+DataIn      |    1.084(R)|      FAST  |   -0.511(R)|      SLOW  |Clk_BUFGP         |   0.000|
+Rst         |    4.621(R)|      SLOW  |   -1.354(R)|      FAST  |Clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+DataOut<0>  |         8.122(R)|      SLOW  |         4.328(R)|      FAST  |Clk_BUFGP         |   0.000|
+DataOut<1>  |         7.944(R)|      SLOW  |         4.273(R)|      FAST  |Clk_BUFGP         |   0.000|
+DataOut<2>  |         7.904(R)|      SLOW  |         4.219(R)|      FAST  |Clk_BUFGP         |   0.000|
+DataOut<3>  |         8.049(R)|      SLOW  |         4.301(R)|      FAST  |Clk_BUFGP         |   0.000|
+DataOut<4>  |         7.539(R)|      SLOW  |         3.939(R)|      FAST  |Clk_BUFGP         |   0.000|
+DataOut<5>  |         7.572(R)|      SLOW  |         3.977(R)|      FAST  |Clk_BUFGP         |   0.000|
+DataOut<6>  |         7.724(R)|      SLOW  |         4.070(R)|      FAST  |Clk_BUFGP         |   0.000|
+DataOut<7>  |         7.724(R)|      SLOW  |         4.070(R)|      FAST  |Clk_BUFGP         |   0.000|
+SteamOut    |         7.541(R)|      SLOW  |         3.942(R)|      FAST  |Clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    3.921|         |         |         |
+Send           |    5.015|    7.667|         |         |
+SwitchSeg<0>   |    2.232|    5.686|         |         |
+SwitchSeg<1>   |    1.830|    6.070|         |         |
+SwitchSeg<2>   |    2.400|    7.667|         |         |
+SwitchSeg<3>   |    2.133|    6.291|         |         |
+SwitchSeg<4>   |    1.767|    7.010|         |         |
+SwitchSeg<5>   |    1.474|    7.111|         |         |
+SwitchSeg<6>   |    1.667|    7.046|         |         |
+SwitchSeg<7>   |    1.877|    7.407|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Send
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Send           |         |         |    0.747|    0.747|
+SwitchSeg<0>   |         |         |   -1.018|   -1.018|
+SwitchSeg<1>   |         |         |   -1.214|   -1.214|
+SwitchSeg<2>   |         |         |   -1.625|   -1.625|
+SwitchSeg<3>   |         |         |   -1.014|   -1.014|
+SwitchSeg<4>   |         |         |   -1.426|   -1.426|
+SwitchSeg<5>   |         |         |   -1.702|   -1.702|
+SwitchSeg<6>   |         |         |   -1.665|   -1.665|
+SwitchSeg<7>   |         |         |   -1.705|   -1.705|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SwitchSeg<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Send           |         |         |    2.395|    2.395|
+SwitchSeg<0>   |         |         |    0.453|    0.453|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SwitchSeg<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Send           |         |         |    2.715|    2.715|
+SwitchSeg<1>   |         |         |    0.420|    0.420|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SwitchSeg<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Send           |         |         |    2.431|    2.431|
+SwitchSeg<2>   |         |         |    0.004|    0.004|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SwitchSeg<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Send           |         |         |    2.546|    2.546|
+SwitchSeg<3>   |         |         |    0.439|    0.439|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SwitchSeg<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Send           |         |         |    3.450|    3.450|
+SwitchSeg<4>   |         |         |    0.594|    0.594|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SwitchSeg<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Send           |         |         |    3.641|    3.641|
+SwitchSeg<5>   |         |         |    0.439|    0.439|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SwitchSeg<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Send           |         |         |    3.513|    3.513|
+SwitchSeg<6>   |         |         |    0.345|    0.345|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SwitchSeg<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Send           |         |         |    3.600|    3.600|
+SwitchSeg<7>   |         |         |    0.462|    0.462|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Oct 26 17:53:31 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 241 MB
+
+
+

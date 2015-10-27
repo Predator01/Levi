@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=D:\ProySisDigAva\P19a_Serial_Comm\Serial_Comm.ncd
-OUTFILE=D:\ProySisDigAva\P19a_Serial_Comm\Serial_Comm.bit
+INFILE=D:\ProySisDigAva\Levi\Downloads\P19a_Serial_Comm\P19a_Serial_Comm\Serial_Comm.ncd
+OUTFILE=D:\ProySisDigAva\Levi\Downloads\P19a_Serial_Comm\P19a_Serial_Comm\Serial_Comm.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=D:\ProySisDigAva\P19a_Serial_Comm
+WORKINGDIR=D:\ProySisDigAva\Levi\Downloads\P19a_Serial_Comm\P19a_Serial_Comm
 LICENSE=WebPack
-USER_INFO=211075565_0_0_270
+USER_INFO=211076419_0_0_317

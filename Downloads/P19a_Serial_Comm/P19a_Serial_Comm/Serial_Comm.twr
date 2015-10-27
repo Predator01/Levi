@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
-3 -fastpaths -xml Serial_Comm.twx Serial_Comm.ncd -o Serial_Comm.twr
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Serial_Comm.twx Serial_Comm.ncd -o Serial_Comm.twr
 Serial_Comm.pcf -ucf Serial_Comm.ucf
 
 Design file:              Serial_Comm.ncd
@@ -65,14 +65,14 @@ Clk            |    2.854|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Oct 14 10:06:07 2015 
+Analysis completed Mon Oct 26 16:17:31 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 161 MB
+Peak Memory Usage: 241 MB
 
 
 

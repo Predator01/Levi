@@ -1,0 +1,73 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc B_Serial_Communication.ucf -p xc6slx16-csg324-3 B_Serial_Communication.ngc B_Serial_Communication.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o B_Serial_Communication_map.ncd B_Serial_Communication.ngd B_Serial_Communication.pcf 
+par -w -intstyle ise -ol high -mt off B_Serial_Communication_map.ncd B_Serial_Communication.ncd B_Serial_Communication.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml B_Serial_Communication.twx B_Serial_Communication.ncd -o B_Serial_Communication.twr B_Serial_Communication.pcf -ucf B_Serial_Communication.ucf 
+bitgen -intstyle ise -f B_Serial_Communication.ut B_Serial_Communication.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc B_Serial_Communication.ucf -p xc6slx16-csg324-3 B_Serial_Communication.ngc B_Serial_Communication.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o B_Serial_Communication_map.ncd B_Serial_Communication.ngd B_Serial_Communication.pcf 
+par -w -intstyle ise -ol high -mt off B_Serial_Communication_map.ncd B_Serial_Communication.ncd B_Serial_Communication.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml B_Serial_Communication.twx B_Serial_Communication.ncd -o B_Serial_Communication.twr B_Serial_Communication.pcf -ucf B_Serial_Communication.ucf 
+bitgen -intstyle ise -f B_Serial_Communication.ut B_Serial_Communication.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc B_Serial_Communication.ucf -p xc6slx16-csg324-3 B_Serial_Communication.ngc B_Serial_Communication.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o B_Serial_Communication_map.ncd B_Serial_Communication.ngd B_Serial_Communication.pcf 
+par -w -intstyle ise -ol high -mt off B_Serial_Communication_map.ncd B_Serial_Communication.ncd B_Serial_Communication.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml B_Serial_Communication.twx B_Serial_Communication.ncd -o B_Serial_Communication.twr B_Serial_Communication.pcf -ucf B_Serial_Communication.ucf 
+bitgen -intstyle ise -f B_Serial_Communication.ut B_Serial_Communication.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc B_Serial_Communication.ucf -p xc6slx16-csg324-3 B_Serial_Communication.ngc B_Serial_Communication.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o B_Serial_Communication_map.ncd B_Serial_Communication.ngd B_Serial_Communication.pcf 
+par -w -intstyle ise -ol high -mt off B_Serial_Communication_map.ncd B_Serial_Communication.ncd B_Serial_Communication.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml B_Serial_Communication.twx B_Serial_Communication.ncd -o B_Serial_Communication.twr B_Serial_Communication.pcf -ucf B_Serial_Communication.ucf 
+bitgen -intstyle ise -f B_Serial_Communication.ut B_Serial_Communication.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc B_Serial_Communication.ucf -p xc6slx16-csg324-3 B_Serial_Communication.ngc B_Serial_Communication.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o B_Serial_Communication_map.ncd B_Serial_Communication.ngd B_Serial_Communication.pcf 
+par -w -intstyle ise -ol high -mt off B_Serial_Communication_map.ncd B_Serial_Communication.ncd B_Serial_Communication.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml B_Serial_Communication.twx B_Serial_Communication.ncd -o B_Serial_Communication.twr B_Serial_Communication.pcf -ucf B_Serial_Communication.ucf 
+bitgen -intstyle ise -f B_Serial_Communication.ut B_Serial_Communication.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc B_Serial_Communication.ucf -p xc6slx16-csg324-3 B_Serial_Communication.ngc B_Serial_Communication.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o B_Serial_Communication_map.ncd B_Serial_Communication.ngd B_Serial_Communication.pcf 
+par -w -intstyle ise -ol high -mt off B_Serial_Communication_map.ncd B_Serial_Communication.ncd B_Serial_Communication.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml B_Serial_Communication.twx B_Serial_Communication.ncd -o B_Serial_Communication.twr B_Serial_Communication.pcf -ucf B_Serial_Communication.ucf 
+bitgen -intstyle ise -f B_Serial_Communication.ut B_Serial_Communication.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc B_Serial_Communication.ucf -p xc6slx16-csg324-3 B_Serial_Communication.ngc B_Serial_Communication.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o B_Serial_Communication_map.ncd B_Serial_Communication.ngd B_Serial_Communication.pcf 
+par -w -intstyle ise -ol high -mt off B_Serial_Communication_map.ncd B_Serial_Communication.ncd B_Serial_Communication.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml B_Serial_Communication.twx B_Serial_Communication.ncd -o B_Serial_Communication.twr B_Serial_Communication.pcf -ucf B_Serial_Communication.ucf 
+bitgen -intstyle ise -f B_Serial_Communication.ut B_Serial_Communication.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc B_Serial_Communication.ucf -p xc6slx16-csg324-3 B_Serial_Communication.ngc B_Serial_Communication.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o B_Serial_Communication_map.ncd B_Serial_Communication.ngd B_Serial_Communication.pcf 
+par -w -intstyle ise -ol high -mt off B_Serial_Communication_map.ncd B_Serial_Communication.ncd B_Serial_Communication.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml B_Serial_Communication.twx B_Serial_Communication.ncd -o B_Serial_Communication.twr B_Serial_Communication.pcf -ucf B_Serial_Communication.ucf 
+bitgen -intstyle ise -f B_Serial_Communication.ut B_Serial_Communication.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.xst" -ofn "D:/ProySisDigAva/Levi/P24_B_Serial_Communication/B_Serial_Communication.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc B_Serial_Communication.ucf -p xc6slx16-csg324-3 B_Serial_Communication.ngc B_Serial_Communication.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o B_Serial_Communication_map.ncd B_Serial_Communication.ngd B_Serial_Communication.pcf 
+par -w -intstyle ise -ol high -mt off B_Serial_Communication_map.ncd B_Serial_Communication.ncd B_Serial_Communication.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml B_Serial_Communication.twx B_Serial_Communication.ncd -o B_Serial_Communication.twr B_Serial_Communication.pcf -ucf B_Serial_Communication.ucf 
+bitgen -intstyle ise -f B_Serial_Communication.ut B_Serial_Communication.ncd 
+bitgen -intstyle ise -f B_Serial_Communication.ut B_Serial_Communication.ncd 
