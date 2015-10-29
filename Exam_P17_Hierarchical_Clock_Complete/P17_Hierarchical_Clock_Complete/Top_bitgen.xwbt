@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\Levi\Exam_P17_Hierarchical_Clock_Complete\P17_Hierarchical_Clock_Complete\Top.ncd
+OUTFILE=D:\ProySisDigAva\Levi\Exam_P17_Hierarchical_Clock_Complete\P17_Hierarchical_Clock_Complete\Top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\Levi\Exam_P17_Hierarchical_Clock_Complete\P17_Hierarchical_Clock_Complete
+LICENSE=WebPack
+USER_INFO=211076419_0_0_317

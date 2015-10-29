@@ -79,7 +79,7 @@ begin
   process (Rst,Clk,ClkOut,Send, SwitchSeg)
   begin
 	 if Send = '1' then
-		StreamSwitchTemp <= '1' & SwitchSeg(7 downto 0) & '0';
+		StreamSwitchTemp <= SwitchSeg(7 downto 0) & '0' & '1';
 		clockToggle <= '1';
 	 elsif (rising_edge(Clk) and ClkOut = '1') then
 		

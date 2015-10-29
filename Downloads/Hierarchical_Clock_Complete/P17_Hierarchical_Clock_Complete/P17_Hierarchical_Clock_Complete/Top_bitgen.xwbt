@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\P17_Hierarchical_Clock_Complete\Top.ncd
+OUTFILE=D:\ProySisDigAva\P17_Hierarchical_Clock_Complete\Top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\P17_Hierarchical_Clock_Complete
+LICENSE=WebPack
+USER_INFO=211075565_0_0_270

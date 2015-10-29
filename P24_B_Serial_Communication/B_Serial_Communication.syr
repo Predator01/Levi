@@ -234,7 +234,7 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
   Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
 
   List of register instances with asynchronous set and reset:
-    StreamSwitchTemp_1 in unit <B_Serial_Communication>
+    StreamSwitchTemp_9 in unit <B_Serial_Communication>
     StreamSwitchTemp_3 in unit <B_Serial_Communication>
     StreamSwitchTemp_4 in unit <B_Serial_Communication>
     StreamSwitchTemp_2 in unit <B_Serial_Communication>
@@ -245,7 +245,6 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
 
 
 Optimizing unit <B_Serial_Communication> ...
-WARNING:Xst:1710 - FF/Latch <StreamSwitchTemp_9> (without init value) has a constant value of 1 in block <B_Serial_Communication>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -257,8 +256,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 61
- Flip-Flops                                            : 61
+# Registers                                            : 62
+ Flip-Flops                                            : 62
 
 =========================================================================
 
@@ -281,23 +280,23 @@ Top Level Output File Name         : B_Serial_Communication.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 118
+# BELS                             : 119
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 12
 #      LUT2                        : 37
 #      LUT3                        : 7
-#      LUT4                        : 21
+#      LUT4                        : 22
 #      LUT5                        : 3
 #      LUT6                        : 10
 #      MUXCY                       : 12
 #      VCC                         : 1
 #      XORCY                       : 13
-# FlipFlops/Latches                : 69
+# FlipFlops/Latches                : 70
 #      FD                          : 2
 #      FDC                         : 22
 #      FDE                         : 8
-#      FDP                         : 9
+#      FDP                         : 10
 #      FDPE                        : 20
 #      LDC                         : 8
 # Clock Buffers                    : 1
@@ -313,15 +312,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              69  out of  18224     0%  
- Number of Slice LUTs:                   91  out of   9112     0%  
-    Number used as Logic:                91  out of   9112     0%  
+ Number of Slice Registers:              70  out of  18224     0%  
+ Number of Slice LUTs:                   92  out of   9112     1%  
+    Number used as Logic:                92  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    107
-   Number with an unused Flip Flop:      38  out of    107    35%  
-   Number with an unused LUT:            16  out of    107    14%  
-   Number of fully used LUT-FF pairs:    53  out of    107    49%  
+ Number of LUT Flip Flop pairs used:    108
+   Number with an unused Flip Flop:      38  out of    108    35%  
+   Number with an unused LUT:            16  out of    108    14%  
+   Number of fully used LUT-FF pairs:    54  out of    108    50%  
    Number of unique control sets:        29
 
 IO Utilization: 
@@ -352,15 +351,15 @@ Clock Information:
 ---------------------------------------------------------+--------------------------------+-------+
 Clock Signal                                             | Clock buffer(FF name)          | Load  |
 ---------------------------------------------------------+--------------------------------+-------+
-Clk                                                      | BUFGP                          | 61    |
-Send_SwitchSeg[6]_AND_6_o(Send_SwitchSeg[6]_AND_6_o1:O)  | NONE(*)(StreamSwitchTemp_7_LDC)| 1     |
-Send_SwitchSeg[7]_AND_4_o(Send_SwitchSeg[7]_AND_4_o1:O)  | NONE(*)(StreamSwitchTemp_8_LDC)| 1     |
-Send_SwitchSeg[5]_AND_8_o(Send_SwitchSeg[5]_AND_8_o1:O)  | NONE(*)(StreamSwitchTemp_6_LDC)| 1     |
-Send_SwitchSeg[4]_AND_10_o(Send_SwitchSeg[4]_AND_10_o1:O)| NONE(*)(StreamSwitchTemp_5_LDC)| 1     |
-Send_SwitchSeg[1]_AND_16_o(Send_SwitchSeg[1]_AND_16_o1:O)| NONE(*)(StreamSwitchTemp_2_LDC)| 1     |
-Send_SwitchSeg[3]_AND_12_o(Send_SwitchSeg[3]_AND_12_o1:O)| NONE(*)(StreamSwitchTemp_4_LDC)| 1     |
-Send_SwitchSeg[2]_AND_14_o(Send_SwitchSeg[2]_AND_14_o1:O)| NONE(*)(StreamSwitchTemp_3_LDC)| 1     |
-Send_SwitchSeg[0]_AND_18_o(Send_SwitchSeg[0]_AND_18_o1:O)| NONE(*)(StreamSwitchTemp_1_LDC)| 1     |
+Clk                                                      | BUFGP                          | 62    |
+Send_SwitchSeg[5]_AND_8_o(Send_SwitchSeg[5]_AND_8_o1:O)  | NONE(*)(StreamSwitchTemp_7_LDC)| 1     |
+Send_SwitchSeg[6]_AND_6_o(Send_SwitchSeg[6]_AND_6_o1:O)  | NONE(*)(StreamSwitchTemp_8_LDC)| 1     |
+Send_SwitchSeg[4]_AND_10_o(Send_SwitchSeg[4]_AND_10_o1:O)| NONE(*)(StreamSwitchTemp_6_LDC)| 1     |
+Send_SwitchSeg[3]_AND_12_o(Send_SwitchSeg[3]_AND_12_o1:O)| NONE(*)(StreamSwitchTemp_5_LDC)| 1     |
+Send_SwitchSeg[0]_AND_18_o(Send_SwitchSeg[0]_AND_18_o1:O)| NONE(*)(StreamSwitchTemp_2_LDC)| 1     |
+Send_SwitchSeg[2]_AND_14_o(Send_SwitchSeg[2]_AND_14_o1:O)| NONE(*)(StreamSwitchTemp_4_LDC)| 1     |
+Send_SwitchSeg[1]_AND_16_o(Send_SwitchSeg[1]_AND_16_o1:O)| NONE(*)(StreamSwitchTemp_3_LDC)| 1     |
+Send_SwitchSeg[7]_AND_4_o(Send_SwitchSeg[7]_AND_4_o1:O)  | NONE(*)(StreamSwitchTemp_9_LDC)| 1     |
 ---------------------------------------------------------+--------------------------------+-------+
 (*) These 8 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -376,7 +375,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 3.101ns (Maximum Frequency: 322.503MHz)
-   Minimum input arrival time before clock: 3.647ns
+   Minimum input arrival time before clock: 3.669ns
    Maximum output required time after clock: 3.634ns
    Maximum combinational path delay: No path found
 
@@ -387,7 +386,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
   Clock period: 3.101ns (frequency: 322.503MHz)
-  Total number of paths / destination ports: 468 / 89
+  Total number of paths / destination ports: 472 / 90
 -------------------------------------------------------------------------
 Delay:               3.101ns (Levels of Logic = 4)
   Source:            Cont_11 (FF)
@@ -411,9 +410,9 @@ Delay:               3.101ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
-  Total number of paths / destination ports: 78 / 62
+  Total number of paths / destination ports: 79 / 63
 -------------------------------------------------------------------------
-Offset:              3.647ns (Levels of Logic = 2)
+Offset:              3.669ns (Levels of Logic = 2)
   Source:            Send (PAD)
   Destination:       StreamSwitchTemp_7_C_7 (FF)
   Destination Clock: Clk rising
@@ -422,172 +421,172 @@ Offset:              3.647ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.176  Send_IBUF (Send_IBUF)
+     IBUF:I->O            20   1.222   1.197  Send_IBUF (Send_IBUF)
      LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[7]_AND_4_o1 (Send_SwitchSeg[7]_AND_4_o)
-     FDP:PRE                   0.430          StreamSwitchTemp_8_P_8
+     FDP:PRE                   0.430          StreamSwitchTemp_9_P_9
     ----------------------------------------
-    Total                      3.647ns (1.855ns logic, 1.792ns route)
-                                       (50.9% logic, 49.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[6]_AND_6_o'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              3.647ns (Levels of Logic = 2)
-  Source:            Send (PAD)
-  Destination:       StreamSwitchTemp_7_LDC (LATCH)
-  Destination Clock: Send_SwitchSeg[6]_AND_6_o falling
-
-  Data Path: Send to StreamSwitchTemp_7_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.176  Send_IBUF (Send_IBUF)
-     LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[6]_AND_7_o1 (Send_SwitchSeg[6]_AND_7_o)
-     LDC:CLR                   0.430          StreamSwitchTemp_7_LDC
-    ----------------------------------------
-    Total                      3.647ns (1.855ns logic, 1.792ns route)
-                                       (50.9% logic, 49.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[7]_AND_4_o'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              3.647ns (Levels of Logic = 2)
-  Source:            Send (PAD)
-  Destination:       StreamSwitchTemp_8_LDC (LATCH)
-  Destination Clock: Send_SwitchSeg[7]_AND_4_o falling
-
-  Data Path: Send to StreamSwitchTemp_8_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.176  Send_IBUF (Send_IBUF)
-     LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[7]_AND_5_o1 (Send_SwitchSeg[7]_AND_5_o)
-     LDC:CLR                   0.430          StreamSwitchTemp_8_LDC
-    ----------------------------------------
-    Total                      3.647ns (1.855ns logic, 1.792ns route)
-                                       (50.9% logic, 49.1% route)
+    Total                      3.669ns (1.855ns logic, 1.814ns route)
+                                       (50.6% logic, 49.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[5]_AND_8_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              3.647ns (Levels of Logic = 2)
+Offset:              3.669ns (Levels of Logic = 2)
   Source:            Send (PAD)
-  Destination:       StreamSwitchTemp_6_LDC (LATCH)
+  Destination:       StreamSwitchTemp_7_LDC (LATCH)
   Destination Clock: Send_SwitchSeg[5]_AND_8_o falling
 
-  Data Path: Send to StreamSwitchTemp_6_LDC
+  Data Path: Send to StreamSwitchTemp_7_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.176  Send_IBUF (Send_IBUF)
+     IBUF:I->O            20   1.222   1.197  Send_IBUF (Send_IBUF)
      LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[5]_AND_9_o1 (Send_SwitchSeg[5]_AND_9_o)
-     LDC:CLR                   0.430          StreamSwitchTemp_6_LDC
+     LDC:CLR                   0.430          StreamSwitchTemp_7_LDC
     ----------------------------------------
-    Total                      3.647ns (1.855ns logic, 1.792ns route)
-                                       (50.9% logic, 49.1% route)
+    Total                      3.669ns (1.855ns logic, 1.814ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[6]_AND_6_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              3.669ns (Levels of Logic = 2)
+  Source:            Send (PAD)
+  Destination:       StreamSwitchTemp_8_LDC (LATCH)
+  Destination Clock: Send_SwitchSeg[6]_AND_6_o falling
+
+  Data Path: Send to StreamSwitchTemp_8_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.197  Send_IBUF (Send_IBUF)
+     LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[6]_AND_7_o1 (Send_SwitchSeg[6]_AND_7_o)
+     LDC:CLR                   0.430          StreamSwitchTemp_8_LDC
+    ----------------------------------------
+    Total                      3.669ns (1.855ns logic, 1.814ns route)
+                                       (50.6% logic, 49.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[4]_AND_10_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              3.647ns (Levels of Logic = 2)
+Offset:              3.669ns (Levels of Logic = 2)
   Source:            Send (PAD)
-  Destination:       StreamSwitchTemp_5_LDC (LATCH)
+  Destination:       StreamSwitchTemp_6_LDC (LATCH)
   Destination Clock: Send_SwitchSeg[4]_AND_10_o falling
 
-  Data Path: Send to StreamSwitchTemp_5_LDC
+  Data Path: Send to StreamSwitchTemp_6_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.176  Send_IBUF (Send_IBUF)
+     IBUF:I->O            20   1.222   1.197  Send_IBUF (Send_IBUF)
      LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[4]_AND_11_o1 (Send_SwitchSeg[4]_AND_11_o)
-     LDC:CLR                   0.430          StreamSwitchTemp_5_LDC
+     LDC:CLR                   0.430          StreamSwitchTemp_6_LDC
     ----------------------------------------
-    Total                      3.647ns (1.855ns logic, 1.792ns route)
-                                       (50.9% logic, 49.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[1]_AND_16_o'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              3.647ns (Levels of Logic = 2)
-  Source:            Send (PAD)
-  Destination:       StreamSwitchTemp_2_LDC (LATCH)
-  Destination Clock: Send_SwitchSeg[1]_AND_16_o falling
-
-  Data Path: Send to StreamSwitchTemp_2_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.176  Send_IBUF (Send_IBUF)
-     LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[1]_AND_17_o1 (Send_SwitchSeg[1]_AND_17_o)
-     LDC:CLR                   0.430          StreamSwitchTemp_2_LDC
-    ----------------------------------------
-    Total                      3.647ns (1.855ns logic, 1.792ns route)
-                                       (50.9% logic, 49.1% route)
+    Total                      3.669ns (1.855ns logic, 1.814ns route)
+                                       (50.6% logic, 49.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[3]_AND_12_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              3.647ns (Levels of Logic = 2)
+Offset:              3.669ns (Levels of Logic = 2)
   Source:            Send (PAD)
-  Destination:       StreamSwitchTemp_4_LDC (LATCH)
+  Destination:       StreamSwitchTemp_5_LDC (LATCH)
   Destination Clock: Send_SwitchSeg[3]_AND_12_o falling
 
-  Data Path: Send to StreamSwitchTemp_4_LDC
+  Data Path: Send to StreamSwitchTemp_5_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.176  Send_IBUF (Send_IBUF)
+     IBUF:I->O            20   1.222   1.197  Send_IBUF (Send_IBUF)
      LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[3]_AND_13_o1 (Send_SwitchSeg[3]_AND_13_o)
-     LDC:CLR                   0.430          StreamSwitchTemp_4_LDC
+     LDC:CLR                   0.430          StreamSwitchTemp_5_LDC
     ----------------------------------------
-    Total                      3.647ns (1.855ns logic, 1.792ns route)
-                                       (50.9% logic, 49.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[2]_AND_14_o'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              3.647ns (Levels of Logic = 2)
-  Source:            Send (PAD)
-  Destination:       StreamSwitchTemp_3_LDC (LATCH)
-  Destination Clock: Send_SwitchSeg[2]_AND_14_o falling
-
-  Data Path: Send to StreamSwitchTemp_3_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.176  Send_IBUF (Send_IBUF)
-     LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[2]_AND_15_o1 (Send_SwitchSeg[2]_AND_15_o)
-     LDC:CLR                   0.430          StreamSwitchTemp_3_LDC
-    ----------------------------------------
-    Total                      3.647ns (1.855ns logic, 1.792ns route)
-                                       (50.9% logic, 49.1% route)
+    Total                      3.669ns (1.855ns logic, 1.814ns route)
+                                       (50.6% logic, 49.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[0]_AND_18_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              3.647ns (Levels of Logic = 2)
+Offset:              3.669ns (Levels of Logic = 2)
   Source:            Send (PAD)
-  Destination:       StreamSwitchTemp_1_LDC (LATCH)
+  Destination:       StreamSwitchTemp_2_LDC (LATCH)
   Destination Clock: Send_SwitchSeg[0]_AND_18_o falling
 
-  Data Path: Send to StreamSwitchTemp_1_LDC
+  Data Path: Send to StreamSwitchTemp_2_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.176  Send_IBUF (Send_IBUF)
+     IBUF:I->O            20   1.222   1.197  Send_IBUF (Send_IBUF)
      LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[0]_AND_19_o1 (Send_SwitchSeg[0]_AND_19_o)
-     LDC:CLR                   0.430          StreamSwitchTemp_1_LDC
+     LDC:CLR                   0.430          StreamSwitchTemp_2_LDC
     ----------------------------------------
-    Total                      3.647ns (1.855ns logic, 1.792ns route)
-                                       (50.9% logic, 49.1% route)
+    Total                      3.669ns (1.855ns logic, 1.814ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[2]_AND_14_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              3.669ns (Levels of Logic = 2)
+  Source:            Send (PAD)
+  Destination:       StreamSwitchTemp_4_LDC (LATCH)
+  Destination Clock: Send_SwitchSeg[2]_AND_14_o falling
+
+  Data Path: Send to StreamSwitchTemp_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.197  Send_IBUF (Send_IBUF)
+     LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[2]_AND_15_o1 (Send_SwitchSeg[2]_AND_15_o)
+     LDC:CLR                   0.430          StreamSwitchTemp_4_LDC
+    ----------------------------------------
+    Total                      3.669ns (1.855ns logic, 1.814ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[1]_AND_16_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              3.669ns (Levels of Logic = 2)
+  Source:            Send (PAD)
+  Destination:       StreamSwitchTemp_3_LDC (LATCH)
+  Destination Clock: Send_SwitchSeg[1]_AND_16_o falling
+
+  Data Path: Send to StreamSwitchTemp_3_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.197  Send_IBUF (Send_IBUF)
+     LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[1]_AND_17_o1 (Send_SwitchSeg[1]_AND_17_o)
+     LDC:CLR                   0.430          StreamSwitchTemp_3_LDC
+    ----------------------------------------
+    Total                      3.669ns (1.855ns logic, 1.814ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Send_SwitchSeg[7]_AND_4_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              3.669ns (Levels of Logic = 2)
+  Source:            Send (PAD)
+  Destination:       StreamSwitchTemp_9_LDC (LATCH)
+  Destination Clock: Send_SwitchSeg[7]_AND_4_o falling
+
+  Data Path: Send to StreamSwitchTemp_9_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.197  Send_IBUF (Send_IBUF)
+     LUT2:I0->O            2   0.203   0.616  Send_SwitchSeg[7]_AND_5_o1 (Send_SwitchSeg[7]_AND_5_o)
+     LDC:CLR                   0.430          StreamSwitchTemp_9_LDC
+    ----------------------------------------
+    Total                      3.669ns (1.855ns logic, 1.814ns route)
+                                       (50.6% logic, 49.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
@@ -633,13 +632,13 @@ Send_SwitchSeg[7]_AND_4_o |         |    2.435|         |         |
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.76 secs
+Total CPU time to Xst completion: 5.68 secs
  
 --> 
 
 Total memory usage is 236372 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   26 (   0 filtered)
+Number of warnings :   25 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 
