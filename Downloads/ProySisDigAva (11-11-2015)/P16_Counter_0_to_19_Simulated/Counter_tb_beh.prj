@@ -1,0 +1,2 @@
+vhdl work "Counter0to19.vhd"
+vhdl work "Counter_tb.vhd"

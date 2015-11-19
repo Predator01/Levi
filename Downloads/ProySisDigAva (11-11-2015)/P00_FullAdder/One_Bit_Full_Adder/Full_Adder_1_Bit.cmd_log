@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full_Adder_1_Bit.xst" -ofn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full_Adder_1_Bit.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full_Adder_1_Bit.xst" -ofn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full_Adder_1_Bit.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full_Adder_1_Bit.xst" -ofn "D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/Full_Adder_1_Bit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Full_Adder_1_Bit.ucf -p xc6slx16-csg324-3 Full_Adder_1_Bit.ngc Full_Adder_1_Bit.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Full_Adder_1_Bit_map.ncd Full_Adder_1_Bit.ngd Full_Adder_1_Bit.pcf 
+par -w -intstyle ise -ol high -mt off Full_Adder_1_Bit_map.ncd Full_Adder_1_Bit.ncd Full_Adder_1_Bit.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Full_Adder_1_Bit.twx Full_Adder_1_Bit.ncd -o Full_Adder_1_Bit.twr Full_Adder_1_Bit.pcf -ucf Full_Adder_1_Bit.ucf 
+bitgen -intstyle ise -f Full_Adder_1_Bit.ut Full_Adder_1_Bit.ncd 

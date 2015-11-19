@@ -1,0 +1,6 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Switch" LOC = T10;
+NET "LED"    LOC = T12;
+

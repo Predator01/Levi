@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P14_D_Type_FFs/D_Type_FFs.xst" -ofn "D:/ProySisDigAva/P14_D_Type_FFs/D_Type_FFs.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P14_D_Type_FFs/D_Type_FFs.xst" -ofn "D:/ProySisDigAva/P14_D_Type_FFs/D_Type_FFs.syr" 

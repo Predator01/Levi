@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2 (64-bit)
+# Build 131561 by hdbuild on Thu Jun 16 17:14:12 PDT 2011
+# Start of session at: Thu Oct 18 11:16:50 2012
+# Process ID: 2880
+# Log file: D:/ProySisDigAva/P19a_Serial_Comm/planAhead_run_1/planAhead.log
+# Journal file: D:/ProySisDigAva/P19a_Serial_Comm/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ProySisDigAva/P19a_Serial_Comm/pa.fromNetlist.tcl
+startgroup
+set_property loc PAD156 [get_ports Clk]
+endgroup
+set_property loc "" [get_ports [list  DataIn]]
+startgroup
+set_property loc PAD27 [get_ports Rst]
+endgroup
+set_property loc "" [get_ports [list  DataIn]]
+startgroup
+set_property loc PAD125 [get_ports {DataOut[0]}]
+endgroup
+startgroup
+set_property loc PAD126 [get_ports {DataOut[1]}]
+endgroup
+startgroup
+set_property loc PAD129 [get_ports {DataOut[2]}]
+endgroup
+startgroup
+set_property loc PAD130 [get_ports {DataOut[3]}]
+endgroup
+startgroup
+set_property loc PAD139 [get_ports {DataOut[4]}]
+endgroup
+startgroup
+set_property loc PAD140 [get_ports {DataOut[5]}]
+endgroup
+startgroup
+set_property loc PAD141 [get_ports {DataOut[6]}]
+endgroup
+startgroup
+set_property loc PAD142 [get_ports {DataOut[7]}]
+endgroup
+startgroup
+set_property loc PAD107 [get_ports DataIn]
+endgroup
+startgroup
+set_property loc PAD142 [get_ports {DataOut[7]}]
+endgroup
+save_design
+exit
+stop_gui

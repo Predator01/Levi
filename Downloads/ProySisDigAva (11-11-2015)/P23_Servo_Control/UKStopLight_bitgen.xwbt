@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\P22_UKStopLight\UKStopLight.ncd
+OUTFILE=D:\ProySisDigAva\P22_UKStopLight\UKStopLight.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\P22_UKStopLight
+LICENSE=WebPack
+USER_INFO=211075565_0_0_270

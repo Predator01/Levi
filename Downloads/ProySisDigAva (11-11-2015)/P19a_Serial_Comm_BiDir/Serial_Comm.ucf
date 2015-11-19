@@ -1,0 +1,26 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Clk"          LOC = V10;
+NET "DataIn"       LOC = N17;
+NET "Rst"          LOC = B8;
+NET "DataOut[0]"   LOC = U16;
+NET "DataOut[1]"   LOC = V16;
+NET "DataOut[2]"   LOC = U15;
+NET "DataOut[3]"   LOC = V15;
+NET "DataOut[4]"   LOC = M11;
+NET "DataOut[5]"   LOC = N11;
+NET "DataOut[6]"   LOC = R11;
+NET "DataOut[7]"   LOC = T11;
+#
+NET "Switches[0]"  LOC = T10;
+NET "Switches[1]"  LOC = T9;
+NET "Switches[2]"  LOC = V9;
+NET "Switches[3]"  LOC = M8;
+NET "Switches[4]"  LOC = N8;
+NET "Switches[5]"  LOC = U8;
+NET "Switches[6]"  LOC = V8;
+NET "Switches[7]"  LOC = T5;
+#
+NET "SendBtn"      LOC = C4;
+NET "DataSend"     LOC = N18;

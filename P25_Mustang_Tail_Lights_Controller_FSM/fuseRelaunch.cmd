@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/ProySisDigAva/Levi/P25_Mustang_Tail_Lights_Controller_FSM/Mustang_Tail_Lights_Controller_TB_isim_beh.exe" -prj "D:/ProySisDigAva/Levi/P25_Mustang_Tail_Lights_Controller_FSM/Mustang_Tail_Lights_Controller_TB_beh.prj" "work.Mustang_Tail_Lights_Controller_TB" 

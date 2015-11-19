@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/ProySisDigAva/P18a_ServoControl_Felipe_Santiago_Rafael/ServoControl_vtb_isim_beh.exe" -prj "D:/ProySisDigAva/P18a_ServoControl_Felipe_Santiago_Rafael/ServoControl_vtb_beh.prj" "work.ServoControl_vtb" 

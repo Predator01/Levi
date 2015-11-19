@@ -1,0 +1,2 @@
+vhdl isim_temp "ServoControl.vhd"
+vhdl isim_temp "ServoControl_vtb.vhd"

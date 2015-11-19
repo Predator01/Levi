@@ -1,0 +1,457 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: Ultrasonic.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Ultrasonic.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Ultrasonic"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Ultrasonic
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\ProySisDigAva\P24_Ultrasonic_no_Rx\Ultrasonic.vhd" into library work
+Parsing entity <Ultrasonic>.
+Parsing architecture <Behavioral> of entity <ultrasonic>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Ultrasonic> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\P24_Ultrasonic_no_Rx\Ultrasonic.vhd" Line 103. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\P24_Ultrasonic_no_Rx\Ultrasonic.vhd" Line 116. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Ultrasonic>.
+    Related source file is "D:\ProySisDigAva\P24_Ultrasonic_no_Rx\Ultrasonic.vhd".
+    Found 2-bit register for signal <pres_state>.
+    Found 20-bit register for signal <SecondCount>.
+    Found 7-bit register for signal <Cont>.
+    Found 1-bit register for signal <TimeBase>.
+    Found finite state machine <FSM_0> for signal <pres_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 10                                             |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | startpulse                                     |
+    | Power Up State     | startpulse                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 21-bit subtractor for signal <GND_6_o_GND_6_o_sub_5_OUT> created at line 75.
+    Found 7-bit adder for signal <Cont[6]_GND_6_o_add_1_OUT> created at line 63.
+    Found 20-bit adder for signal <SecondCount[19]_GND_6_o_add_6_OUT> created at line 79.
+    Found 21-bit comparator equal for signal <GND_6_o_GND_6_o_equal_6_o> created at line 75
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Ultrasonic> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 20-bit adder                                          : 1
+ 21-bit subtractor                                     : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 20-bit register                                       : 1
+ 7-bit register                                        : 1
+# Comparators                                          : 1
+ 21-bit comparator equal                               : 1
+# Multiplexers                                         : 2
+ 20-bit 2-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Ultrasonic>.
+The following registers are absorbed into counter <Cont>: 1 register on signal <Cont>.
+The following registers are absorbed into counter <SecondCount>: 1 register on signal <SecondCount>.
+Unit <Ultrasonic> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 21-bit subtractor                                     : 1
+# Counters                                             : 2
+ 20-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 1
+ 21-bit comparator equal                               : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <pres_state[1:2]> with gray encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ startpulse         | 00
+ waitforresponse    | 01
+ ultrasonicresponse | 11
+ waitfornewstart    | 10
+--------------------------------
+
+Optimizing unit <Ultrasonic> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Ultrasonic, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Ultrasonic.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 90
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 23
+#      LUT3                        : 2
+#      LUT4                        : 5
+#      LUT5                        : 7
+#      LUT6                        : 3
+#      MUXCY                       : 27
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 30
+#      FDC                         : 9
+#      FDCE                        : 20
+#      FDE                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              30  out of  18224     0%  
+ Number of Slice LUTs:                   41  out of   9112     0%  
+    Number used as Logic:                41  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     41
+   Number with an unused Flip Flop:      11  out of     41    26%  
+   Number with an unused LUT:             0  out of     41     0%  
+   Number of fully used LUT-FF pairs:    30  out of     41    73%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          11
+ Number of bonded IOBs:                   3  out of    232     1%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 30    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.053ns (Maximum Frequency: 246.749MHz)
+   Minimum input arrival time before clock: 3.592ns
+   Maximum output required time after clock: 4.734ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 4.053ns (frequency: 246.749MHz)
+  Total number of paths / destination ports: 7719 / 50
+-------------------------------------------------------------------------
+Delay:               4.053ns (Levels of Logic = 29)
+  Source:            SecondCount_0 (FF)
+  Destination:       SecondCount_19 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: SecondCount_0 to SecondCount_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.447   0.961  SecondCount_0 (SecondCount_0)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_GND_6_o_GND_6_o_equal_6_o_lut<0>1 (Mcompar_GND_6_o_GND_6_o_equal_6_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<0> (Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<1> (Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<2> (Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<3> (Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<4> (Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<5> (Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<5>)
+     MUXCY:CI->O          23   0.019   1.154  Mcompar_GND_6_o_GND_6_o_equal_6_o_cy<6> (GND_6_o_GND_6_o_equal_6_o)
+     LUT2:I1->O            1   0.205   0.000  Mcount_SecondCount_lut<0> (Mcount_SecondCount_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcount_SecondCount_cy<0> (Mcount_SecondCount_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<1> (Mcount_SecondCount_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<2> (Mcount_SecondCount_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<3> (Mcount_SecondCount_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<4> (Mcount_SecondCount_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<5> (Mcount_SecondCount_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<6> (Mcount_SecondCount_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<7> (Mcount_SecondCount_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<8> (Mcount_SecondCount_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<9> (Mcount_SecondCount_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<10> (Mcount_SecondCount_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<11> (Mcount_SecondCount_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<12> (Mcount_SecondCount_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<13> (Mcount_SecondCount_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<14> (Mcount_SecondCount_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<15> (Mcount_SecondCount_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<16> (Mcount_SecondCount_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_SecondCount_cy<17> (Mcount_SecondCount_cy<17>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_SecondCount_cy<18> (Mcount_SecondCount_cy<18>)
+     XORCY:CI->O           1   0.180   0.000  Mcount_SecondCount_xor<19> (Mcount_SecondCount19)
+     FDCE:D                    0.102          SecondCount_19
+    ----------------------------------------
+    Total                      4.053ns (1.937ns logic, 2.116ns route)
+                                       (47.8% logic, 52.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Offset:              3.592ns (Levels of Logic = 2)
+  Source:            Rst (PAD)
+  Destination:       TimeBase (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Rst to TimeBase
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            30   1.222   1.263  Rst_IBUF (Rst_IBUF)
+     INV:I->O              1   0.206   0.579  Rst_inv1_INV_0 (Rst_inv)
+     FDE:CE                    0.322          TimeBase
+    ----------------------------------------
+    Total                      3.592ns (1.750ns logic, 1.842ns route)
+                                       (48.7% logic, 51.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.734ns (Levels of Logic = 2)
+  Source:            pres_state_FSM_FFd2 (FF)
+  Destination:       Tx (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: pres_state_FSM_FFd2 to Tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.447   0.934  pres_state_FSM_FFd2 (pres_state_FSM_FFd2)
+     LUT2:I0->O            1   0.203   0.579  Tx1 (Tx_OBUF)
+     OBUF:I->O                 2.571          Tx_OBUF (Tx)
+    ----------------------------------------
+    Total                      4.734ns (3.221ns logic, 1.513ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    4.053|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.34 secs
+ 
+--> 
+
+Total memory usage is 190824 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

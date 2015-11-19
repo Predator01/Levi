@@ -1,0 +1,28 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Oct 26 22:30:32 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "DataIn" LOCATE = SITE "N17" LEVEL 1;
+COMP "DataSend" LOCATE = SITE "N18" LEVEL 1;
+COMP "Switches<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Switches<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "Rst" LOCATE = SITE "B8" LEVEL 1;
+COMP "Switches<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "Switches<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "Switches<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "Switches<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "DataOut<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "Switches<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "DataOut<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "Switches<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "DataOut<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "DataOut<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "DataOut<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "DataOut<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "Clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "DataOut<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "DataOut<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "SendBtn" LOCATE = SITE "C4" LEVEL 1;
+SCHEMATIC END;
+

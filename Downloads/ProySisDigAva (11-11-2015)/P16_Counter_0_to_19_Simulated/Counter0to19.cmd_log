@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P16_Counter_0_to_19_Simulated/Counter0to19.xst" -ofn "D:/ProySisDigAva/P16_Counter_0_to_19_Simulated/Counter0to19.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P16_Counter_0_to_19_Simulated/Counter0to19.xst" -ofn "D:/ProySisDigAva/P16_Counter_0_to_19_Simulated/Counter0to19.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P16_Counter_0_to_19_Simulated/Counter0to19.xst" -ofn "D:/ProySisDigAva/P16_Counter_0_to_19_Simulated/Counter0to19.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P16_Counter_0_to_19_Simulated/Counter0to19.xst" -ofn "D:/ProySisDigAva/P16_Counter_0_to_19_Simulated/Counter0to19.syr" 

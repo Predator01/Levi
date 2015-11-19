@@ -1,0 +1,30 @@
+Command line:
+   SN74LS138_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53283
+
+Wed Sep 02 12:31:56 2015
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 857.588 Meg
+
+ Total Signals          : 16
+ Total Nets             : 18
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 4
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 378
+Total Line Count : 29
+Total Line Count : 29
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 385.667 Meg
+
+Wed Sep 02 12:43:10 2015
+

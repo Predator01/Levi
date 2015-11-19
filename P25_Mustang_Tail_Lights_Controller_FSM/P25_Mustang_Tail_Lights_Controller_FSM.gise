@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="P25_Mustang_Tail_Lights_Controller_FSM.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Mustang_Tail_Lights_Controller.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Mustang_Tail_Lights_Controller.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Mustang_Tail_Lights_Controller.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Mustang_Tail_Lights_Controller.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Mustang_Tail_Lights_Controller.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Mustang_Tail_Lights_Controller.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Mustang_Tail_Lights_Controller.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Mustang_Tail_Lights_Controller.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Mustang_Tail_Lights_Controller.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Mustang_Tail_Lights_Controller.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mustang_Tail_Lights_Controller.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Mustang_Tail_Lights_Controller.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Mustang_Tail_Lights_Controller.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Mustang_Tail_Lights_Controller.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Mustang_Tail_Lights_Controller.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Mustang_Tail_Lights_Controller.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Mustang_Tail_Lights_Controller.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Mustang_Tail_Lights_Controller.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Mustang_Tail_Lights_Controller.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Mustang_Tail_Lights_Controller.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mustang_Tail_Lights_Controller_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Mustang_Tail_Lights_Controller_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Mustang_Tail_Lights_Controller_TB_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Mustang_Tail_Lights_Controller_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Mustang_Tail_Lights_Controller_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Mustang_Tail_Lights_Controller_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Mustang_Tail_Lights_Controller_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Mustang_Tail_Lights_Controller_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Mustang_Tail_Lights_Controller_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Mustang_Tail_Lights_Controller_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Mustang_Tail_Lights_Controller_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Mustang_Tail_Lights_Controller_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Mustang_Tail_Lights_Controller_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Mustang_Tail_Lights_Controller_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Mustang_Tail_Lights_Controller_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mustang_Tail_Lights_Controller_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Mustang_Tail_Lights_Controller_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Mustang_Tail_Lights_Controller_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Mustang_Tail_Lights_Controller_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Mustang_Tail_Lights_Controller_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mustang_tail_lights_controller.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="mustang_tail_lights_controller.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="mustang_tail_lights_controller.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1446526908" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1446526908">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526909" xil_pn:in_ck="3000814734473429567" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1446526908">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.vhd"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_TB.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526909" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6473581903398137504" xil_pn:start_ts="1446526909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526909" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4291283103387221218" xil_pn:start_ts="1446526909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526909" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2183227809726894821" xil_pn:start_ts="1446526909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526909" xil_pn:in_ck="3000814734473429567" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1446526909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.vhd"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_TB.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526912" xil_pn:in_ck="3000814734473429567" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="817799125070410080" xil_pn:start_ts="1446526909">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_TB_beh.prj"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_TB_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526912" xil_pn:in_ck="-3951871885438931427" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9122585212685689971" xil_pn:start_ts="1446526912">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_TB_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526556" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1446526556">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526556" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3180131011650033942" xil_pn:start_ts="1446526556">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526556" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2183227809726894821" xil_pn:start_ts="1446526556">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526556" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1446526556">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526556" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4734088055705842712" xil_pn:start_ts="1446526556">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526556" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1446526556">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526556" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2046416754883284207" xil_pn:start_ts="1446526556">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526564" xil_pn:in_ck="7127098468090131141" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4667704526887799746" xil_pn:start_ts="1446526556">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.lso"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.ngc"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.ngr"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.prj"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.stx"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.syr"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.xst"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_TB_beh.prj"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_stx_beh.prj"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526564" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-1209239153859593907" xil_pn:start_ts="1446526564">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526569" xil_pn:in_ck="7127098468090122395" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7137075394064830864" xil_pn:start_ts="1446526564">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.bld"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.ngd"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526577" xil_pn:in_ck="7127098468090122396" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1446526569">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.pcf"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_map.map"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_map.mrp"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_map.ncd"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_map.ngm"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_map.xrpt"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_summary.xml"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526589" xil_pn:in_ck="6735012792251829685" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1446526577">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.ncd"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.pad"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.par"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.ptwx"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.unroutes"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.xpi"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_pad.csv"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_pad.txt"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526607" xil_pn:in_ck="7127098468090122264" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1446526589">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="mustang_tail_lights_controller.bgn"/>
+      <outfile xil_pn:name="mustang_tail_lights_controller.bit"/>
+      <outfile xil_pn:name="mustang_tail_lights_controller.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1446526589" xil_pn:in_ck="7127098468090122264" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1446526583">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.twr"/>
+      <outfile xil_pn:name="Mustang_Tail_Lights_Controller.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

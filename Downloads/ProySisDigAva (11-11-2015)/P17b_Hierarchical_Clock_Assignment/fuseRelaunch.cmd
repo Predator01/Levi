@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/ProySisDigAva/P17b_Hierarchical_Clock/Cont0a9_tb_isim_beh.exe" -prj "D:/ProySisDigAva/P17b_Hierarchical_Clock/Cont0a9_tb_beh.prj" "work.Cont0a9_tb" 

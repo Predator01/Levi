@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="P07_BinaryGray_Converter_Loops.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="BinaryGray_Converter.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="BinaryGray_Converter.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="BinaryGray_Converter.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="BinaryGray_Converter.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BinaryGray_Converter.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="BinaryGray_Converter.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="BinaryGray_Converter.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="BinaryGray_Converter.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="BinaryGray_Converter_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="BinaryGray_Converter_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BinaryGray_Converter_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="BinaryGray_Converter_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="BinaryGray_Converter_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="BinaryGray_Converter_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1441723820" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1441723820">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723820" xil_pn:in_ck="5989251849912428659" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1441723820">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BinaryGray_Converter.vhd"/>
+      <outfile xil_pn:name="BinaryGray_Converter_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723820" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8651180729843684166" xil_pn:start_ts="1441723820">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723820" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1045909901430879544" xil_pn:start_ts="1441723820">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723820" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-765292532429074241" xil_pn:start_ts="1441723820">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723820" xil_pn:in_ck="5989251849912428659" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1441723820">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BinaryGray_Converter.vhd"/>
+      <outfile xil_pn:name="BinaryGray_Converter_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723823" xil_pn:in_ck="5989251849912428659" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2870741347217756372" xil_pn:start_ts="1441723820">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BinaryGray_Converter_tb_beh.prj"/>
+      <outfile xil_pn:name="BinaryGray_Converter_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723823" xil_pn:in_ck="3335565969350385427" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8001260866900662273" xil_pn:start_ts="1441723823">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BinaryGray_Converter_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723897" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1441723897">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723897" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2092575848590624208" xil_pn:start_ts="1441723897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723897" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-765292532429074241" xil_pn:start_ts="1441723897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723897" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1441723897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723897" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-6938997862406337870" xil_pn:start_ts="1441723897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723897" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1441723897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723897" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-6980532141034727863" xil_pn:start_ts="1441723897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1441723904" xil_pn:in_ck="2853156259419278367" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="4421971183340370072" xil_pn:start_ts="1441723897">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BinaryGray_Converter.lso"/>
+      <outfile xil_pn:name="BinaryGray_Converter.ngc"/>
+      <outfile xil_pn:name="BinaryGray_Converter.ngr"/>
+      <outfile xil_pn:name="BinaryGray_Converter.prj"/>
+      <outfile xil_pn:name="BinaryGray_Converter.stx"/>
+      <outfile xil_pn:name="BinaryGray_Converter.syr"/>
+      <outfile xil_pn:name="BinaryGray_Converter.xst"/>
+      <outfile xil_pn:name="BinaryGray_Converter_tb_beh.prj"/>
+      <outfile xil_pn:name="BinaryGray_Converter_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

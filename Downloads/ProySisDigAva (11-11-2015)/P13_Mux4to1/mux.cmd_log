@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P13_Mux4to1/mux.xst" -ofn "D:/ProySisDigAva/P13_Mux4to1/mux.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P13_Mux4to1/mux.xst" -ofn "D:/ProySisDigAva/P13_Mux4to1/mux.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P13_Mux4to1/mux.xst" -ofn "D:/ProySisDigAva/P13_Mux4to1/mux.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P13_Mux4to1/mux.xst" -ofn "D:/ProySisDigAva/P13_Mux4to1/mux.syr" 

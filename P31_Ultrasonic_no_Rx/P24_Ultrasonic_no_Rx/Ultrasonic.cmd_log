@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P24_Ultrasonic/Ultrasonic.xst" -ofn "D:/ProySisDigAva/P24_Ultrasonic/Ultrasonic.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P24_Ultrasonic/Ultrasonic.xst" -ofn "D:/ProySisDigAva/P24_Ultrasonic/Ultrasonic.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P24_Ultrasonic/Ultrasonic.xst" -ofn "D:/ProySisDigAva/P24_Ultrasonic/Ultrasonic.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P24_Ultrasonic/Ultrasonic.xst" -ofn "D:/ProySisDigAva/P24_Ultrasonic/Ultrasonic.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P24_Ultrasonic/Ultrasonic.xst" -ofn "D:/ProySisDigAva/P24_Ultrasonic/Ultrasonic.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P24_Ultrasonic_no_Rx/Ultrasonic.xst" -ofn "D:/ProySisDigAva/P24_Ultrasonic_no_Rx/Ultrasonic.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P24_Ultrasonic_no_Rx/Ultrasonic.xst" -ofn "D:/ProySisDigAva/P24_Ultrasonic_no_Rx/Ultrasonic.syr" 

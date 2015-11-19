@@ -1,0 +1,29 @@
+Command line:
+   Mustang_Tail_Lights_Controller_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  3401
+
+Mon Nov 02 23:01:53 2015
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 519.16 Meg
+
+ Total Signals          : 17
+ Total Nets             : 16
+ Total Signal Drivers   : 10
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 6
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 377
+Total Line Count : 72
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 519.16 Meg
+
+Mon Nov 02 23:02:00 2015
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\Levi\P31_Ultrasonic_Rx\P24_Ultrasonic_no_Rx\Ultrasonic.ncd
+OUTFILE=D:\ProySisDigAva\Levi\P31_Ultrasonic_Rx\P24_Ultrasonic_no_Rx\Ultrasonic.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\Levi\P31_Ultrasonic_Rx\P24_Ultrasonic_no_Rx
+LICENSE=WebPack
+USER_INFO=211076419_0_0_317

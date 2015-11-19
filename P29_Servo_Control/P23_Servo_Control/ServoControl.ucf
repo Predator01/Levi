@@ -1,0 +1,7 @@
+
+# PlanAhead Generated physical constraints 
+
+
+NET "Clk"   LOC = V10;
+NET "Rst"   LOC = B8;
+NET "Servo" LOC = T12;

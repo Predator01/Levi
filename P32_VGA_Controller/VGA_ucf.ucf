@@ -1,0 +1,16 @@
+#PACE: Start of PACE I/O Pin Assignments
+#Pins para la tableta Nexys 2
+NET "Rst"         LOC = "B18";
+#Forzar a que un Clock se pueda conectar a una señal que no es Clock
+#NET "KeyClock" CLOCK_DEDICATED_ROUTE;
+NET "Clk_50M"       LOC = "B8";
+NET "Red<2>"        LOC = "R8";  #Rojo  MSB 
+NET "Red<1>"        LOC = "T8";  #Rojo  middle bit
+NET "Red<0>"        LOC = "R9";  #Rojo  LSB
+NET "Green<2>"      LOC = "P6";  #Green MSB
+NET "Green<1>"      LOC = "P8";  #Green middle bit
+NET "Green<0>"      LOC = "N8";  #Green LSB
+NET "Blue<1>"       LOC = "U4";  #Blue  MSB
+NET "Blue<0>"       LOC = "U5";  #Blue  LSB
+NET "Hsync"         LOC = "T4";
+NET "Vsync"         LOC = "U3";

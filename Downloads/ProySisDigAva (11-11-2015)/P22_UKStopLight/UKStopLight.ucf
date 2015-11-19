@@ -1,0 +1,8 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "AmberLight" LOC = V16;
+NET "Clk" LOC = V10;
+NET "GreenLight" LOC = U16;
+NET "RedLight" LOC = U15;
+NET "Rst" LOC = B8;

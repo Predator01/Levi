@@ -1,0 +1,6 @@
+NET "Clk" LOC = V10;
+NET "Rst" LOC = B8;
+
+NET "Ligths[0]" LOC = U16;
+NET "Ligths[1]" LOC = V16;
+NET "Ligths[2]" LOC = U15;

@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P22_Shift_Register_8_bit_SN74164/Shift_Register.xst" -ofn "D:/ProySisDigAva/P22_Shift_Register_8_bit_SN74164/Shift_Register.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Shift_Register.ucf -p xc6slx16-csg324-3 Shift_Register.ngc Shift_Register.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Shift_Register_map.ncd Shift_Register.ngd Shift_Register.pcf 
+par -w -intstyle ise -ol high -mt off Shift_Register_map.ncd Shift_Register.ncd Shift_Register.pcf 

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Compat Version="1" Minor="4">
+	<CompatParts>
+	</CompatParts>
+	<ConfigModes>
+		<Mode Id="JTAG"/>
+	</ConfigModes>
+	<PortProps>
+		<Port Name="Angulo[7]" OffChipTerm="NONE"/>
+		<Port Name="Angulo[6]" OffChipTerm="NONE"/>
+		<Port Name="Angulo[5]" OffChipTerm="NONE"/>
+		<Port Name="Angulo[4]" OffChipTerm="NONE"/>
+		<Port Name="Angulo[3]" OffChipTerm="NONE"/>
+		<Port Name="Angulo[2]" OffChipTerm="NONE"/>
+		<Port Name="Angulo[1]" OffChipTerm="NONE"/>
+		<Port Name="Angulo[0]" OffChipTerm="NONE"/>
+		<Port Name="Clk" OffChipTerm="NONE"/>
+		<Port Name="Rst" OffChipTerm="NONE"/>
+		<Port Name="Senal" OffChipTerm="FP_VTT_50"/>
+	</PortProps>
+</Compat>
+

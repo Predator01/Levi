@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P18_Shift_Register_8_bit_SN74164/Shift_Register.xst" -ofn "D:/ProySisDigAva/P18_Shift_Register_8_bit_SN74164/Shift_Register.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P18_Shift_Register_8_bit_SN74164/Shift_Register.xst" -ofn "D:/ProySisDigAva/P18_Shift_Register_8_bit_SN74164/Shift_Register.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Shift_Register.ucf -p xc6slx16-csg324-3 Shift_Register.ngc Shift_Register.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Shift_Register_map.ncd Shift_Register.ngd Shift_Register.pcf 
+par -w -intstyle ise -ol high -mt off Shift_Register_map.ncd Shift_Register.ncd Shift_Register.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Shift_Register.twx Shift_Register.ncd -o Shift_Register.twr Shift_Register.pcf -ucf Shift_Register.ucf 
+bitgen -intstyle ise -f Shift_Register.ut Shift_Register.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P18_Shift_Register_8_bit_SN74164/Shift_Register.xst" -ofn "D:/ProySisDigAva/P18_Shift_Register_8_bit_SN74164/Shift_Register.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Shift_Register.ucf -p xc6slx16-csg324-3 Shift_Register.ngc Shift_Register.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Shift_Register_map.ncd Shift_Register.ngd Shift_Register.pcf 
+par -w -intstyle ise -ol high -mt off Shift_Register_map.ncd Shift_Register.ncd Shift_Register.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Shift_Register.twx Shift_Register.ncd -o Shift_Register.twr Shift_Register.pcf -ucf Shift_Register.ucf 
+bitgen -intstyle ise -f Shift_Register.ut Shift_Register.ncd 

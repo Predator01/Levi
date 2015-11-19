@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\P21_Mustang_Tail_Lights_Controller_FSM\Mustang_Tail_Lights_Controller.ncd
+OUTFILE=D:\ProySisDigAva\P21_Mustang_Tail_Lights_Controller_FSM\Mustang_Tail_Lights_Controller.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\P21_Mustang_Tail_Lights_Controller_FSM
+LICENSE=WebPack
+USER_INFO=211075565_0_0_270

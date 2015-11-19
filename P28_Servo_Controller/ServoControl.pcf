@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Nov 06 09:33:14 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Servo" LOCATE = SITE "T12" LEVEL 1;
+COMP "Rst" LOCATE = SITE "B8" LEVEL 1;
+COMP "Clk" LOCATE = SITE "V10" LEVEL 1;
+SCHEMATIC END;
+

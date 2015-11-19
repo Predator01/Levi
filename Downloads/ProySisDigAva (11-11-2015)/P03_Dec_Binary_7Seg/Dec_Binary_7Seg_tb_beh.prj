@@ -1,0 +1,2 @@
+vhdl work "Dec_Binary_7Seg.vhd"
+vhdl work "Dec_Binary_7Seg_tb.vhd"

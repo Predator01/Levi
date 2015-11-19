@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P17_Structural_Clock/Top.xst" -ofn "D:/ProySisDigAva/P17_Structural_Clock/Top.syr" 

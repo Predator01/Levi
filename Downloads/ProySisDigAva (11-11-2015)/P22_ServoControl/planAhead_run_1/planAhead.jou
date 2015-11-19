@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2 (64-bit)
+# Build 131561 by hdbuild on Thu Jun 16 17:14:12 PDT 2011
+# Start of session at: Thu Oct 04 07:54:21 2012
+# Process ID: 4072
+# Log file: D:/ProySisDigAva/P18a_ServoControl_Felipe_Santiago_Rafael/planAhead_run_1/planAhead.log
+# Journal file: D:/ProySisDigAva/P18a_ServoControl_Felipe_Santiago_Rafael/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ProySisDigAva/P18a_ServoControl_Felipe_Santiago_Rafael/pa.fromNetlist.tcl
+startgroup
+set_property loc PAD154 [get_ports {Angulo[0]}]
+endgroup
+startgroup
+set_property loc PAD159 [get_ports {Angulo[1]}]
+endgroup
+startgroup
+set_property loc PAD160 [get_ports {Angulo[2]}]
+endgroup
+startgroup
+set_property loc PAD32 [get_ports {Angulo[4]}]
+endgroup
+startgroup
+set_property loc PAD161 [get_ports {Angulo[3]}]
+endgroup
+startgroup
+set_property loc PAD162 [get_ports {Angulo[4]}]
+endgroup
+set_property loc "" [get_ports [list  {Angulo[7]}]]
+startgroup
+set_property loc PAD163 [get_ports {Angulo[5]}]
+endgroup
+startgroup
+set_property loc PAD164 [get_ports {Angulo[6]}]
+endgroup
+startgroup
+set_property loc PAD178 [get_ports {Angulo[7]}]
+endgroup
+startgroup
+set_property loc PAD156 [get_ports Clk]
+endgroup
+startgroup
+set_property loc PAD27 [get_ports Rst]
+endgroup
+set_property loc "" [get_ports [list  Senal]]
+startgroup
+set_property loc PAD143 [get_ports Senal]
+endgroup
+save_design
+exit
+stop_gui

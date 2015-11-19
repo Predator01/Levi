@@ -1,0 +1,2 @@
+vhdl work "ServoControl.vhd"
+vhdl work "ServoControl_vtb.vhd"

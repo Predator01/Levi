@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\P18a_ServoControl_Felipe_Santiago_Rafael\ServoControl.ncd
+OUTFILE=D:\ProySisDigAva\P18a_ServoControl_Felipe_Santiago_Rafael\ServoControl.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\P18a_ServoControl_Felipe_Santiago_Rafael
+LICENSE=WebPack
+USER_INFO=176089449_0_0_459

@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Nov 04 12:35:00 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Ligths<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "Ligths<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "Ligths<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "Rst" LOCATE = SITE "B8" LEVEL 1;
+COMP "Clk" LOCATE = SITE "V10" LEVEL 1;
+SCHEMATIC END;
+

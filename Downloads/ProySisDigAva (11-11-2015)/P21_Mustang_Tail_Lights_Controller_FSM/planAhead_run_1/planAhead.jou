@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 03 09:16:21 2015
+# Process ID: 8056
+# Log file: D:/ProySisDigAva/P21_Mustang_Tail_Lights_Controller_FSM/planAhead_run_1/planAhead.log
+# Journal file: D:/ProySisDigAva/P21_Mustang_Tail_Lights_Controller_FSM/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ProySisDigAva/P21_Mustang_Tail_Lights_Controller_FSM/pa.fromNetlist.tcl
+startgroup
+set_property package_pin T11 [get_ports {L[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {L[0]}]]
+startgroup
+set_property package_pin R11 [get_ports {L[1]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {L[0]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {R[0]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {R[1]}]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports {R[2]}]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports Clk]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports Haz]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports Rst]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports TurnLeft]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports TurnRight]
+endgroup
+save_constraints

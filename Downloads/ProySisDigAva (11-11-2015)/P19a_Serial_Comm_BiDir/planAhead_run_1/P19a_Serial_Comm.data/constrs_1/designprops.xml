@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Compat Version="1" Minor="4">
+	<CompatParts>
+	</CompatParts>
+	<ConfigModes>
+		<Mode Id="JTAG"/>
+	</ConfigModes>
+	<PortProps>
+		<Port Name="DataOut[7]" OffChipTerm="FP_VTT_50"/>
+		<Port Name="DataOut[6]" OffChipTerm="FP_VTT_50"/>
+		<Port Name="DataOut[5]" OffChipTerm="FP_VTT_50"/>
+		<Port Name="DataOut[4]" OffChipTerm="FP_VTT_50"/>
+		<Port Name="DataOut[3]" OffChipTerm="FP_VTT_50"/>
+		<Port Name="DataOut[2]" OffChipTerm="FP_VTT_50"/>
+		<Port Name="DataOut[1]" OffChipTerm="FP_VTT_50"/>
+		<Port Name="DataOut[0]" OffChipTerm="FP_VTT_50"/>
+		<Port Name="Clk" OffChipTerm="NONE"/>
+		<Port Name="Rst" OffChipTerm="NONE"/>
+		<Port Name="DataIn" OffChipTerm="NONE"/>
+	</PortProps>
+</Compat>
+

@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map O.61xd on Thu Oct 04 08:01:23 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Angulo<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "Angulo<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "Angulo<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "Angulo<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "Angulo<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "Angulo<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "Angulo<6>" LOCATE = SITE "V8" LEVEL 1;
+COMP "Angulo<7>" LOCATE = SITE "T5" LEVEL 1;
+COMP "Senal" LOCATE = SITE "T12" LEVEL 1;
+COMP "Rst" LOCATE = SITE "B8" LEVEL 1;
+COMP "Clk" LOCATE = SITE "V10" LEVEL 1;
+SCHEMATIC END;
+

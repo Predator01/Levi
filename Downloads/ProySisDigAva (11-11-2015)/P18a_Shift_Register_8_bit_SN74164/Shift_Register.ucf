@@ -1,0 +1,13 @@
+NET "Q[0]" LOC = T11;
+NET "Q[1]" LOC = R11;
+NET "Q[2]" LOC = N11;
+NET "Q[3]" LOC = M11;
+NET "Q[4]" LOC = V15;
+NET "Q[5]" LOC = U15;
+NET "Q[6]" LOC = V16;
+NET "Q[7]" LOC = U16;
+
+NET "A" LOC = T9;
+NET "B" LOC = T10;
+NET "Clk" LOC = V10;
+NET "Clr" LOC = V9;

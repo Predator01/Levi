@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/ProySisDigAva/P03_Dec_Binary_7Seg/Dec_Binary_7Seg_tb_isim_beh.exe" -prj "D:/ProySisDigAva/P03_Dec_Binary_7Seg/Dec_Binary_7Seg_tb_beh.prj" "work.Dec_Binary_7Seg_tb" 

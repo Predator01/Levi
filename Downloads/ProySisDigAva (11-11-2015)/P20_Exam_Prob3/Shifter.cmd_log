@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P20_Exam_Prob3/Shifter.xst" -ofn "D:/ProySisDigAva/P20_Exam_Prob3/Shifter.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/P20_Exam_Prob3/Shifter.xst" -ofn "D:/ProySisDigAva/P20_Exam_Prob3/Shifter.syr" 

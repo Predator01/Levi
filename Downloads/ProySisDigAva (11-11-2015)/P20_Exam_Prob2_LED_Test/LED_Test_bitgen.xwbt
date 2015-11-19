@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\P20_Exam_Prob2_LED_Test\LED_Test.ncd
+OUTFILE=D:\ProySisDigAva\P20_Exam_Prob2_LED_Test\LED_Test.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\P20_Exam_Prob2_LED_Test
+LICENSE=WebPack
+USER_INFO=211075565_0_0_270

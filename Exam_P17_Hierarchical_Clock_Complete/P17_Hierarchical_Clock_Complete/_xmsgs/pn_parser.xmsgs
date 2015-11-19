@@ -8,6 +8,36 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/AlarmMod.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/Clk1Hz.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/Cont0a23.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/Cont0a3.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/Cont0a5.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/Cont0a9.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/DecBCD7Seg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/Mux4to1.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/RefreshDisplay.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/SelAnodo.vhd&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/Exam_P17_Hierarchical_Clock_Complete/P17_Hierarchical_Clock_Complete/Top.vhd&quot; into library work</arg>
 </msg>
 

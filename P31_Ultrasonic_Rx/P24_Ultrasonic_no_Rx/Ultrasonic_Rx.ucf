@@ -1,0 +1,15 @@
+
+NET "Clk"      LOC = V10;
+NET "Rst"      LOC = B8;
+
+NET "Rx"    LOC = N10;
+NET "Tx"    LOC = P11;
+
+NET "LEDs[0]" LOC = U16;
+NET "LEDs[1]" LOC = V16;
+NET "LEDs[2]" LOC = U15;
+NET "LEDs[3]" LOC = V15;
+NET "LEDs[4]" LOC = M11;
+NET "LEDs[5]" LOC = N11;
+NET "LEDs[6]" LOC = R11;
+NET "LEDs[7]" LOC = T11;

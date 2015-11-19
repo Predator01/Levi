@@ -1,0 +1,30 @@
+Command line:
+   First_term_exam_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64353
+
+Fri Sep 18 09:32:29 2015
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 1011.02 Meg
+
+ Total Signals          : 4
+ Total Nets             : 14
+ Total Signal Drivers   : 2
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 2
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 392
+Total Line Count : 8
+Total Line Count : 8
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 1010.99 Meg
+
+Fri Sep 18 09:33:17 2015
+

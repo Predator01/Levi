@@ -1,0 +1,2 @@
+vhdl work "BinaryGray_Converter.vhd"
+vhdl work "BinaryGray_Converter_tb.vhd"

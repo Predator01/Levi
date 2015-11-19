@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/P10_Ripple_Counter/Ripple_Counter.xst" -ofn "D:/ProySisDigAva/P10_Ripple_Counter/Ripple_Counter.syr" 

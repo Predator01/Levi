@@ -1,0 +1,17 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Rst" CLOCK_DEDICATED_ROUTE = FALSE;
+
+NET "Clk"   LOC = V10;
+NET "Rst"   LOC = B8;
+NET "Servo" LOC = T12;
+
+NET "Input(0)" LOC = T10;
+NET "Input(1)" LOC = T9;
+NET "Input(2)" LOC = V9;
+NET "Input(3)" LOC = M8;
+NET "Input(4)" LOC = N8;
+NET "Input(5)" LOC = U8;
+NET "Input(6)" LOC = V8;
+NET "Input(7)" LOC = T5;

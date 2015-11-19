@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Aug 19 11:54:37 2015
+# Process ID: 10988
+# Log file: D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/planAhead_run_1/planAhead.log
+# Journal file: D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ProySisDigAva/P00_FullAdder/One_Bit_Full_Adder/pa.fromNetlist.tcl
+startgroup
+set_property package_pin V9 [get_ports A]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports B]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports Cin]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports Sout]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports Cout]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports Sout]
+endgroup
+save_constraints
