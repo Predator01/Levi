@@ -2,7 +2,7 @@
 -- Company: 		ITESM CQ
 -- Engineer: 		Miguel Gonzalez A01203712
 -- 
--- Create Date:    10:29:20 11/21/2015 
+-- Create Date:    10:29:20 11/10/2015 
 -- Design Name: 
 -- Module Name:    Top - Behavioral 
 -- Project Name: 
@@ -13,7 +13,8 @@
 -- Dependencies: 
 --
 -- Revision: 
--- Revision 0.01 - File Created
+-- Revision 0.0.1 - File Created
+-- Revision 1.0.0 - Motor Implementation
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
@@ -36,6 +37,7 @@ architecture Behavioral of Top is
 			in_Action : in   STD_LOGIC_VECTOR(7 downto 0);
 			out_motor : out STD_LOGIC);
 	end component;
+
 begin
 	
 	-- instanciar componentes

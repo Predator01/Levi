@@ -2,7 +2,7 @@
 -- Company: 		ITESM CQ
 -- Engineer: 		Miguel Gonzalez A01203712
 -- 
--- Create Date:    11:10:52 11/21/2015 
+-- Create Date:    11:10:52 11/10/2015 
 -- Design Name: 
 -- Module Name:    State_Reg_Motor - Behavioral 
 -- Project Name: 
@@ -13,7 +13,8 @@
 -- Dependencies: 
 --
 -- Revision: 
--- Revision 0.01 - File Created
+-- Revision 0.0.1 - File Created
+-- Revision 1.0.0 - Motor Implementation
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------

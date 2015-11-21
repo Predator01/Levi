@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Sat Nov 21 12:35:40 2015">
+  <application stringID="NgdBuild" timeStamp="Sat Nov 21 13:59:55 2015">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -54,6 +54,7 @@
         <item DEFAULT="None" label="-intstyle" stringID="NGDBUILD_intstyle" value="ise"/>
         <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
         <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc6slx16-csg324-3"/>
+        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="Robot_Sumo.ucf"/>
       </section>
     </task>
     <task stringID="NGDBUILD_REPORT">

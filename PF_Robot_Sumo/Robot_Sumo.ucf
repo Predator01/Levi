@@ -1,4 +1,8 @@
+# Version 0.0.1 - File Created
+# version 1.0.0 - Motor module creation
+# clock
 NET "in_Clk100MHz" LOC = V10;
+# reset
 NET "in_Rst" LOC = B8;
 NET "out_motor_1" LOC = T12;
 NET "in_Action[0]" LOC = T10;

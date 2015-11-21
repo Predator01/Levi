@@ -3,7 +3,7 @@ Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
--n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf
+-n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Robot_Sumo.ucf
 
 Design file:              Top.ncd
 Physical constraint file: Top.pcf
@@ -36,15 +36,15 @@ Setup/Hold to clock in_Clk100MHz
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-in_Action<0>|    9.970(R)|      SLOW  |   -1.630(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
-in_Action<1>|   10.342(R)|      SLOW  |   -1.708(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
-in_Action<2>|    9.835(R)|      SLOW  |   -1.626(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
-in_Action<3>|    9.852(R)|      SLOW  |   -1.754(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
-in_Action<4>|    9.369(R)|      SLOW  |   -1.532(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
-in_Action<5>|    9.595(R)|      SLOW  |   -1.889(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
-in_Action<6>|    9.579(R)|      SLOW  |   -1.649(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
-in_Action<7>|    8.882(R)|      SLOW  |   -2.016(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
-in_Rst      |    1.957(R)|      SLOW  |   -0.188(R)|      SLOW  |in_Clk100MHz_BUFGP|   0.000|
+in_Action<0>|   11.618(R)|      SLOW  |   -2.921(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+in_Action<1>|   11.747(R)|      SLOW  |   -2.533(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+in_Action<2>|   11.524(R)|      SLOW  |   -2.574(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+in_Action<3>|   11.247(R)|      SLOW  |   -2.563(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+in_Action<4>|   10.939(R)|      SLOW  |   -2.427(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+in_Action<5>|   11.192(R)|      SLOW  |   -2.845(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+in_Action<6>|   10.480(R)|      SLOW  |   -2.187(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+in_Action<7>|   10.579(R)|      SLOW  |   -3.031(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+in_Rst      |    3.296(R)|      SLOW  |   -1.469(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock in_Clk100MHz to Pad
@@ -52,7 +52,7 @@ Clock in_Clk100MHz to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-out_motor_1 |         7.703(R)|      SLOW  |         4.022(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+out_motor_1 |         8.446(R)|      SLOW  |         4.452(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock in_Clk100MHz
@@ -60,11 +60,11 @@ Clock to Setup on destination clock in_Clk100MHz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-in_Clk100MHz   |    4.013|         |         |         |
+in_Clk100MHz   |    4.502|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Nov 21 12:35:59 2015 
+Analysis completed Sat Nov 21 14:00:25 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:

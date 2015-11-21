@@ -145,7 +145,7 @@ Elaborating entity <State_Reg_Motor> (architecture <Behavioral>) from library <w
 Elaborating entity <Equation_motor> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <FSM_motor> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\PF_Robot_Sumo\FSM_motor.vhd" Line 50. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\PF_Robot_Sumo\FSM_motor.vhd" Line 51. Case statement is complete. others clause is never selected
 
 Elaborating entity <Output_motor> (architecture <Behavioral>) from library <work>.
 
@@ -169,7 +169,7 @@ Synthesizing Unit <Freq_Div>.
     Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Freq_Div.vhd".
     Found 7-bit register for signal <cont>.
     Found 1-bit register for signal <out_time_base>.
-    Found 7-bit adder for signal <cont[6]_GND_9_o_add_1_OUT> created at line 50.
+    Found 7-bit adder for signal <cont[6]_GND_9_o_add_1_OUT> created at line 51.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   8 D-type flip-flop(s).
@@ -180,8 +180,8 @@ Synthesizing Unit <State_Reg_Motor>.
     Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\State_Reg_Motor.vhd".
     Found 1-bit register for signal <out_pres_state>.
     Found 15-bit register for signal <micros_count>.
-    Found 15-bit adder for signal <micros_count[14]_GND_10_o_add_1_OUT> created at line 51.
-    Found 15-bit comparator equal for signal <micros_count[14]_in_state_duration[14]_equal_1_o> created at line 48
+    Found 15-bit adder for signal <micros_count[14]_GND_10_o_add_1_OUT> created at line 52.
+    Found 15-bit comparator equal for signal <micros_count[14]_in_state_duration[14]_equal_1_o> created at line 49
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  16 D-type flip-flop(s).
@@ -190,10 +190,10 @@ Unit <State_Reg_Motor> synthesized.
 
 Synthesizing Unit <Equation_motor>.
     Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Equation_motor.vhd".
-    Found 16-bit subtractor for signal <n0009[15:0]> created at line 43.
-    Found 11-bit adder for signal <n0010> created at line 41.
-    Found 15-bit adder for signal <tH> created at line 42.
-    Found 8x11-bit multiplier for signal <in_action[7]_GND_12_o_MuLt_0_OUT> created at line 41.
+    Found 16-bit subtractor for signal <n0009[15:0]> created at line 44.
+    Found 11-bit adder for signal <n0010> created at line 42.
+    Found 15-bit adder for signal <tH> created at line 43.
+    Found 8x11-bit multiplier for signal <in_action[7]_GND_12_o_MuLt_0_OUT> created at line 42.
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   3 Adder/Subtractor(s).
@@ -501,7 +501,7 @@ in_Clk100MHz   |    4.392|         |         |         |
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.91 secs
+Total CPU time to Xst completion: 6.56 secs
  
 --> 
 

@@ -8,27 +8,6 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/PF_Robot_Sumo/Equation_motor.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/PF_Robot_Sumo/FSM_motor.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/PF_Robot_Sumo/Freq_Div.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/PF_Robot_Sumo/Motor.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/PF_Robot_Sumo/Output_motor.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/PF_Robot_Sumo/PKG_ROBOT_SUMO.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/PF_Robot_Sumo/State_Reg_Motor.vhd&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/ProySisDigAva/Levi/PF_Robot_Sumo/Top.vhd&quot; into library work</arg>
 </msg>
 
