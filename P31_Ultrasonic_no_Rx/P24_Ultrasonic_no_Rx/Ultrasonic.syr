@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: Ultrasonic.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "D:\ProySisDigAva\P24_Ultrasonic_no_Rx\Ultrasonic.vhd" into library work
+Parsing VHDL file "D:\ProySisDigAva\Levi\P31_Ultrasonic_no_Rx\P24_Ultrasonic_no_Rx\Ultrasonic.vhd" into library work
 Parsing entity <Ultrasonic>.
 Parsing architecture <Behavioral> of entity <ultrasonic>.
 
@@ -114,15 +114,15 @@ Parsing architecture <Behavioral> of entity <ultrasonic>.
 =========================================================================
 
 Elaborating entity <Ultrasonic> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "D:\ProySisDigAva\P24_Ultrasonic_no_Rx\Ultrasonic.vhd" Line 103. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "D:\ProySisDigAva\P24_Ultrasonic_no_Rx\Ultrasonic.vhd" Line 116. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\P31_Ultrasonic_no_Rx\P24_Ultrasonic_no_Rx\Ultrasonic.vhd" Line 106. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\P31_Ultrasonic_no_Rx\P24_Ultrasonic_no_Rx\Ultrasonic.vhd" Line 119. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Ultrasonic>.
-    Related source file is "D:\ProySisDigAva\P24_Ultrasonic_no_Rx\Ultrasonic.vhd".
+    Related source file is "D:\ProySisDigAva\Levi\P31_Ultrasonic_no_Rx\P24_Ultrasonic_no_Rx\Ultrasonic.vhd".
     Found 2-bit register for signal <pres_state>.
     Found 20-bit register for signal <SecondCount>.
     Found 7-bit register for signal <Cont>.
@@ -141,10 +141,10 @@ Synthesizing Unit <Ultrasonic>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 21-bit subtractor for signal <GND_6_o_GND_6_o_sub_5_OUT> created at line 75.
-    Found 7-bit adder for signal <Cont[6]_GND_6_o_add_1_OUT> created at line 63.
-    Found 20-bit adder for signal <SecondCount[19]_GND_6_o_add_6_OUT> created at line 79.
-    Found 21-bit comparator equal for signal <GND_6_o_GND_6_o_equal_6_o> created at line 75
+    Found 21-bit subtractor for signal <GND_6_o_GND_6_o_sub_5_OUT> created at line 78.
+    Found 7-bit adder for signal <Cont[6]_GND_6_o_add_1_OUT> created at line 66.
+    Found 20-bit adder for signal <SecondCount[19]_GND_6_o_add_6_OUT> created at line 82.
+    Found 21-bit comparator equal for signal <GND_6_o_GND_6_o_equal_6_o> created at line 78
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  28 D-type flip-flop(s).
@@ -444,12 +444,12 @@ Clk            |    4.053|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.34 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.19 secs
  
 --> 
 
-Total memory usage is 190824 kilobytes
+Total memory usage is 252564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P33_Room_Definition/ROM_Definition.xst" -ofn "D:/ProySisDigAva/Levi/P33_Room_Definition/ROM_Definition.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P33_Room_Definition/ROM_Definition.xst" -ofn "D:/ProySisDigAva/Levi/P33_Room_Definition/ROM_Definition.syr" 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\P25_VGA_Controller\Top.ncd
+OUTFILE=D:\ProySisDigAva\P25_VGA_Controller\Top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\P25_VGA_Controller
+LICENSE=WebPack
+USER_INFO=211075565_0_0_270

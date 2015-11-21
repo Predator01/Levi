@@ -45,6 +45,8 @@ ARCHITECTURE behavior OF Top IS
 	 COMPONENT VGA_Display
     PORT(
          En     : IN   std_logic;
+			Clk    : in   STD_LOGIC;
+			Rst    : IN  std_logic;
          Xin    : IN   NATURAL range 0 to MX_HS;
 			Yin    : IN   NATURAL range 0 to MX_VS;
          R      : OUT  std_logic_vector(2 downto 0);
@@ -52,12 +54,13 @@ ARCHITECTURE behavior OF Top IS
          B      : OUT  std_logic_vector(1 downto 0));
     END COMPONENT;
     
+	
 
    --Embedded Signals
 	SIGNAL Enable: std_logic;
 	SIGNAL Xemb  : NATURAL range 0 to MX_HS;
 	SIGNAL Yemb  : NATURAL range 0 to MX_VS;
- 
+
 BEGIN
  
 	-- Instantiate components
@@ -69,13 +72,14 @@ BEGIN
           Active => Enable,
           X      => Xemb,
           Y      => Yemb);
-			 
+	
    C02: VGA_Display PORT MAP (
           En     => Enable,
+			 Clk    => Clk,
+			 Rst    => Rst,
 			 Xin    => Xemb,
 			 Yin    => Yemb,
 			 R      => Red,
 			 G      => Green,
 			 B      => Blue);
-
 END;

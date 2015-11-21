@@ -1,0 +1,11 @@
+NET "in_Clk100MHz" LOC = V10;
+NET "in_Rst" LOC = B8;
+NET "out_motor_1" LOC = T12;
+NET "in_Action[0]" LOC = T10;
+NET "in_Action[1]" LOC = T9;
+NET "in_Action[2]" LOC = V9;
+NET "in_Action[3]" LOC = M8;
+NET "in_Action[4]" LOC = N8;
+NET "in_Action[5]" LOC = U8;
+NET "in_Action[6]" LOC = V8;
+NET "in_Action[7]" LOC = T5;

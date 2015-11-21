@@ -105,7 +105,9 @@
     <transform xil_pn:end_ts="1447259428" xil_pn:in_ck="-7874024688394584480" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="3515410786506270585" xil_pn:start_ts="1447259418">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ServoControl.lso"/>
       <outfile xil_pn:name="ServoControl.ngc"/>
@@ -126,6 +128,7 @@
     <transform xil_pn:end_ts="1447259436" xil_pn:in_ck="8247874160636264882" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3229626845237759915" xil_pn:start_ts="1447259428">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="ServoControl.bld"/>
       <outfile xil_pn:name="ServoControl.ngd"/>
       <outfile xil_pn:name="ServoControl_ngdbuild.xrpt"/>
@@ -135,6 +138,7 @@
     <transform xil_pn:end_ts="1447259444" xil_pn:in_ck="4422545065423070131" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1447259436">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ServoControl.pcf"/>
@@ -150,6 +154,7 @@
     <transform xil_pn:end_ts="1447259459" xil_pn:in_ck="-1898190977556726196" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1447259444">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="ServoControl.ncd"/>
       <outfile xil_pn:name="ServoControl.pad"/>
       <outfile xil_pn:name="ServoControl.par"/>
@@ -164,6 +169,7 @@
     <transform xil_pn:end_ts="1447259481" xil_pn:in_ck="-7874024688394593357" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1447259459">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="ServoControl.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="servocontrol.bgn"/>
@@ -176,6 +182,7 @@
     <transform xil_pn:end_ts="1447259459" xil_pn:in_ck="-7142848430302667985" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1447259452">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="ServoControl.twr"/>
       <outfile xil_pn:name="ServoControl.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

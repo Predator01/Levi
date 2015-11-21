@@ -117,15 +117,3 @@ begin
 		end case;
   end process output;
 end Behavioral;
-
-
-
-
-
-
-
-
-
-
-
-

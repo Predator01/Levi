@@ -3,7 +3,7 @@ NET "Clk"      LOC = V10;
 NET "Rst"      LOC = B8;
 
 NET "Rx"    LOC = N10;
-NET "Tx"    LOC = P11;
+#NET "Tx"    LOC = P11;
 
 NET "LEDs[0]" LOC = U16;
 NET "LEDs[1]" LOC = V16;
