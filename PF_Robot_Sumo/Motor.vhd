@@ -26,9 +26,9 @@ use work.PKG_ROBOT_SUMO.all;
 
 entity Motor is
     Port ( 
-		in_Rst : in  STD_LOGIC;
-		in_Clk : in  STD_LOGIC;
-		in_Action : in   STD_LOGIC_VECTOR(7 downto 0);
+		in_Rst : in STD_LOGIC;
+		in_Clk : in STD_LOGIC;
+		in_Action_m : in STD_LOGIC_VECTOR(2 downto 0);
 		out_motor : out STD_LOGIC);
 end Motor;
 
@@ -73,12 +73,12 @@ architecture Behavioral of Motor is
 	-- Comp : U5 Equation_motor
 	component Equation_motor
 		port (
-			in_action : in STD_LOGIC_VECTOR(7 downto 0);
+			in_action : in STD_LOGIC_VECTOR(2 downto 0);
 			out_th : out integer;
 			out_tl : out integer);
 	end component;
 	
-	-- seniales enbebidas
+	-- seniales embebidas
 	-- 1 bit
 	signal time_base : STD_LOGIC;
 	
@@ -95,10 +95,10 @@ architecture Behavioral of Motor is
 begin
 	-- Instanciar componentes
 	
-	U1 : Freq_Div
+	U1_1 : Freq_Div
 		port map(in_rst, in_clk, time_base);
 		
-	U2 : State_Reg_Motor
+	U1_2 : State_Reg_Motor
 		port map(
 		in_clk, 
 		time_base, 
@@ -107,14 +107,14 @@ begin
 			curr_state_duration, 
 			pres_state);
 	
-	U5 : Equation_motor
-		port map(in_Action, tH, tL);
+	U1_5 : Equation_motor
+		port map(in_Action_m, tH, tL);
 	
-	U3 : FSM_motor
+	U1_3 : FSM_motor
 		port map(pres_state, tH, tL, next_state, 
 			curr_state_duration);
 			
-	U4 : Output_motor
+	U1_4 : Output_motor
 		port map(pres_state, out_motor);
 
 end Behavioral;

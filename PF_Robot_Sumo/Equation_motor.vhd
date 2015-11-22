@@ -27,7 +27,7 @@ use work.PKG_ROBOT_SUMO.all;
 
 entity Equation_motor is
     port (
-			in_action : in STD_LOGIC_VECTOR(7 downto 0);
+			in_action : in STD_LOGIC_VECTOR(2 downto 0);
 			out_th : out integer;
 			out_tl : out integer);
 end Equation_motor;
@@ -37,7 +37,11 @@ architecture Behavioral of Equation_motor is
 	signal Tmp : integer range 0 to 20_000;
 	signal tH  : integer range 0 to 20_000;
 begin
-
+	
+	-- TODO: Aqui la ecuacion dependiendo de la accion
+	--debe de hacer un full-foward 
+	--full-revers
+	--girars etc
   -- Calculate tH and tL
   Tmp <= (CONV_INTEGER(in_action) * 1000) / 256;
   tH <= Tmp + 1000;  

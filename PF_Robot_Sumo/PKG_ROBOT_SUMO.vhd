@@ -12,11 +12,17 @@ use IEEE.STD_LOGIC_1164.all;
 
 package PKG_ROBOT_SUMO is
 	-- Types
-	type motor_state_values is (MOTOR_HIGH, MOTOR_LOW);
+		-- MOTOR
+		type motor_state_values is (MOTOR_HIGH, MOTOR_LOW);
+		-- ROBOT
+		type robot_state_values is (ROBOT_DETECT, ROBOT_FOWARD, 
+											ROBOT_REVERSE, ROBOT_STOP);
 	-- Constants
   constant MOTOR_TH_MICOS : integer := 1500;-- in microseconds
   constant MOTOR_TL_MICROS : integer := 18500;
   constant MOTOR_MAX : integer := 20_000;
+		-- ROBOT 
+		constant ROBOT_MAX : integer := 20_000;
   
   
 -- type <new_type> is

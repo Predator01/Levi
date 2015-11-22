@@ -108,12 +108,21 @@ Slice Utilization Ratio Delta      : 5
 Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Robot_Sumo\PKG_ROBOT_SUMO.vhd" into library work
 Parsing package <PKG_ROBOT_SUMO>.
 Parsing package body <PKG_ROBOT_SUMO>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Robot_Sumo\State_Reg_Robot.vhd" into library work
+Parsing entity <State_Reg_Robot>.
+Parsing architecture <Behavioral> of entity <state_reg_robot>.
 Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Robot_Sumo\State_Reg_Motor.vhd" into library work
 Parsing entity <State_Reg_Motor>.
 Parsing architecture <Behavioral> of entity <state_reg_motor>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Output_robot.vhd" into library work
+Parsing entity <Output_robot>.
+Parsing architecture <Behavioral> of entity <output_robot>.
 Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Output_motor.vhd" into library work
 Parsing entity <Output_motor>.
 Parsing architecture <Behavioral> of entity <output_motor>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Robot_Sumo\FSM_robot.vhd" into library work
+Parsing entity <FSM_robot>.
+Parsing architecture <Behavioral> of entity <fsm_robot>.
 Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Robot_Sumo\FSM_motor.vhd" into library work
 Parsing entity <FSM_motor>.
 Parsing architecture <Behavioral> of entity <fsm_motor>.
@@ -123,6 +132,9 @@ Parsing architecture <Behavioral> of entity <freq_div>.
 Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Equation_motor.vhd" into library work
 Parsing entity <Equation_motor>.
 Parsing architecture <Behavioral> of entity <equation_motor>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Robot.vhd" into library work
+Parsing entity <Robot>.
+Parsing architecture <Behavioral> of entity <robot>.
 Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Motor.vhd" into library work
 Parsing entity <Motor>.
 Parsing architecture <Behavioral> of entity <motor>.
@@ -136,9 +148,19 @@ Parsing architecture <Behavioral> of entity <top>.
 
 Elaborating entity <Top> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <Motor> (architecture <Behavioral>) from library <work>.
+Elaborating entity <Robot> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <Freq_Div> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <State_Reg_Robot> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FSM_robot> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\PF_Robot_Sumo\FSM_robot.vhd" Line 57. Case statement is complete. others clause is never selected
+
+Elaborating entity <Output_robot> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Output_robot.vhd" Line 44. Case statement is complete. others clause is never selected
+
+Elaborating entity <Motor> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <State_Reg_Motor> (architecture <Behavioral>) from library <work>.
 
@@ -159,11 +181,11 @@ Synthesizing Unit <Top>.
 	no macro.
 Unit <Top> synthesized.
 
-Synthesizing Unit <Motor>.
-    Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Motor.vhd".
+Synthesizing Unit <Robot>.
+    Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Robot.vhd".
     Summary:
 	no macro.
-Unit <Motor> synthesized.
+Unit <Robot> synthesized.
 
 Synthesizing Unit <Freq_Div>.
     Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Freq_Div.vhd".
@@ -176,11 +198,38 @@ Synthesizing Unit <Freq_Div>.
 	inferred   1 Multiplexer(s).
 Unit <Freq_Div> synthesized.
 
+Synthesizing Unit <State_Reg_Robot>.
+    Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\State_Reg_Robot.vhd".
+    Found 2-bit register for signal <out_pres_state>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <State_Reg_Robot> synthesized.
+
+Synthesizing Unit <FSM_robot>.
+    Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\FSM_robot.vhd".
+    Found 4x2-bit Read Only RAM for signal <out_next_state>
+    Summary:
+	inferred   1 RAM(s).
+Unit <FSM_robot> synthesized.
+
+Synthesizing Unit <Output_robot>.
+    Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Output_robot.vhd".
+    Found 4x3-bit Read Only RAM for signal <out_action>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Output_robot> synthesized.
+
+Synthesizing Unit <Motor>.
+    Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Motor.vhd".
+    Summary:
+	no macro.
+Unit <Motor> synthesized.
+
 Synthesizing Unit <State_Reg_Motor>.
     Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\State_Reg_Motor.vhd".
     Found 1-bit register for signal <out_pres_state>.
     Found 15-bit register for signal <micros_count>.
-    Found 15-bit adder for signal <micros_count[14]_GND_10_o_add_1_OUT> created at line 52.
+    Found 15-bit adder for signal <micros_count[14]_GND_18_o_add_1_OUT> created at line 52.
     Found 15-bit comparator equal for signal <micros_count[14]_in_state_duration[14]_equal_1_o> created at line 49
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -190,10 +239,10 @@ Unit <State_Reg_Motor> synthesized.
 
 Synthesizing Unit <Equation_motor>.
     Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Equation_motor.vhd".
-    Found 16-bit subtractor for signal <n0009[15:0]> created at line 44.
-    Found 11-bit adder for signal <n0010> created at line 42.
-    Found 15-bit adder for signal <tH> created at line 43.
-    Found 8x11-bit multiplier for signal <in_action[7]_GND_12_o_MuLt_0_OUT> created at line 42.
+    Found 16-bit subtractor for signal <n0009[15:0]> created at line 48.
+    Found 6-bit adder for signal <n0010> created at line 46.
+    Found 15-bit adder for signal <tH> created at line 47.
+    Found 3x11-bit multiplier for signal <in_action[2]_GND_20_o_MuLt_0_OUT> created at line 46.
     Summary:
 	inferred   1 Multiplier(s).
 	inferred   3 Adder/Subtractor(s).
@@ -215,22 +264,26 @@ Unit <Output_motor> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
+# RAMs                                                 : 2
+ 4x2-bit single-port Read Only RAM                     : 1
+ 4x3-bit single-port Read Only RAM                     : 1
 # Multipliers                                          : 1
- 11x8-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 5
- 11-bit adder                                          : 1
+ 11x3-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 6
  15-bit adder                                          : 2
  16-bit subtractor                                     : 1
- 7-bit adder                                           : 1
-# Registers                                            : 4
- 1-bit register                                        : 2
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 2
+# Registers                                            : 7
+ 1-bit register                                        : 3
  15-bit register                                       : 1
- 7-bit register                                        : 1
+ 2-bit register                                        : 1
+ 7-bit register                                        : 2
 # Comparators                                          : 1
  15-bit comparator equal                               : 1
-# Multiplexers                                         : 2
+# Multiplexers                                         : 3
  32-bit 2-to-1 multiplexer                             : 1
- 7-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -239,9 +292,37 @@ Macro Statistics
 =========================================================================
 
 
+Synthesizing (advanced) Unit <FSM_robot>.
+INFO:Xst:3217 - HDL ADVISOR - Register <out_pres_state> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_out_next_state> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <in_pres_state> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <out_next_state> |          |
+    -----------------------------------------------------------------------
+Unit <FSM_robot> synthesized (advanced).
+
 Synthesizing (advanced) Unit <Freq_Div>.
 The following registers are absorbed into counter <cont>: 1 register on signal <cont>.
 Unit <Freq_Div> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Output_robot>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_out_action> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 3-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <in_pres_state> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <out_action>    |          |
+    -----------------------------------------------------------------------
+Unit <Output_robot> synthesized (advanced).
 
 Synthesizing (advanced) Unit <State_Reg_Motor>.
 The following registers are absorbed into counter <micros_count>: 1 register on signal <micros_count>.
@@ -251,17 +332,20 @@ Unit <State_Reg_Motor> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# RAMs                                                 : 2
+ 4x2-bit single-port distributed Read Only RAM         : 1
+ 4x3-bit single-port distributed Read Only RAM         : 1
 # Multipliers                                          : 1
- 11x8-bit multiplier                                   : 1
+ 11x3-bit multiplier                                   : 1
 # Adders/Subtractors                                   : 3
- 10-bit adder                                          : 1
  15-bit adder                                          : 1
  16-bit subtractor                                     : 1
-# Counters                                             : 2
+ 5-bit adder                                           : 1
+# Counters                                             : 3
  15-bit up counter                                     : 1
- 7-bit up counter                                      : 1
-# Registers                                            : 2
- Flip-Flops                                            : 2
+ 7-bit up counter                                      : 2
+# Registers                                            : 5
+ Flip-Flops                                            : 5
 # Comparators                                          : 1
  15-bit comparator equal                               : 1
 # Multiplexers                                         : 1
@@ -276,10 +360,18 @@ Macro Statistics
 Optimizing unit <Top> ...
 
 Optimizing unit <State_Reg_Motor> ...
+INFO:Xst:2261 - The FF/Latch <U2/U2_1/out_time_base> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <U1/U1_1/out_time_base> 
+INFO:Xst:2261 - The FF/Latch <U2/U2_1/cont_0> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <U1/U1_1/cont_0> 
+INFO:Xst:2261 - The FF/Latch <U2/U2_1/cont_1> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <U1/U1_1/cont_1> 
+INFO:Xst:2261 - The FF/Latch <U2/U2_1/cont_2> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <U1/U1_1/cont_2> 
+INFO:Xst:2261 - The FF/Latch <U2/U2_1/cont_3> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <U1/U1_1/cont_3> 
+INFO:Xst:2261 - The FF/Latch <U2/U2_1/cont_4> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <U1/U1_1/cont_4> 
+INFO:Xst:2261 - The FF/Latch <U2/U2_1/cont_5> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <U1/U1_1/cont_5> 
+INFO:Xst:2261 - The FF/Latch <U2/U2_1/cont_6> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <U1/U1_1/cont_6> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -287,8 +379,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 24
- Flip-Flops                                            : 24
+# Registers                                            : 26
+ Flip-Flops                                            : 26
 
 =========================================================================
 
@@ -311,27 +403,26 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 189
+# BELS                             : 86
 #      GND                         : 1
-#      INV                         : 3
-#      LUT1                        : 16
-#      LUT2                        : 8
-#      LUT3                        : 4
-#      LUT4                        : 13
-#      LUT5                        : 39
-#      LUT6                        : 22
-#      MUXCY                       : 42
+#      INV                         : 2
+#      LUT1                        : 14
+#      LUT2                        : 4
+#      LUT3                        : 3
+#      LUT4                        : 4
+#      LUT5                        : 17
+#      LUT6                        : 6
+#      MUXCY                       : 19
 #      VCC                         : 1
-#      XORCY                       : 40
-# FlipFlops/Latches                : 24
-#      FD                          : 15
-#      FDC                         : 7
-#      FDCE                        : 1
-#      FDE                         : 1
+#      XORCY                       : 15
+# FlipFlops/Latches                : 26
+#      FD                          : 16
+#      FDC                         : 8
+#      FDCE                        : 2
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 10
-#      IBUF                        : 9
+# IO Buffers                       : 2
+#      IBUF                        : 1
 #      OBUF                        : 1
 
 Device utilization summary:
@@ -341,20 +432,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              24  out of  18224     0%  
- Number of Slice LUTs:                  105  out of   9112     1%  
-    Number used as Logic:               105  out of   9112     1%  
+ Number of Slice Registers:              26  out of  18224     0%  
+ Number of Slice LUTs:                   50  out of   9112     0%  
+    Number used as Logic:                50  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    105
-   Number with an unused Flip Flop:      81  out of    105    77%  
-   Number with an unused LUT:             0  out of    105     0%  
-   Number of fully used LUT-FF pairs:    24  out of    105    22%  
-   Number of unique control sets:         4
+ Number of LUT Flip Flop pairs used:     50
+   Number with an unused Flip Flop:      24  out of     50    48%  
+   Number with an unused LUT:             0  out of     50     0%  
+   Number of fully used LUT-FF pairs:    26  out of     50    52%  
+   Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                          11
- Number of bonded IOBs:                  11  out of    232     4%  
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    232     1%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -380,7 +471,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-in_Clk100MHz                       | BUFGP                  | 24    |
+in_Clk100MHz                       | BUFGP                  | 26    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -391,9 +482,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.392ns (Maximum Frequency: 227.679MHz)
-   Minimum input arrival time before clock: 14.516ns
-   Maximum output required time after clock: 4.735ns
+   Minimum period: 3.431ns (Maximum Frequency: 291.426MHz)
+   Minimum input arrival time before clock: 3.078ns
+   Maximum output required time after clock: 4.576ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -402,87 +493,71 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'in_Clk100MHz'
-  Clock period: 4.392ns (frequency: 227.679MHz)
-  Total number of paths / destination ports: 627 / 25
+  Clock period: 3.431ns (frequency: 291.426MHz)
+  Total number of paths / destination ports: 602 / 28
 -------------------------------------------------------------------------
-Delay:               4.392ns (Levels of Logic = 6)
-  Source:            U1/U2/out_pres_state (FF)
-  Destination:       U1/U2/out_pres_state (FF)
+Delay:               3.431ns (Levels of Logic = 7)
+  Source:            U2/U2_2/out_pres_state_1 (FF)
+  Destination:       U1/U1_2/micros_count_14 (FF)
   Source Clock:      in_Clk100MHz rising
   Destination Clock: in_Clk100MHz rising
 
-  Data Path: U1/U2/out_pres_state to U1/U2/out_pres_state
+  Data Path: U2/U2_2/out_pres_state_1 to U1/U1_2/micros_count_14
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            13   0.447   0.933  U1/U2/out_pres_state (U1/U2/out_pres_state)
-     LUT4:I3->O            1   0.205   0.808  U1/U3/Mmux_state_duration81 (U1/n0003<4>)
-     LUT6:I3->O            1   0.205   0.000  U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_lut<1> (U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_lut<1>)
-     MUXCY:S->O            1   0.172   0.000  U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<1> (U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<1>)
-     MUXCY:CI->O           1   0.019   0.000  U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<2> (U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<2>)
-     MUXCY:CI->O           1   0.019   0.000  U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<3> (U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<3>)
-     MUXCY:CI->O          16   0.258   1.004  U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<4> (U1/U2/micros_count[14]_in_state_duration[14]_equal_1_o)
-     FDCE:CE                   0.322          U1/U2/out_pres_state
+     FDCE:C->Q             4   0.447   1.028  U2/U2_2/out_pres_state_1 (U2/U2_2/out_pres_state_1)
+     LUT6:I1->O            1   0.203   0.000  U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_lut<0> (U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<0> (U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<1> (U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<2> (U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<3> (U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<3>)
+     MUXCY:CI->O          16   0.213   1.005  U1/U1_2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<4> (U1/U1_2/micros_count[14]_in_state_duration[14]_equal_1_o)
+     LUT5:I4->O            1   0.205   0.000  U1/U1_2/micros_count_14_rstpot (U1/U1_2/micros_count_14_rstpot)
+     FD:D                      0.102          U1/U1_2/micros_count_14
     ----------------------------------------
-    Total                      4.392ns (1.647ns logic, 2.745ns route)
-                                       (37.5% logic, 62.5% route)
+    Total                      3.431ns (1.399ns logic, 2.032ns route)
+                                       (40.8% logic, 59.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'in_Clk100MHz'
-  Total number of paths / destination ports: 2421464 / 25
+  Total number of paths / destination ports: 26 / 26
 -------------------------------------------------------------------------
-Offset:              14.516ns (Levels of Logic = 19)
-  Source:            in_Action<5> (PAD)
-  Destination:       U1/U2/out_pres_state (FF)
+Offset:              3.078ns (Levels of Logic = 2)
+  Source:            in_Rst (PAD)
+  Destination:       U1/U1_2/micros_count_14 (FF)
   Destination Clock: in_Clk100MHz rising
 
-  Data Path: in_Action<5> to U1/U2/out_pres_state
+  Data Path: in_Rst to U1/U1_2/micros_count_14
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            19   1.222   1.416  in_Action_5_IBUF (U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd1_lut<14>)
-     LUT5:I0->O            6   0.203   0.973  U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd1_cy<12>12 (U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd1_cy<12>)
-     LUT5:I2->O            1   0.205   0.000  U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd4_lut<13> (U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd4_lut<13>)
-     MUXCY:S->O            1   0.172   0.000  U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd4_cy<13> (U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd4_cy<13>)
-     MUXCY:CI->O           1   0.019   0.000  U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd4_cy<14> (U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd4_cy<14>)
-     XORCY:CI->O           1   0.180   0.924  U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd4_xor<15> (U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd_154)
-     LUT5:I0->O            1   0.203   0.000  U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd5_lut<14> (U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd5_lut<14>)
-     MUXCY:S->O            1   0.172   0.000  U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd5_cy<14> (U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd5_cy<14>)
-     MUXCY:CI->O           1   0.019   0.000  U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd5_cy<15> (U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd5_cy<15>)
-     MUXCY:CI->O           0   0.019   0.000  U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd5_cy<16> (U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd5_cy<16>)
-     XORCY:CI->O           1   0.180   0.944  U1/U5/Mmult_in_action[7]_GND_12_o_MuLt_0_OUT_Madd5_xor<17> (U1/U5/in_action[7]_GND_12_o_MuLt_0_OUT<18>)
-     LUT6:I0->O            8   0.203   1.147  U1/U5/Madd_n0010_Madd_lut<0> (U1/U5/Madd_n0010_Madd_lut<0>)
-     LUT6:I1->O            6   0.203   0.973  U1/U5/Madd_n0010_Madd_xor<4>11 (U1/U5/Madd_tH_lut<4>)
-     LUT6:I3->O            2   0.205   0.845  U1/U5/Madd_tH_xor<7>11 (U1/n0001<7>)
-     LUT3:I0->O            4   0.205   0.912  U1/U5/Msub_n0009[15:0]_cy<7>11 (U1/U5/Msub_n0009[15:0]_cy<7>)
-     LUT6:I3->O            1   0.205   0.808  U1/U3/Mmux_state_duration21 (U1/n0003<10>)
-     LUT6:I3->O            1   0.205   0.000  U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_lut<3> (U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_lut<3>)
-     MUXCY:S->O            1   0.172   0.000  U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<3> (U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<3>)
-     MUXCY:CI->O          16   0.258   1.004  U1/U2/Mcompar_micros_count[14]_in_state_duration[14]_equal_1_o_cy<4> (U1/U2/micros_count[14]_in_state_duration[14]_equal_1_o)
-     FDCE:CE                   0.322          U1/U2/out_pres_state
+     IBUF:I->O            26   1.222   1.551  in_Rst_IBUF (in_Rst_IBUF)
+     LUT5:I0->O            1   0.203   0.000  U1/U1_2/micros_count_14_rstpot (U1/U1_2/micros_count_14_rstpot)
+     FD:D                      0.102          U1/U1_2/micros_count_14
     ----------------------------------------
-    Total                     14.516ns (4.572ns logic, 9.944ns route)
-                                       (31.5% logic, 68.5% route)
+    Total                      3.078ns (1.527ns logic, 1.551ns route)
+                                       (49.6% logic, 50.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'in_Clk100MHz'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.735ns (Levels of Logic = 2)
-  Source:            U1/U2/out_pres_state (FF)
+Offset:              4.576ns (Levels of Logic = 2)
+  Source:            U1/U1_2/out_pres_state (FF)
   Destination:       out_motor_1 (PAD)
   Source Clock:      in_Clk100MHz rising
 
-  Data Path: U1/U2/out_pres_state to out_motor_1
+  Data Path: U1/U1_2/out_pres_state to out_motor_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            13   0.447   0.932  U1/U2/out_pres_state (U1/U2/out_pres_state)
+     FDC:C->Q              7   0.447   0.773  U1/U1_2/out_pres_state (U1/U1_2/out_pres_state)
      INV:I->O              1   0.206   0.579  out_motor_11_INV_0 (out_motor_1_OBUF)
      OBUF:I->O                 2.571          out_motor_1_OBUF (out_motor_1)
     ----------------------------------------
-    Total                      4.735ns (3.224ns logic, 1.511ns route)
-                                       (68.1% logic, 31.9% route)
+    Total                      4.576ns (3.224ns logic, 1.351ns route)
+                                       (70.5% logic, 29.5% route)
 
 =========================================================================
 
@@ -494,14 +569,14 @@ Clock to Setup on destination clock in_Clk100MHz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-in_Clk100MHz   |    4.392|         |         |         |
+in_Clk100MHz   |    3.431|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.56 secs
+Total CPU time to Xst completion: 5.38 secs
  
 --> 
 
@@ -509,5 +584,5 @@ Total memory usage is 252564 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
 
