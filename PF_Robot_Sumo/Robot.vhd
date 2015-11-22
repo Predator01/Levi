@@ -60,7 +60,7 @@ architecture Behavioral of Robot is
 			in_pres_state : in robot_state_values;
 			in_color_1 : in  STD_LOGIC;
 			in_sonic_1 : in STD_LOGIC;
-			out_next_state: out robot_state_values);
+			out_next_state_fsmr: out robot_state_values);
 	end component;
 	
 	-- Comp : U4 Output Robot

@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (nt64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Sat Nov 21 18:21:47 2015
+#Sat Nov 21 18:55:11 2015
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -61,7 +61,7 @@ C3,,,GND,,,,,,,,,,,,
 C4,,IOBS,IO_L1N_VREF_0,UNUSED,,0,,,,,,,,,
 C5,,IOBM,IO_L6P_0,UNUSED,,0,,,,,,,,,
 C6,,IOBS,IO_L3N_0,UNUSED,,0,,,,,,,,,
-C7,,IOBM,IO_L10P_0,UNUSED,,0,,,,,,,,,
+C7,in_line_top,IOB,IO_L10P_0,INPUT,LVCMOS25*,0,,,,NONE,,UNLOCATED,NO,NONE,
 C8,,IOBS,IO_L11N_0,UNUSED,,0,,,,,,,,,
 C9,,IOBS,IO_L34N_GCLK18_0,UNUSED,,0,,,,,,,,,
 C10,,IOBM,IO_L37P_GCLK13_0,UNUSED,,0,,,,,,,,,

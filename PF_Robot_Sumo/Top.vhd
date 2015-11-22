@@ -25,6 +25,7 @@ entity Top is
     Port ( 
 		in_Clk100MHz : in STD_LOGIC;
 		in_Rst : in STD_LOGIC;
+		in_line_top : in STD_LOGIC;
       out_motor_1 : out STD_LOGIC);
 end Top;
 
@@ -48,22 +49,36 @@ architecture Behavioral of Top is
 			in_rst : in STD_LOGIC;
 			out_action : out STD_LOGIC_VECTOR(2 downto 0));
 	end component;
-	
+	--Comp: U3 Line Detector
+	Component Detector_Linea
+		Port(
+			in_Rst_dl : in STD_LOGIC;
+			in_Clk : in STD_LOGIC;
+			in_line_dl : in STD_LOGIC;
+			out_Line: out STD_LOGIC);
+	end component;
 	-- signals
 	-- no use
 	constant aux_sonic : STD_LOGIC := '0';
 	constant aux_color : STD_LOGIC := '0';
 	-- 1 bit
+	signal out_Line  : STD_LOGIC := '0';
 	-- 2 or more bit
 	-- integer
 	signal motor_1_action : STD_LOGIC_VECTOR(2 downto 0);
 begin
 	-- instanciar componentes
-	
+	U3: Detector_Linea
+		port map(
+			in_Rst,
+			in_Clk100MHz,
+			in_line_top,
+			out_Line);
+			
 	U2: Robot 
 		port map (
 			aux_sonic,
-			aux_color,
+			out_Line,
 			in_Clk100MHz,
 			in_rst,
 			motor_1_action); -- TODO
@@ -74,6 +89,8 @@ begin
 			in_Clk100MHz,
 			motor_1_action,
 			out_motor_1);
+	
+
 
 end Behavioral;
 

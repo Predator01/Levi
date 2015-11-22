@@ -29,7 +29,7 @@ entity FSM_robot is
 			in_pres_state : in robot_state_values;
 			in_color_1 : in  STD_LOGIC;
 			in_sonic_1 : in STD_LOGIC;
-			out_next_state: out robot_state_values);
+			out_next_state_fsmr : out robot_state_values);
 end FSM_robot;
 
 architecture Behavioral of FSM_robot is
@@ -41,21 +41,25 @@ begin
 		
     case in_pres_state is
       when ROBOT_DETECT => 
-			out_next_state <= ROBOT_FOWARD;
+			out_next_state_fsmr <= ROBOT_FOWARD;
       when ROBOT_FOWARD => 
 			if(in_color_1 = '1')then
-					out_next_state <= ROBOT_REVERSE;
+				out_next_state_fsmr <= ROBOT_REVERSE;
 			elsif(in_sonic_1 = '0')then
-					out_next_state <= ROBOT_STOP;
+				out_next_state_fsmr <= ROBOT_STOP;
+			else
+				out_next_state_fsmr <= ROBOT_FOWARD;
 			end if;
 		when ROBOT_REVERSE =>
 			if(in_color_1 = '0') then
-				out_next_state <= ROBOT_STOP;
+				out_next_state_fsmr <= ROBOT_STOP;
+			else
+				out_next_state_fsmr <= ROBOT_REVERSE;
 			end if;
 		when ROBOT_STOP =>
-			out_next_state <= ROBOT_DETECT;
+			out_next_state_fsmr <= ROBOT_DETECT;
       when others => 
-			out_next_state <= ROBOT_DETECT;
+			out_next_state_fsmr <= ROBOT_DETECT;
     end case; 
   end process fsm;
   
