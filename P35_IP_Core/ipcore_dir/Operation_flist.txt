@@ -1,0 +1,14 @@
+# Output products list for <Operation>
+Operation.asy
+Operation.gise
+Operation.ngc
+Operation.sym
+Operation.vhd
+Operation.vho
+Operation.xco
+Operation.xise
+Operation\doc\cordic_ds249.pdf
+Operation\doc\cordic_v4_0_vinfo.html
+Operation_flist.txt
+Operation_readme.txt
+Operation_xmdf.tcl

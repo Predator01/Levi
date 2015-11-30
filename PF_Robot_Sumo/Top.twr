@@ -36,8 +36,9 @@ Setup/Hold to clock in_Clk100MHz
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-in_Rst      |    1.906(R)|      SLOW  |   -0.253(R)|      SLOW  |in_Clk100MHz_BUFGP|   0.000|
-in_line_top |    1.036(R)|      SLOW  |   -0.517(R)|      SLOW  |in_Clk100MHz_BUFGP|   0.000|
+in_Rst      |    4.228(R)|      SLOW  |    0.070(R)|      SLOW  |in_Clk100MHz_BUFGP|   0.000|
+in_Rx       |    1.099(R)|      FAST  |   -0.397(R)|      SLOW  |in_Clk100MHz_BUFGP|   0.000|
+in_line_top |    1.914(R)|      SLOW  |   -1.217(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock in_Clk100MHz to Pad
@@ -45,7 +46,8 @@ Clock in_Clk100MHz to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-out_motor_1 |        10.203(R)|      SLOW  |         5.518(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+out_Tx      |         8.443(R)|      SLOW  |         4.309(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+out_motor_1 |         9.151(R)|      SLOW  |         4.820(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock in_Clk100MHz
@@ -53,18 +55,18 @@ Clock to Setup on destination clock in_Clk100MHz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-in_Clk100MHz   |    3.164|         |         |         |
+in_Clk100MHz   |   26.814|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Nov 21 18:55:16 2015 
+Analysis completed Mon Nov 30 13:16:46 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 241 MB
+Peak Memory Usage: 240 MB
 
 
 

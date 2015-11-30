@@ -45,7 +45,7 @@ begin
       when ROBOT_FOWARD => 
 			if(in_color_1 = '1')then
 				out_next_state_fsmr <= ROBOT_REVERSE;
-			elsif(in_sonic_1 = '0')then
+			elsif(in_sonic_1 = '0')then -- no detect
 				out_next_state_fsmr <= ROBOT_STOP;
 			else
 				out_next_state_fsmr <= ROBOT_FOWARD;

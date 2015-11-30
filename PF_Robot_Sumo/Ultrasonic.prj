@@ -1,0 +1,7 @@
+vhdl work "PKG_ROBOT_SUMO.vhd"
+vhdl work "Tin_Counter.vhd"
+vhdl work "State_Reg_Ultrasonic.vhd"
+vhdl work "Output_Ultrasonic.vhd"
+vhdl work "FSM_Ultrasonic.vhd"
+vhdl work "Freq_Div.vhd"
+vhdl work "Ultrasonic.vhd"

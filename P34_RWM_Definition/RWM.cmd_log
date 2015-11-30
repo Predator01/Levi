@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.xst" -ofn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.xst" -ofn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.xst" -ofn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.xst" -ofn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 RWM.ngc RWM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RWM_map.ncd RWM.ngd RWM.pcf 
+par -w -intstyle ise -ol high -mt off RWM_map.ncd RWM.ncd RWM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RWM.twx RWM.ncd -o RWM.twr RWM.pcf 
+bitgen -intstyle ise -f RWM.ut RWM.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.xst" -ofn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.xst" -ofn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.syr" 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.xst" -ofn "D:/ProySisDigAva/Levi/P34_RWM_Definition/RWM.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 RWM.ngc RWM.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RWM_map.ncd RWM.ngd RWM.pcf 
+par -w -intstyle ise -ol high -mt off RWM_map.ncd RWM.ncd RWM.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RWM.twx RWM.ncd -o RWM.twr RWM.pcf 
+bitgen -intstyle ise -f RWM.ut RWM.ncd 

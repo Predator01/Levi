@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Proy_SisDigAva\P31a_OpalKelly_Counter\Counter.ncd
+OUTFILE=D:\Proy_SisDigAva\P31a_OpalKelly_Counter\Counter.bit
+FAMILY=Spartan6
+PART=xc6slx16-2ftg256
+WORKINGDIR=D:\Proy_SisDigAva\P31a_OpalKelly_Counter
+LICENSE=WebPack
+USER_INFO=176089449_1777494614_210566592_902

@@ -17,6 +17,7 @@ package PKG_ROBOT_SUMO is
 		-- ROBOT
 		type robot_state_values is (ROBOT_DETECT, ROBOT_FOWARD, 
 											ROBOT_REVERSE, ROBOT_STOP);
+		type ultrasonic_state_values is (StartPulse,WaitForResponse,UltrasonicResponse,WaitForNewStart);
 	-- Constants
   constant MOTOR_TH_MICOS : integer := 1500;-- in microseconds
   constant MOTOR_TL_MICROS : integer := 18500;

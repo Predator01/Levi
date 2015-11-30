@@ -1,0 +1,109 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml RWM.twx RWM.ncd -o RWM.twr RWM.pcf
+
+Design file:              RWM.ncd
+Physical constraint file: RWM.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock WClk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Address<0>  |    0.360(R)|      FAST  |    0.673(R)|      SLOW  |WClk_BUFGP        |   0.000|
+Address<1>  |    0.459(R)|      FAST  |    0.527(R)|      SLOW  |WClk_BUFGP        |   0.000|
+Address<2>  |    0.445(R)|      FAST  |    0.641(R)|      SLOW  |WClk_BUFGP        |   0.000|
+Address<3>  |    0.412(R)|      FAST  |    0.513(R)|      SLOW  |WClk_BUFGP        |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock WClk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Data<0>     |         7.485(R)|      SLOW  |         3.831(R)|      FAST  |WClk_BUFGP        |   0.000|
+Data<1>     |         7.439(R)|      SLOW  |         3.840(R)|      FAST  |WClk_BUFGP        |   0.000|
+Data<2>     |         7.330(R)|      SLOW  |         3.773(R)|      FAST  |WClk_BUFGP        |   0.000|
+Data<3>     |         7.393(R)|      SLOW  |         3.823(R)|      FAST  |WClk_BUFGP        |   0.000|
+Data<4>     |         7.242(R)|      SLOW  |         3.711(R)|      FAST  |WClk_BUFGP        |   0.000|
+Data<5>     |         7.349(R)|      SLOW  |         3.777(R)|      FAST  |WClk_BUFGP        |   0.000|
+Data<6>     |         7.399(R)|      SLOW  |         3.827(R)|      FAST  |WClk_BUFGP        |   0.000|
+Data<7>     |         7.282(R)|      SLOW  |         3.759(R)|      FAST  |WClk_BUFGP        |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Address<0>     |Data<0>        |    6.544|
+Address<0>     |Data<1>        |    6.498|
+Address<0>     |Data<2>        |    6.389|
+Address<0>     |Data<3>        |    6.452|
+Address<0>     |Data<4>        |    6.301|
+Address<0>     |Data<5>        |    6.408|
+Address<0>     |Data<6>        |    6.458|
+Address<0>     |Data<7>        |    6.341|
+Address<1>     |Data<0>        |    6.633|
+Address<1>     |Data<1>        |    6.587|
+Address<1>     |Data<2>        |    6.478|
+Address<1>     |Data<3>        |    6.541|
+Address<1>     |Data<4>        |    6.390|
+Address<1>     |Data<5>        |    6.497|
+Address<1>     |Data<6>        |    6.547|
+Address<1>     |Data<7>        |    6.430|
+Address<2>     |Data<0>        |    6.628|
+Address<2>     |Data<1>        |    6.582|
+Address<2>     |Data<2>        |    6.473|
+Address<2>     |Data<3>        |    6.536|
+Address<2>     |Data<4>        |    6.385|
+Address<2>     |Data<5>        |    6.492|
+Address<2>     |Data<6>        |    6.542|
+Address<2>     |Data<7>        |    6.425|
+Address<3>     |Data<0>        |    6.503|
+Address<3>     |Data<1>        |    6.457|
+Address<3>     |Data<2>        |    6.348|
+Address<3>     |Data<3>        |    6.411|
+Address<3>     |Data<4>        |    6.260|
+Address<3>     |Data<5>        |    6.367|
+Address<3>     |Data<6>        |    6.417|
+Address<3>     |Data<7>        |    6.300|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Nov 24 09:35:20 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 241 MB
+
+
+

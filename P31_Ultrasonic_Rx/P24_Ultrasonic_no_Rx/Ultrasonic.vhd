@@ -76,7 +76,7 @@ begin
 	-- measurement equations
 	Measurement <= (tIN * 300) / 18500;
 	--process that count to obtain T_in
-	tIn_Counter: process(Clk, TimeBase, tIN)
+	tIn_Counter: process(Clk, TimeBase, tIN, Rst)
 	begin
 		if(rising_edge(Clk) and TimeBase = '1') then 
 			if(pres_state = WaitForResponse) then 
@@ -86,6 +86,7 @@ begin
 			elsif (pres_state = WaitForNewStart) then 
 				LEDs <=CONV_STD_LOGIC_VECTOR(Measurement,8);
 			end if;
+		
 		end if;
 	end process tIn_Counter;
 	

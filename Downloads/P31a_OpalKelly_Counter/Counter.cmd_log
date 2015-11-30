@@ -1,0 +1,24 @@
+xst -intstyle ise -ifn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.xst" -ofn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.syr" 
+xst -intstyle ise -ifn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.xst" -ofn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.syr" 
+xst -intstyle ise -ifn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.xst" -ofn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.syr" 
+xst -intstyle ise -ifn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.xst" -ofn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.syr" 
+xst -intstyle ise -ifn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.xst" -ofn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6001.ucf -p xc6slx16-ftg256-2 Counter.ngc Counter.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6001.ucf -p xc6slx16-ftg256-2 Counter.ngc Counter.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -mt off Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf xem6001.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.xst" -ofn "D:/Projects_SisDigAva/P37_OpalKelly_Counter/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6001.ucf -p xc6slx16-ftg256-2 Counter.ngc Counter.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -mt off Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf xem6001.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
+xst -intstyle ise -ifn "D:/Proy_SisDigAva/P31a_OpalKelly_Counter/Counter.xst" -ofn "D:/Proy_SisDigAva/P31a_OpalKelly_Counter/Counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xem6001.ucf -p xc6slx16-ftg256-2 Counter.ngc Counter.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Counter_map.ncd Counter.ngd Counter.pcf 
+par -w -intstyle ise -ol high -mt off Counter_map.ncd Counter.ncd Counter.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Counter.twx Counter.ncd -o Counter.twr Counter.pcf -ucf xem6001.ucf 
+bitgen -intstyle ise -f Counter.ut Counter.ncd 
