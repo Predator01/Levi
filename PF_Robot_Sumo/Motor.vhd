@@ -28,7 +28,7 @@ entity Motor is
     Port ( 
 		in_Rst : in STD_LOGIC;
 		in_Clk : in STD_LOGIC;
-		in_Action_m : in STD_LOGIC_VECTOR(2 downto 0);
+		in_Action_m : in STD_LOGIC_VECTOR(1 downto 0);
 		out_motor : out STD_LOGIC);
 end Motor;
 
@@ -73,7 +73,7 @@ architecture Behavioral of Motor is
 	-- Comp : U5 Equation_motor
 	component Equation_motor
 		port (
-			in_action : in STD_LOGIC_VECTOR(2 downto 0);
+			in_action : in STD_LOGIC_VECTOR(1 downto 0);
 			out_th : out integer;
 			out_tl : out integer);
 	end component;

@@ -27,7 +27,8 @@ use work.PKG_ROBOT_SUMO.all;
 entity Output_robot is
 		port (
 			in_pres_state : in robot_state_values;
-			out_action : out STD_LOGIC_VECTOR(2 downto 0));
+			out_action_1_ro : out STD_LOGIC_VECTOR(1 downto 0);
+			out_action_2_ro : out STD_LOGIC_VECTOR(1 downto 0));
 end Output_robot;
 
 architecture Behavioral of Output_robot is
@@ -37,11 +38,21 @@ begin
 	outputs: process (in_pres_state)
 	begin
 		case in_pres_state is
-			when ROBOT_DETECT => out_action <= "000";
-			when ROBOT_FOWARD => out_action <= "001";
-			when ROBOT_REVERSE => out_action <= "010";
-			when ROBOT_STOP => out_action <= "011";
-			when others => out_action <= "000";
+			when ROBOT_DETECT => 
+				out_action_1_ro <= "00"; -- 00 es adelante
+				out_action_2_ro <= "01"; -- 01 es atras
+ 			when ROBOT_FOWARD => 	    -- 10 es stop
+				out_action_1_ro <= "00";
+				out_action_2_ro <= "00";
+			when ROBOT_REVERSE => 
+				out_action_1_ro <= "01";
+				out_action_2_ro <= "01";
+			when ROBOT_STOP => 
+				out_action_1_ro <= "10";
+				out_action_2_ro <= "10";
+			when others => 
+				out_action_1_ro <= "11";
+				out_action_2_ro <= "11";
 		end case;
 	end process outputs;
 

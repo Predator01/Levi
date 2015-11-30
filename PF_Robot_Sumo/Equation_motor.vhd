@@ -27,7 +27,7 @@ use work.PKG_ROBOT_SUMO.all;
 
 entity Equation_motor is
     port (
-			in_action : in STD_LOGIC_VECTOR(2 downto 0);
+			in_action : in STD_LOGIC_VECTOR(1 downto 0);
 			out_th : out integer;
 			out_tl : out integer);
 end Equation_motor;
@@ -43,10 +43,32 @@ begin
 	--full-revers
 	--girars etc
   -- Calculate tH and tL
-  Tmp <= (CONV_INTEGER(in_action) * 1000) / 256;
-  tH <= Tmp + 1000;  
-  out_tl  <= 20000 - tH;  
-  out_th <= tH;
+  
+	
+	
+	
+
+  --Tmp <= (CONV_INTEGER(in_action) * 1000) / 256;
+  --tH <= Tmp + 1000;  
+  --out_tl  <= 20000 - tH;  
+  --out_th <= tH;
+  
+  	outputs: process (in_action)
+	begin
+		if (in_action = "00" ) then -- 000 es adelante
+			out_th <= 1000;
+			out_tl <= 19000;
+		elsif (in_action = "01") then -- 001 es atras
+			out_th <= 2000;
+			out_tl <= 19000;
+		elsif (in_action = "01") then -- 010 es stop
+			out_th <= 1500;
+			out_tl <= 19000;
+		else
+			out_th <= 1000;
+			out_tl <= 19000;
+		end if;
+	end process outputs;
 
 end Behavioral;
 

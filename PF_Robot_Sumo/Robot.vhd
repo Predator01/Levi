@@ -32,7 +32,8 @@ entity Robot is
 			-- 0 negro normal # 1 blanco reversa
 		in_clk : in STD_LOGIC;
 		in_rst : in STD_LOGIC;
-		out_action : out STD_LOGIC_VECTOR(2 downto 0));
+		out_action_1_r : out STD_LOGIC_VECTOR(1 downto 0);
+		out_action_2_r : out STD_LOGIC_VECTOR(1 downto 0));
 end Robot;
 
 architecture Behavioral of Robot is
@@ -67,7 +68,8 @@ architecture Behavioral of Robot is
 	component Output_robot
 		port (
 			in_pres_state : in robot_state_values;
-			out_action : out STD_LOGIC_VECTOR(2 downto 0));
+			out_action_1_ro : out STD_LOGIC_VECTOR(1 downto 0);
+			out_action_2_ro : out STD_LOGIC_VECTOR(1 downto 0));
 	end component;
 	
 	-- seniales embebidas
@@ -90,7 +92,7 @@ begin
 	U2_3 : FSM_robot
 		port map(pres_state, in_color_1, in_sonic_1, next_state);
 	U2_4 : Output_robot
-		port map(pres_state, out_action);
+		port map(pres_state, out_action_1_r, out_action_2_r);
 
 end Behavioral;
 

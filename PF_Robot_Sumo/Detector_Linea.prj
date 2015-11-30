@@ -1,4 +1,0 @@
-vhdl work "PKG_ROBOT_SUMO.vhd"
-vhdl work "Line_Detection.vhd"
-vhdl work "Freq_Div.vhd"
-vhdl work "Detector_Linea.vhd"

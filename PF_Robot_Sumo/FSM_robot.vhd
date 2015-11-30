@@ -41,7 +41,11 @@ begin
 		
     case in_pres_state is
       when ROBOT_DETECT => 
-			out_next_state_fsmr <= ROBOT_FOWARD;
+			if (in_sonic_1 = '1') then
+				out_next_state_fsmr <= ROBOT_FOWARD;
+			else
+				out_next_state_fsmr <= ROBOT_DETECT;
+			end if;
       when ROBOT_FOWARD => 
 			if(in_color_1 = '1')then
 				out_next_state_fsmr <= ROBOT_REVERSE;

@@ -192,10 +192,10 @@ Elaborating entity <Robot> (architecture <Behavioral>) from library <work>.
 Elaborating entity <State_Reg_Robot> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <FSM_robot> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\PF_Robot_Sumo\FSM_robot.vhd" Line 61. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\PF_Robot_Sumo\FSM_robot.vhd" Line 65. Case statement is complete. others clause is never selected
 
 Elaborating entity <Output_robot> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Output_robot.vhd" Line 44. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Output_robot.vhd" Line 53. Case statement is complete. others clause is never selected
 
 Elaborating entity <Motor> (architecture <Behavioral>) from library <work>.
 
@@ -369,9 +369,10 @@ Unit <FSM_robot> synthesized.
 
 Synthesizing Unit <Output_robot>.
     Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Output_robot.vhd".
-    Found 4x3-bit Read Only RAM for signal <out_action>
+    Found 4x2-bit Read Only RAM for signal <out_action_1_ro>
+    Found 4x2-bit Read Only RAM for signal <out_action_2_ro>
     Summary:
-	inferred   1 RAM(s).
+	inferred   2 RAM(s).
 Unit <Output_robot> synthesized.
 
 Synthesizing Unit <Motor>.
@@ -394,13 +395,8 @@ Unit <State_Reg_Motor> synthesized.
 
 Synthesizing Unit <Equation_motor>.
     Related source file is "D:\ProySisDigAva\Levi\PF_Robot_Sumo\Equation_motor.vhd".
-    Found 16-bit subtractor for signal <n0009[15:0]> created at line 48.
-    Found 6-bit adder for signal <n0010> created at line 46.
-    Found 15-bit adder for signal <tH> created at line 47.
-    Found 3x11-bit multiplier for signal <in_action[2]_GND_50_o_MuLt_0_OUT> created at line 46.
     Summary:
-	inferred   1 Multiplier(s).
-	inferred   3 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
 Unit <Equation_motor> synthesized.
 
 Synthesizing Unit <FSM_motor>.
@@ -419,16 +415,14 @@ Unit <Output_motor> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 3
+# RAMs                                                 : 4
  4x1-bit single-port Read Only RAM                     : 1
+ 4x2-bit single-port Read Only RAM                     : 2
  4x20-bit single-port Read Only RAM                    : 1
- 4x3-bit single-port Read Only RAM                     : 1
-# Multipliers                                          : 2
- 11x3-bit multiplier                                   : 1
+# Multipliers                                          : 1
  15x9-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 34
+# Adders/Subtractors                                   : 33
  15-bit adder                                          : 4
- 16-bit subtractor                                     : 1
  24-bit adder                                          : 9
  25-bit adder                                          : 1
  26-bit adder                                          : 1
@@ -445,15 +439,14 @@ Macro Statistics
  37-bit adder                                          : 1
  38-bit adder                                          : 1
  39-bit adder                                          : 1
- 6-bit adder                                           : 1
- 7-bit adder                                           : 4
-# Registers                                            : 15
- 1-bit register                                        : 6
- 15-bit register                                       : 3
+ 7-bit adder                                           : 5
+# Registers                                            : 19
+ 1-bit register                                        : 8
+ 15-bit register                                       : 4
  2-bit register                                        : 2
- 7-bit register                                        : 4
-# Comparators                                          : 28
- 15-bit comparator equal                               : 1
+ 7-bit register                                        : 5
+# Comparators                                          : 29
+ 15-bit comparator equal                               : 2
  24-bit comparator lessequal                           : 10
  25-bit comparator lessequal                           : 1
  26-bit comparator lessequal                           : 1
@@ -472,14 +465,15 @@ Macro Statistics
  37-bit comparator lessequal                           : 1
  38-bit comparator lessequal                           : 1
  39-bit comparator lessequal                           : 1
-# Multiplexers                                         : 516
+# Multiplexers                                         : 520
  1-bit 2-to-1 multiplexer                              : 504
+ 11-bit 2-to-1 multiplexer                             : 2
  15-bit 2-to-1 multiplexer                             : 1
  2-bit 2-to-1 multiplexer                              : 1
  2-bit 4-to-1 multiplexer                              : 2
  24-bit 2-to-1 multiplexer                             : 3
- 32-bit 2-to-1 multiplexer                             : 1
- 7-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 2
+ 7-bit 2-to-1 multiplexer                              : 5
 
 =========================================================================
 
@@ -521,16 +515,27 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_out_tx> will be implemented on LUTs 
 Unit <Output_Ultrasonic> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Output_robot>.
-INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_out_action> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_out_action_1_ro> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 4-word x 3-bit                      |          |
+    |     aspect ratio   | 4-word x 2-bit                      |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <in_pres_state> |          |
     |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <out_action>    |          |
+    |     doA            | connected to signal <out_action_1_ro> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_out_action_2_ro> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 2-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <in_pres_state> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <out_action_2_ro> |          |
     -----------------------------------------------------------------------
 Unit <Output_robot> synthesized (advanced).
 
@@ -550,25 +555,21 @@ Unit <Tin_Counter> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 3
+# RAMs                                                 : 4
  4x1-bit single-port distributed Read Only RAM         : 1
+ 4x2-bit single-port distributed Read Only RAM         : 2
  4x20-bit single-port distributed Read Only RAM        : 1
- 4x3-bit single-port distributed Read Only RAM         : 1
-# Multipliers                                          : 2
- 11x3-bit multiplier                                   : 1
+# Multipliers                                          : 1
  15x9-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 27
- 15-bit adder                                          : 1
- 16-bit subtractor                                     : 1
+# Adders/Subtractors                                   : 24
  24-bit adder                                          : 24
- 5-bit adder                                           : 1
-# Counters                                             : 7
- 15-bit up counter                                     : 3
- 7-bit up counter                                      : 4
-# Registers                                            : 10
- Flip-Flops                                            : 10
-# Comparators                                          : 28
- 15-bit comparator equal                               : 1
+# Counters                                             : 9
+ 15-bit up counter                                     : 4
+ 7-bit up counter                                      : 5
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Comparators                                          : 29
+ 15-bit comparator equal                               : 2
  24-bit comparator lessequal                           : 10
  25-bit comparator lessequal                           : 1
  26-bit comparator lessequal                           : 1
@@ -587,12 +588,12 @@ Macro Statistics
  37-bit comparator lessequal                           : 1
  38-bit comparator lessequal                           : 1
  39-bit comparator lessequal                           : 1
-# Multiplexers                                         : 510
+# Multiplexers                                         : 511
  1-bit 2-to-1 multiplexer                              : 504
  2-bit 2-to-1 multiplexer                              : 1
  2-bit 4-to-1 multiplexer                              : 1
  24-bit 2-to-1 multiplexer                             : 3
- 32-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 2
 
 =========================================================================
 
@@ -609,14 +610,14 @@ Optimizing unit <Tin_Counter> ...
 Optimizing unit <div_24u_15u> ...
 
 Optimizing unit <State_Reg_Motor> ...
-INFO:Xst:2261 - The FF/Latch <U4/U4_1/out_time_base> in Unit <Top> is equivalent to the following 3 FFs/Latches, which will be removed : <U3/U3_1/out_time_base> <U2/U2_1/out_time_base> <U1/U1_1/out_time_base> 
-INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_0> in Unit <Top> is equivalent to the following 3 FFs/Latches, which will be removed : <U3/U3_1/cont_0> <U2/U2_1/cont_0> <U1/U1_1/cont_0> 
-INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_1> in Unit <Top> is equivalent to the following 3 FFs/Latches, which will be removed : <U3/U3_1/cont_1> <U2/U2_1/cont_1> <U1/U1_1/cont_1> 
-INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_2> in Unit <Top> is equivalent to the following 3 FFs/Latches, which will be removed : <U3/U3_1/cont_2> <U2/U2_1/cont_2> <U1/U1_1/cont_2> 
-INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_3> in Unit <Top> is equivalent to the following 3 FFs/Latches, which will be removed : <U3/U3_1/cont_3> <U2/U2_1/cont_3> <U1/U1_1/cont_3> 
-INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_4> in Unit <Top> is equivalent to the following 3 FFs/Latches, which will be removed : <U3/U3_1/cont_4> <U2/U2_1/cont_4> <U1/U1_1/cont_4> 
-INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_5> in Unit <Top> is equivalent to the following 3 FFs/Latches, which will be removed : <U3/U3_1/cont_5> <U2/U2_1/cont_5> <U1/U1_1/cont_5> 
-INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_6> in Unit <Top> is equivalent to the following 3 FFs/Latches, which will be removed : <U3/U3_1/cont_6> <U2/U2_1/cont_6> <U1/U1_1/cont_6> 
+INFO:Xst:2261 - The FF/Latch <U4/U4_1/out_time_base> in Unit <Top> is equivalent to the following 4 FFs/Latches, which will be removed : <U3/U3_1/out_time_base> <U2/U2_1/out_time_base> <U1_2/U1_1/out_time_base> <U1_1/U1_1/out_time_base> 
+INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_0> in Unit <Top> is equivalent to the following 4 FFs/Latches, which will be removed : <U3/U3_1/cont_0> <U1_1/U1_1/cont_0> <U2/U2_1/cont_0> <U1_2/U1_1/cont_0> 
+INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_1> in Unit <Top> is equivalent to the following 4 FFs/Latches, which will be removed : <U3/U3_1/cont_1> <U1_1/U1_1/cont_1> <U2/U2_1/cont_1> <U1_2/U1_1/cont_1> 
+INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_2> in Unit <Top> is equivalent to the following 4 FFs/Latches, which will be removed : <U3/U3_1/cont_2> <U1_1/U1_1/cont_2> <U2/U2_1/cont_2> <U1_2/U1_1/cont_2> 
+INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_3> in Unit <Top> is equivalent to the following 4 FFs/Latches, which will be removed : <U3/U3_1/cont_3> <U1_1/U1_1/cont_3> <U2/U2_1/cont_3> <U1_2/U1_1/cont_3> 
+INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_4> in Unit <Top> is equivalent to the following 4 FFs/Latches, which will be removed : <U3/U3_1/cont_4> <U1_1/U1_1/cont_4> <U2/U2_1/cont_4> <U1_2/U1_1/cont_4> 
+INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_5> in Unit <Top> is equivalent to the following 4 FFs/Latches, which will be removed : <U3/U3_1/cont_5> <U1_1/U1_1/cont_5> <U2/U2_1/cont_5> <U1_2/U1_1/cont_5> 
+INFO:Xst:2261 - The FF/Latch <U4/U4_1/cont_6> in Unit <Top> is equivalent to the following 4 FFs/Latches, which will be removed : <U3/U3_1/cont_6> <U1_1/U1_1/cont_6> <U2/U2_1/cont_6> <U1_2/U1_1/cont_6> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -628,8 +629,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 59
- Flip-Flops                                            : 59
+# Registers                                            : 75
+ Flip-Flops                                            : 75
 
 =========================================================================
 
@@ -652,28 +653,28 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 925
+# BELS                             : 983
 #      GND                         : 1
-#      INV                         : 21
-#      LUT1                        : 31
-#      LUT2                        : 40
-#      LUT3                        : 44
-#      LUT4                        : 37
-#      LUT5                        : 81
-#      LUT6                        : 290
-#      MUXCY                       : 190
+#      INV                         : 23
+#      LUT1                        : 45
+#      LUT2                        : 41
+#      LUT3                        : 46
+#      LUT4                        : 40
+#      LUT5                        : 84
+#      LUT6                        : 289
+#      MUXCY                       : 209
 #      MUXF7                       : 12
 #      VCC                         : 1
-#      XORCY                       : 177
-# FlipFlops/Latches                : 59
+#      XORCY                       : 192
+# FlipFlops/Latches                : 75
 #      FDC                         : 7
-#      FDCE                        : 6
-#      FDE                         : 46
+#      FDCE                        : 7
+#      FDE                         : 61
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 5
+# IO Buffers                       : 6
 #      IBUF                        : 3
-#      OBUF                        : 2
+#      OBUF                        : 3
 # DSPs                             : 1
 #      DSP48A1                     : 1
 
@@ -684,20 +685,20 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              59  out of  18224     0%  
- Number of Slice LUTs:                  544  out of   9112     5%  
-    Number used as Logic:               544  out of   9112     5%  
+ Number of Slice Registers:              75  out of  18224     0%  
+ Number of Slice LUTs:                  568  out of   9112     6%  
+    Number used as Logic:               568  out of   9112     6%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    561
-   Number with an unused Flip Flop:     502  out of    561    89%  
-   Number with an unused LUT:            17  out of    561     3%  
-   Number of fully used LUT-FF pairs:    42  out of    561     7%  
-   Number of unique control sets:         8
+ Number of LUT Flip Flop pairs used:    585
+   Number with an unused Flip Flop:     510  out of    585    87%  
+   Number with an unused LUT:            17  out of    585     2%  
+   Number of fully used LUT-FF pairs:    58  out of    585     9%  
+   Number of unique control sets:        10
 
 IO Utilization: 
- Number of IOs:                           6
- Number of bonded IOBs:                   6  out of    232     2%  
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    232     3%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -724,7 +725,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-in_Clk100MHz                       | BUFGP                  | 59    |
+in_Clk100MHz                       | BUFGP                  | 75    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -735,8 +736,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 27.425ns (Maximum Frequency: 36.463MHz)
-   Minimum input arrival time before clock: 3.963ns
+   Minimum period: 27.881ns (Maximum Frequency: 35.867MHz)
+   Minimum input arrival time before clock: 4.008ns
    Maximum output required time after clock: 4.975ns
    Maximum combinational path delay: No path found
 
@@ -746,37 +747,37 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'in_Clk100MHz'
-  Clock period: 27.425ns (frequency: 36.463MHz)
-  Total number of paths / destination ports: 12304443765580 / 109
+  Clock period: 27.881ns (frequency: 35.867MHz)
+  Total number of paths / destination ports: 24608887530197 / 141
 -------------------------------------------------------------------------
-Delay:               27.425ns (Levels of Logic = 34)
+Delay:               27.881ns (Levels of Logic = 33)
   Source:            U4/U4_5/tIN_14 (FF)
-  Destination:       U2/U2_2/out_pres_state_1 (FF)
+  Destination:       U2/U2_2/out_pres_state_0 (FF)
   Source Clock:      in_Clk100MHz rising
   Destination Clock: in_Clk100MHz rising
 
-  Data Path: U4/U4_5/tIN_14 to U2/U2_2/out_pres_state_1
+  Data Path: U4/U4_5/tIN_14 to U2/U2_2/out_pres_state_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              2   0.447   0.616  U4/U4_5/tIN_14 (U4/U4_5/tIN_14)
      DSP48A1:B14->M23     55   3.364   1.581  U4/U4_5/Mmult_tIN[14]_PWR_10_o_MuLt_0_OUT (U4/U4_5/tIN[14]_PWR_10_o_MuLt_0_OUT<23>)
-     LUT3:I2->O           11   0.205   0.987  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<9>13_SW0 (N207)
+     LUT3:I2->O           11   0.205   0.987  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<9>13_SW0 (N213)
      LUT6:I4->O           10   0.203   0.857  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_a[0]_a[23]_MUX_1016_o151 (U4/U4_5/tIN[14]_PWR_10_o_div_1/a[14]_a[23]_MUX_1002_o)
      LUT6:I5->O           15   0.205   0.982  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<8>23 (U4/U4_5/tIN[14]_PWR_10_o_div_1/o<8>22)
      LUT6:I5->O            3   0.205   0.651  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<8>24_1 (U4/U4_5/tIN[14]_PWR_10_o_div_1/o<8>24)
      LUT6:I5->O            4   0.205   0.912  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<7>24 (U4/U4_5/tIN[14]_PWR_10_o_div_1/o<7>23)
      LUT6:I3->O            7   0.205   0.774  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<7>25_1 (U4/U4_5/tIN[14]_PWR_10_o_div_1/o<7>25)
      LUT5:I4->O            9   0.205   1.058  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<6>22 (U4/U4_5/tIN[14]_PWR_10_o_div_1/o<6>21)
-     LUT5:I2->O           14   0.205   0.958  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_a[0]_a[23]_MUX_1088_o171_SW0 (N80)
+     LUT5:I2->O           14   0.205   0.958  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_a[0]_a[23]_MUX_1088_o171_SW0 (N86)
      LUT6:I5->O           15   0.205   0.982  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_a[0]_a[23]_MUX_1088_o1101 (U4/U4_5/tIN[14]_PWR_10_o_div_1/a[19]_a[23]_MUX_1069_o)
-     LUT5:I4->O           15   0.205   0.982  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_a[0]_a[23]_MUX_1112_o1111_SW0 (N70)
-     LUT6:I5->O           12   0.205   1.013  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_a[0]_a[23]_MUX_1112_o161 (U4/U4_5/tIN[14]_PWR_10_o_div_1/a[15]_a[23]_MUX_1097_o)
+     LUT5:I4->O           15   0.205   0.982  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_a[0]_a[23]_MUX_1112_o1111_SW0 (N76)
+     LUT6:I5->O           13   0.205   1.037  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_a[0]_a[23]_MUX_1112_o161 (U4/U4_5/tIN[14]_PWR_10_o_div_1/a[15]_a[23]_MUX_1097_o)
      LUT6:I4->O            4   0.203   0.684  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<4>25_1 (U4/U4_5/tIN[14]_PWR_10_o_div_1/o<4>25)
      LUT6:I5->O           14   0.205   1.186  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<3>33 (U4/U4_5/tIN[14]_PWR_10_o_div_1/o<3>32)
-     LUT5:I2->O           16   0.205   1.005  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_n173151_SW0 (N60)
-     LUT6:I5->O            3   0.205   0.995  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_n173171 (U4/U4_5/tIN[14]_PWR_10_o_div_1/n1731<15>)
-     LUT6:I1->O           10   0.203   0.857  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<2>33_1 (U4/U4_5/tIN[14]_PWR_10_o_div_1/o<2>331)
+     LUT5:I2->O           16   0.205   1.005  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_n173151_SW0 (N66)
+     LUT6:I5->O            3   0.205   0.879  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_n173171 (U4/U4_5/tIN[14]_PWR_10_o_div_1/n1731<15>)
+     LUT6:I3->O           10   0.205   0.857  U4/U4_5/tIN[14]_PWR_10_o_div_1/o<2>33_1 (U4/U4_5/tIN[14]_PWR_10_o_div_1/o<2>331)
      LUT6:I5->O            2   0.205   0.961  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mmux_n1735221 (U4/U4_5/tIN[14]_PWR_10_o_div_1/n1735<7>)
      LUT5:I0->O            1   0.203   0.000  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mcompar_o<1>_lut<0> (U4/U4_5/tIN[14]_PWR_10_o_div_1/Mcompar_o<1>_lut<0>)
      MUXCY:S->O            1   0.172   0.000  U4/U4_5/tIN[14]_PWR_10_o_div_1/Mcompar_o<1>_cy<0> (U4/U4_5/tIN[14]_PWR_10_o_div_1/Mcompar_o<1>_cy<0>)
@@ -791,19 +792,18 @@ Delay:               27.425ns (Levels of Logic = 34)
      MUXCY:CI->O           1   0.019   0.000  U4/U4_4/Mcompar_out_ultrasonic_cy<3> (U4/U4_4/Mcompar_out_ultrasonic_cy<3>)
      MUXCY:CI->O           1   0.019   0.000  U4/U4_4/Mcompar_out_ultrasonic_cy<4> (U4/U4_4/Mcompar_out_ultrasonic_cy<4>)
      MUXCY:CI->O           1   0.019   0.000  U4/U4_4/Mcompar_out_ultrasonic_cy<5> (U4/U4_4/Mcompar_out_ultrasonic_cy<5>)
-     MUXCY:CI->O           1   0.019   0.000  U4/U4_4/Mcompar_out_ultrasonic_cy<6> (U4/U4_4/Mcompar_out_ultrasonic_cy<6>)
-     MUXCY:CI->O           1   0.019   0.000  U2/U2_3/Mmux_out_next_state_fsmr21_cy (U4/U4_4/Mcompar_out_ultrasonic_cy<6>_l1)
-     MUXCY:CI->O           1   0.258   0.000  U2/U2_3/Mmux_out_next_state_fsmr21_cy1 (U2/next_state<1>)
-     FDCE:D                    0.102          U2/U2_2/out_pres_state_1
+     MUXCY:CI->O           2   0.019   0.617  U4/U4_4/Mcompar_out_ultrasonic_cy<6> (U4/U4_4/Mcompar_out_ultrasonic_cy<6>)
+     LUT4:I3->O            1   0.205   0.000  U2/U2_3/Mmux_out_next_state_fsmr11 (U2/next_state<0>)
+     FDCE:D                    0.102          U2/U2_2/out_pres_state_0
     ----------------------------------------
-    Total                     27.425ns (8.805ns logic, 18.620ns route)
-                                       (32.1% logic, 67.9% route)
+    Total                     27.881ns (8.735ns logic, 19.146ns route)
+                                       (31.3% logic, 68.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'in_Clk100MHz'
-  Total number of paths / destination ports: 47 / 47
+  Total number of paths / destination ports: 63 / 63
 -------------------------------------------------------------------------
-Offset:              3.963ns (Levels of Logic = 2)
+Offset:              4.008ns (Levels of Logic = 2)
   Source:            in_Rst (PAD)
   Destination:       U4/U4_2/micros_count_14 (FF)
   Destination Clock: in_Clk100MHz rising
@@ -812,16 +812,16 @@ Offset:              3.963ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            16   1.222   1.233  in_Rst_IBUF (in_Rst_IBUF)
+     IBUF:I->O            18   1.222   1.278  in_Rst_IBUF (in_Rst_IBUF)
      LUT3:I0->O           15   0.205   0.981  U4/U4_2/_n0033_inv1 (U4/U4_2/_n0033_inv)
      FDE:CE                    0.322          U4/U4_2/micros_count_0
     ----------------------------------------
-    Total                      3.963ns (1.749ns logic, 2.214ns route)
-                                       (44.1% logic, 55.9% route)
+    Total                      4.008ns (1.749ns logic, 2.259ns route)
+                                       (43.6% logic, 56.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'in_Clk100MHz'
-  Total number of paths / destination ports: 3 / 2
+  Total number of paths / destination ports: 4 / 3
 -------------------------------------------------------------------------
 Offset:              4.975ns (Levels of Logic = 2)
   Source:            U4/U4_2/out_pres_state_1 (FF)
@@ -849,20 +849,20 @@ Clock to Setup on destination clock in_Clk100MHz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-in_Clk100MHz   |   27.425|         |         |         |
+in_Clk100MHz   |   27.881|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.92 secs
+Total CPU time to Xst completion: 11.02 secs
  
 --> 
 
-Total memory usage is 254840 kilobytes
+Total memory usage is 254812 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
-Number of infos    :   11 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
 
