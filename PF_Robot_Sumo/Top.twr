@@ -7,7 +7,7 @@ C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
 
 Design file:              Top.ncd
 Physical constraint file: Top.pcf
-Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Device,package,speed:     xc6slx16,ftg256,C,-3 (PRODUCTION 1.23 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -36,9 +36,9 @@ Setup/Hold to clock in_Clk100MHz
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-in_Rst      |    4.123(R)|      SLOW  |   -0.225(R)|      SLOW  |in_Clk100MHz_BUFGP|   0.000|
-in_Rx       |    0.911(R)|      FAST  |   -0.129(R)|      SLOW  |in_Clk100MHz_BUFGP|   0.000|
-in_line_top |    1.511(R)|      SLOW  |   -0.991(R)|      SLOW  |in_Clk100MHz_BUFGP|   0.000|
+in_Rst      |    6.188(R)|      SLOW  |   -1.197(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+in_Rx       |    2.289(R)|      SLOW  |   -1.260(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+in_line_top |    2.305(R)|      SLOW  |   -1.340(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock in_Clk100MHz to Pad
@@ -46,9 +46,9 @@ Clock in_Clk100MHz to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-out_Tx      |         7.985(R)|      SLOW  |         4.018(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
-out_motor_1 |         8.822(R)|      SLOW  |         4.681(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
-out_motor_2 |         8.330(R)|      SLOW  |         4.447(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+out_Tx      |         9.005(R)|      SLOW  |         5.054(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+out_motor_1 |         9.911(R)|      SLOW  |         5.574(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
+out_motor_2 |         9.309(R)|      SLOW  |         5.199(R)|      FAST  |in_Clk100MHz_BUFGP|   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock in_Clk100MHz
@@ -56,11 +56,11 @@ Clock to Setup on destination clock in_Clk100MHz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-in_Clk100MHz   |   27.144|         |         |         |
+in_Clk100MHz   |   28.902|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Nov 30 14:16:10 2015 
+Analysis completed Mon Nov 30 14:35:51 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:

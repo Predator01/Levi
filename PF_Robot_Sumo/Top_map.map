@@ -3,14 +3,14 @@ Xilinx Map Application Log File for Design 'Top'
 
 Design Information
 ------------------
-Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol
+Command Line   : map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol
 high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
 -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
 Target Device  : xc6slx16
-Target Package : csg324
+Target Package : ftg256
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Nov 30 14:15:46 2015
+Mapped Date    : Mon Nov 30 14:35:26 2015
 
 Mapping design into LUTs...
 Running directed packing...
@@ -19,56 +19,52 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 3 secs 
+Total REAL time at the beginning of Placer: 4 secs 
 Total CPU  time at the beginning of Placer: 4 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:770c85ed) REAL time: 4 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:336acdcf) REAL time: 4 secs 
 
 Phase 2.7  Design Feasibility Check
-INFO:Place:834 - Only a subset of IOs are locked. Out of 7 IOs, 3 are locked and
-   4 are not locked. If you would like to print the names of these IOs, please
-   set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:770c85ed) REAL time: 4 secs 
+Phase 2.7  Design Feasibility Check (Checksum:336acdcf) REAL time: 4 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:770c85ed) REAL time: 4 secs 
+Phase 3.31  Local Placement Optimization (Checksum:336acdcf) REAL time: 4 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-...
+
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:3fc12708) REAL time: 5 secs 
+(Checksum:fc1f6eea) REAL time: 5 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:3fc12708) REAL time: 5 secs 
+Phase 5.36  Local Placement Optimization (Checksum:fc1f6eea) REAL time: 5 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:3fc12708) REAL time: 5 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:fc1f6eea) REAL time: 5 secs 
 
 Phase 7.3  Local Placement Optimization
-...
-Phase 7.3  Local Placement Optimization (Checksum:b7c5e262) REAL time: 5 secs 
+Phase 7.3  Local Placement Optimization (Checksum:fc1f6eea) REAL time: 5 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:b7c5e262) REAL time: 5 secs 
+Phase 8.5  Local Placement Optimization (Checksum:fc1f6eea) REAL time: 5 secs 
 
 Phase 9.8  Global Placement
-.................................
-......................................................................................................................................
-...............................
-Phase 9.8  Global Placement (Checksum:2194d73c) REAL time: 6 secs 
+..................................
+.............................................................................................................................................................................................................
+......................................
+Phase 9.8  Global Placement (Checksum:40ce523a) REAL time: 7 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:2194d73c) REAL time: 7 secs 
+Phase 10.5  Local Placement Optimization (Checksum:40ce523a) REAL time: 7 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:e8a5ce2c) REAL time: 9 secs 
+Phase 11.18  Placement Optimization (Checksum:b261525a) REAL time: 10 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:e8a5ce2c) REAL time: 10 secs 
+Phase 12.5  Local Placement Optimization (Checksum:b261525a) REAL time: 10 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:e8a5ce2c) REAL time: 10 secs 
+Phase 13.34  Placement Validation (Checksum:b261525a) REAL time: 10 secs 
 
 Total REAL time to Placer completion: 10 secs 
 Total CPU  time to Placer completion: 10 secs 
@@ -89,8 +85,8 @@ Slice Logic Utilization:
     Number used as AND/OR logics:                0
   Number of Slice LUTs:                        554 out of   9,112    6%
     Number used as logic:                      550 out of   9,112    6%
-      Number using O6 output only:             426
-      Number using O5 output only:              42
+      Number using O6 output only:             427
+      Number using O5 output only:              41
       Number using O5 and O6:                   82
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
@@ -100,7 +96,7 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   185 out of   2,278    8%
+  Number of occupied Slices:                   201 out of   2,278    8%
   Number of MUXCYs used:                       252 out of   4,556    5%
   Number of LUT Flip Flop pairs used:          554
     Number with an unused Flip Flop:           483 out of     554   87%
@@ -117,8 +113,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         7 out of     232    3%
-    Number of LOCed IOBs:                        3 out of       7   42%
+  Number of bonded IOBs:                         7 out of     186    3%
+    Number of LOCed IOBs:                        7 out of       7  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -148,8 +144,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                4.46
 
 Peak Memory Usage:  389 MB
-Total REAL time to MAP completion:  10 secs 
-Total CPU time to MAP completion:   10 secs 
+Total REAL time to MAP completion:  11 secs 
+Total CPU time to MAP completion:   11 secs 
 
 Mapping completed.
 See MAP report file "Top_map.mrp" for details.

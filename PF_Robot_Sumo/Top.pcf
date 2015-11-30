@@ -1,10 +1,15 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Nov 30 14:15:56 2015
+// Written by: Map P.20131013 on Mon Nov 30 14:35:37 2015
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "in_Rst" LOCATE = SITE "B8" LEVEL 1;
-COMP "in_Clk100MHz" LOCATE = SITE "V10" LEVEL 1;
-COMP "out_motor_1" LOCATE = SITE "T12" LEVEL 1;
+CONFIG VCCAUX = "3.3";
+COMP "in_Rx" LOCATE = SITE "F3" LEVEL 1;
+COMP "in_line_top" LOCATE = SITE "B16" LEVEL 1;
+COMP "in_Rst" LOCATE = SITE "D5" LEVEL 1;
+COMP "out_Tx" LOCATE = SITE "G1" LEVEL 1;
+COMP "in_Clk100MHz" LOCATE = SITE "T8" LEVEL 1;
+COMP "out_motor_1" LOCATE = SITE "T15" LEVEL 1;
+COMP "out_motor_2" LOCATE = SITE "T14" LEVEL 1;
 SCHEMATIC END;
 

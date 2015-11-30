@@ -3,14 +3,14 @@ Xilinx Mapping Report File for Design 'Top'
 
 Design Information
 ------------------
-Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol
+Command Line   : map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol
 high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
 -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
 Target Device  : xc6slx16
-Target Package : csg324
+Target Package : ftg256
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Nov 30 14:15:46 2015
+Mapped Date    : Mon Nov 30 14:35:26 2015
 
 Design Summary
 --------------
@@ -24,8 +24,8 @@ Slice Logic Utilization:
     Number used as AND/OR logics:                0
   Number of Slice LUTs:                        554 out of   9,112    6%
     Number used as logic:                      550 out of   9,112    6%
-      Number using O6 output only:             426
-      Number using O5 output only:              42
+      Number using O6 output only:             427
+      Number using O5 output only:              41
       Number using O5 and O6:                   82
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
@@ -35,7 +35,7 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   185 out of   2,278    8%
+  Number of occupied Slices:                   201 out of   2,278    8%
   Number of MUXCYs used:                       252 out of   4,556    5%
   Number of LUT Flip Flop pairs used:          554
     Number with an unused Flip Flop:           483 out of     554   87%
@@ -52,8 +52,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         7 out of     232    3%
-    Number of LOCed IOBs:                        3 out of       7   42%
+  Number of bonded IOBs:                         7 out of     186    3%
+    Number of LOCed IOBs:                        7 out of       7  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -83,8 +83,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                4.46
 
 Peak Memory Usage:  389 MB
-Total REAL time to MAP completion:  10 secs 
-Total CPU time to MAP completion:   10 secs 
+Total REAL time to MAP completion:  11 secs 
+Total CPU time to MAP completion:   11 secs 
 
 Table of Contents
 -----------------
@@ -120,9 +120,6 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 7 IOs, 3 are locked and
-   4 are not locked. If you would like to print the names of these IOs, please
-   set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
@@ -147,13 +144,13 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
-| in_Clk100MHz                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| in_Rst                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| in_Rx                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| in_line_top                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| out_Tx                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| out_motor_1                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| out_motor_2                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| in_Clk100MHz                       | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| in_Rst                             | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| in_Rx                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| in_line_top                        | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| out_Tx                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| out_motor_1                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| out_motor_2                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs
