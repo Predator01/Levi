@@ -29,7 +29,8 @@ entity Top is
 		in_Rx : in STD_LOGIC;
 		out_Tx : out  STD_LOGIC;
       out_motor_1 : out STD_LOGIC;
-		out_motor_2 : out STD_LOGIC);
+		out_motor_2 : out STD_LOGIC
+		);
 
 end Top;
 
@@ -54,6 +55,7 @@ architecture Behavioral of Top is
 			out_action_1_r : out STD_LOGIC_VECTOR(1 downto 0);
 			out_action_2_r : out STD_LOGIC_VECTOR(1 downto 0));
 	end component;
+	
 	--Comp: U3 Line Detector
 	Component Detector_Linea
 		Port(
@@ -65,12 +67,11 @@ architecture Behavioral of Top is
 	
 	--Comp: U4 Line Detector
 	Component Ultrasonic
-		Port(
-			in_rst_ul : in STD_LOGIC;
-			in_clk : in STD_LOGIC;
-			in_rx : in STD_LOGIC;
-			out_tx: out STD_LOGIC;
-			out_ultrasonic: out STD_LOGIC);
+		Port ( Clk        : in  STD_LOGIC;
+           Rst        : in  STD_LOGIC;
+			  Rx : in STD_LOGIC;
+           Tx         : out  STD_LOGIC;
+			  out_ultrasonic : out STD_LOGIC);
 	end component;
 	
 	-- signals
@@ -88,13 +89,7 @@ architecture Behavioral of Top is
 begin
 	-- instanciar componentes
 	U4: Ultrasonic
-		port map(
-			in_Rst,
-			in_Clk100MHz,
-			in_Rx,
-			out_Tx,
-			out_ultrasonic_1);
-	
+		Port map (in_Clk100MHz,in_Rst, in_Rx,out_Tx,out_ultrasonic_1);
 	U3: Detector_Linea
 		port map(
 			in_Rst,

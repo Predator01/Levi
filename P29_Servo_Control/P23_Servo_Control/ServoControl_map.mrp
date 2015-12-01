@@ -1,4 +1,4 @@
-Release 14.7 Map P.20131013 (nt)
+Release 14.7 Map P.20131013 (nt64)
 Xilinx Mapping Report File for Design 'ServoControl'
 
 Design Information
@@ -11,7 +11,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Fri Nov 06 09:31:40 2015
+Mapped Date    : Mon Nov 30 23:15:18 2015
 
 Design Summary
 --------------
@@ -79,9 +79,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                3.83
 
-Peak Memory Usage:  303 MB
+Peak Memory Usage:  374 MB
 Total REAL time to MAP completion:  5 secs 
-Total CPU time to MAP completion:   4 secs 
+Total CPU time to MAP completion:   5 secs 
 
 Table of Contents
 -----------------

@@ -7,16 +7,23 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Detector_Linea - Behavioral D:|ProySisDigAva|Levi|PF_Robot_Sumo|Detector_Linea.vhd</ClosedNode>
+         <ClosedNode>/Motor - Behavioral D:|ProySisDigAva|Levi|PF_Robot_Sumo|Motor.vhd</ClosedNode>
+         <ClosedNode>/Robot - Behavioral D:|ProySisDigAva|Levi|PF_Robot_Sumo|Robot.vhd</ClosedNode>
          <ClosedNode>/Top - Behavioral D:|ProySisDigAva|Levi|PF_Robot_Sumo|Top.vhd/PKG_ROBOT_SUMO</ClosedNode>
+         <ClosedNode>/Top - Behavioral D:|ProySisDigAva|Levi|PF_Robot_Sumo|Top.vhd/U1_1 - Motor - Behavioral</ClosedNode>
+         <ClosedNode>/Top - Behavioral D:|ProySisDigAva|Levi|PF_Robot_Sumo|Top.vhd/U1_2 - Motor - Behavioral</ClosedNode>
+         <ClosedNode>/Top - Behavioral D:|ProySisDigAva|Levi|PF_Robot_Sumo|Top.vhd/U2 - Robot - Behavioral</ClosedNode>
+         <ClosedNode>/Top - Behavioral D:|ProySisDigAva|Levi|PF_Robot_Sumo|Top.vhd/U3 - Detector_Linea - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Top - Behavioral (D:/ProySisDigAva/Levi/PF_Robot_Sumo/Top.vhd)</SelectedItem>
+         <SelectedItem>U4 - Ultrasonic - Behavioral (D:/ProySisDigAva/Levi/PF_Robot_Sumo/Ultrasonic.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000022f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000022f0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d80000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Top - Behavioral (D:/ProySisDigAva/Levi/PF_Robot_Sumo/Top.vhd)</CurrentItem>
+      <CurrentItem>U4 - Ultrasonic - Behavioral (D:/ProySisDigAva/Levi/PF_Robot_Sumo/Ultrasonic.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -28,7 +35,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
@@ -37,11 +44,11 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems/>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000038e000000040101000100000000000000000000000064ffffffff000000810000000000000004000000480000000100000000000000270000000100000000000000760000000100000000000002a90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Top.vhd</CurrentItem>
+      <CurrentItem>Detector_Linea.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -61,16 +68,17 @@
          <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000179000000010000000100000000000000000000000064ffffffff000000810000000000000001000001790000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
       <ClosedNodes>
@@ -97,8 +105,53 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
+   </ItemView>
+   <CopyAdditionalFiles/>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Robot_sumo_tb - behavior D:|ProySisDigAva|Levi|PF_Robot_Sumo|Robot_sumo_tb.vhd/uut - Top - Behavioral/U1_1 - Motor - Behavioral</ClosedNode>
+         <ClosedNode>/Robot_sumo_tb - behavior D:|ProySisDigAva|Levi|PF_Robot_Sumo|Robot_sumo_tb.vhd/uut - Top - Behavioral/U1_2 - Motor - Behavioral</ClosedNode>
+         <ClosedNode>/Robot_sumo_tb - behavior D:|ProySisDigAva|Levi|PF_Robot_Sumo|Robot_sumo_tb.vhd/uut - Top - Behavioral/U2 - Robot - Behavioral</ClosedNode>
+         <ClosedNode>/Robot_sumo_tb - behavior D:|ProySisDigAva|Levi|PF_Robot_Sumo|Robot_sumo_tb.vhd/uut - Top - Behavioral/U3 - Detector_Linea - Behavioral</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>uut - Top - Behavioral (D:/ProySisDigAva/Levi/PF_Robot_Sumo/Top.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d80000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>uut - Top - Behavioral (D:/ProySisDigAva/Levi/PF_Robot_Sumo/Top.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
 </Project>

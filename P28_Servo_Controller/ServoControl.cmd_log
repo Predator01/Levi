@@ -4,3 +4,33 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off ServoControl_map.ncd ServoControl.ncd ServoControl.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ServoControl.twx ServoControl.ncd -o ServoControl.twr ServoControl.pcf -ucf ServoControl.ucf 
 bitgen -intstyle ise -f ServoControl.ut ServoControl.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P28_Servo_Controller/ServoControl.xst" -ofn "D:/ProySisDigAva/Levi/P28_Servo_Controller/ServoControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ServoControl.ucf -p xc6slx16-csg324-3 ServoControl.ngc ServoControl.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ServoControl_map.ncd ServoControl.ngd ServoControl.pcf 
+par -w -intstyle ise -ol high -mt off ServoControl_map.ncd ServoControl.ncd ServoControl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ServoControl.twx ServoControl.ncd -o ServoControl.twr ServoControl.pcf -ucf ServoControl.ucf 
+bitgen -intstyle ise -f ServoControl.ut ServoControl.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P28_Servo_Controller/ServoControl.xst" -ofn "D:/ProySisDigAva/Levi/P28_Servo_Controller/ServoControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ServoControl.ucf -p xc6slx16-csg324-3 ServoControl.ngc ServoControl.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ServoControl_map.ncd ServoControl.ngd ServoControl.pcf 
+par -w -intstyle ise -ol high -mt off ServoControl_map.ncd ServoControl.ncd ServoControl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ServoControl.twx ServoControl.ncd -o ServoControl.twr ServoControl.pcf -ucf ServoControl.ucf 
+bitgen -intstyle ise -f ServoControl.ut ServoControl.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P28_Servo_Controller/ServoControl.xst" -ofn "D:/ProySisDigAva/Levi/P28_Servo_Controller/ServoControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ServoControl.ucf -p xc6slx16-csg324-3 ServoControl.ngc ServoControl.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ServoControl_map.ncd ServoControl.ngd ServoControl.pcf 
+par -w -intstyle ise -ol high -mt off ServoControl_map.ncd ServoControl.ncd ServoControl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ServoControl.twx ServoControl.ncd -o ServoControl.twr ServoControl.pcf -ucf ServoControl.ucf 
+bitgen -intstyle ise -f ServoControl.ut ServoControl.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P28_Servo_Controller/ServoControl.xst" -ofn "D:/ProySisDigAva/Levi/P28_Servo_Controller/ServoControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ServoControl.ucf -p xc6slx16-csg324-3 ServoControl.ngc ServoControl.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ServoControl_map.ncd ServoControl.ngd ServoControl.pcf 
+par -w -intstyle ise -ol high -mt off ServoControl_map.ncd ServoControl.ncd ServoControl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ServoControl.twx ServoControl.ncd -o ServoControl.twr ServoControl.pcf -ucf ServoControl.ucf 
+bitgen -intstyle ise -f ServoControl.ut ServoControl.ncd 
+xst -intstyle ise -ifn "D:/ProySisDigAva/Levi/P28_Servo_Controller/ServoControl.xst" -ofn "D:/ProySisDigAva/Levi/P28_Servo_Controller/ServoControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ServoControl.ucf -p xc6slx16-csg324-3 ServoControl.ngc ServoControl.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ServoControl_map.ncd ServoControl.ngd ServoControl.pcf 
+par -w -intstyle ise -ol high -mt off ServoControl_map.ncd ServoControl.ncd ServoControl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ServoControl.twx ServoControl.ncd -o ServoControl.twr ServoControl.pcf -ucf ServoControl.ucf 
+bitgen -intstyle ise -f ServoControl.ut ServoControl.ncd 

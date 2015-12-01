@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-11-30T14:18:25</DateModified>
+  <DateModified>2015-11-30T17:49:07</DateModified>
   <ModuleName>Counter</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-11-30T17:48:30</SummaryTimeStamp>
   <SavedFilePath>D:/ProySisDigAva/Levi/P36a_OpalKelly_Counter/iseconfig/Counter.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/ProySisDigAva/Levi/P36a_OpalKelly_Counter\</ImplementationReportsDirectory>
-  <DateInitialized>2015-11-25T12:45:06</DateInitialized>
+  <DateInitialized>2015-11-30T17:48:06</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

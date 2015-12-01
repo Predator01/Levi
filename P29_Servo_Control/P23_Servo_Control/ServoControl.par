@@ -1,7 +1,7 @@
-Release 14.7 par P.20131013 (nt)
+Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CALYPSO-ROG::  Fri Nov 06 09:31:48 2015
+PREDATOR::  Mon Nov 30 23:15:26 2015
 
 par -w -intstyle ise -ol high -mt off ServoControl_map.ncd ServoControl.ncd
 ServoControl.pcf 
@@ -95,9 +95,9 @@ Finished initial Timing Analysis.  REAL time: 2 secs
 Starting Router
 
 
-Phase  1  : 151 unrouted;      REAL time: 2 secs 
+Phase  1  : 151 unrouted;      REAL time: 3 secs 
 
-Phase  2  : 127 unrouted;      REAL time: 2 secs 
+Phase  2  : 127 unrouted;      REAL time: 3 secs 
 
 Phase  3  : 22 unrouted;      REAL time: 3 secs 
 
@@ -154,10 +154,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 3 secs 
-Total CPU time to PAR completion: 3 secs 
+Total REAL time to PAR completion: 4 secs 
+Total CPU time to PAR completion: 4 secs 
 
-Peak Memory Usage:  287 MB
+Peak Memory Usage:  321 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/ProySisDigAva/Levi/PF_Robot_Sumo/Top_isim_beh.exe" -prj "D:/ProySisDigAva/Levi/PF_Robot_Sumo/Top_beh.prj" "work.Top" 

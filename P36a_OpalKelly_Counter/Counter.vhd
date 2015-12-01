@@ -31,7 +31,7 @@ end Counter;
 architecture Behavioral of Counter is
   -- Constant definition
   -- Oscillator frequency of a Opal Kelly board
-  constant BoardFreq : natural := 100000000;
+  constant BoardFreq : natural := 100_000_000;
   constant MaxCount  : natural := BoardFreq / 2;
   
   -- Counter used for frequency division

@@ -38,8 +38,8 @@ architecture Behavioral of ServoControl is
   constant CtaMax : integer := Fosc / Fdiv; 
   
   -- in microseconds
-  constant th_micros : integer := 1500;
-  constant tl_micros : integer := 18500;
+  constant th_micros : integer := 2000;
+  constant tl_micros : integer := 19000;
   
   signal Cont : integer range 0 to CtaMax;
   signal ClkOut : std_logic;
@@ -101,6 +101,7 @@ begin
 			when LOW => Servo <= '0';
 			when others => Servo <= '1';
 		end case;
+--		Servo <= '1';
   end process outputs;
 
 end Behavioral;

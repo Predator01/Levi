@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: ServoControl.prj
 
@@ -122,36 +122,16 @@ INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\P28_Servo_Controller\StopLigth.vhd
 
 Synthesizing Unit <ServoControl>.
     Related source file is "D:\ProySisDigAva\Levi\P28_Servo_Controller\StopLigth.vhd".
-    Found 1-bit register for signal <pres_state>.
-    Found 7-bit register for signal <Cont>.
-    Found 1-bit register for signal <ClkOut>.
-    Found 15-bit register for signal <micros_count>.
-    Found 7-bit adder for signal <Cont[6]_GND_6_o_add_1_OUT> created at line 59.
-    Found 15-bit adder for signal <micros_count[14]_GND_6_o_add_5_OUT> created at line 74.
-    Found 15-bit comparator equal for signal <micros_count[14]_micros_current_state_duration[14]_equal_5_o> created at line 71
+WARNING:Xst:647 - Input <Rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  24 D-type flip-flop(s).
-	inferred   1 Comparator(s).
-	inferred   1 Multiplexer(s).
+	no macro.
 Unit <ServoControl> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
-Macro Statistics
-# Adders/Subtractors                                   : 2
- 15-bit adder                                          : 1
- 7-bit adder                                           : 1
-# Registers                                            : 4
- 1-bit register                                        : 2
- 15-bit register                                       : 1
- 7-bit register                                        : 1
-# Comparators                                          : 1
- 15-bit comparator equal                               : 1
-# Multiplexers                                         : 1
- 7-bit 2-to-1 multiplexer                              : 1
-
+Found no macro
 =========================================================================
 
 =========================================================================
@@ -159,23 +139,10 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <ServoControl>.
-The following registers are absorbed into counter <Cont>: 1 register on signal <Cont>.
-The following registers are absorbed into counter <micros_count>: 1 register on signal <micros_count>.
-Unit <ServoControl> synthesized (advanced).
-
 =========================================================================
 Advanced HDL Synthesis Report
 
-Macro Statistics
-# Counters                                             : 2
- 15-bit up counter                                     : 1
- 7-bit up counter                                      : 1
-# Registers                                            : 2
- Flip-Flops                                            : 2
-# Comparators                                          : 1
- 15-bit comparator equal                               : 1
-
+Found no macro
 =========================================================================
 
 =========================================================================
@@ -193,10 +160,7 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Macro Statistics
-# Registers                                            : 24
- Flip-Flops                                            : 24
-
+Found no macro
 =========================================================================
 
 =========================================================================
@@ -218,25 +182,9 @@ Top Level Output File Name         : ServoControl.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 81
-#      GND                         : 1
-#      INV                         : 3
-#      LUT1                        : 14
-#      LUT2                        : 4
-#      LUT3                        : 1
-#      LUT4                        : 16
-#      LUT5                        : 2
-#      LUT6                        : 10
-#      MUXCY                       : 14
+# BELS                             : 1
 #      VCC                         : 1
-#      XORCY                       : 15
-# FlipFlops/Latches                : 24
-#      FDC                         : 8
-#      FDE                         : 16
-# Clock Buffers                    : 1
-#      BUFGP                       : 1
-# IO Buffers                       : 2
-#      IBUF                        : 1
+# IO Buffers                       : 1
 #      OBUF                        : 1
 
 Device utilization summary:
@@ -246,23 +194,19 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              24  out of  18224     0%  
- Number of Slice LUTs:                   50  out of   9112     0%  
-    Number used as Logic:                50  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     50
-   Number with an unused Flip Flop:      26  out of     50    52%  
-   Number with an unused LUT:             0  out of     50     0%  
-   Number of fully used LUT-FF pairs:    24  out of     50    48%  
-   Number of unique control sets:         3
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
 
 IO Utilization: 
  Number of IOs:                           3
- Number of bonded IOBs:                   3  out of    232     1%  
+ Number of bonded IOBs:                   1  out of    232     0%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -282,11 +226,7 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-Clk                                | BUFGP                  | 24    |
------------------------------------+------------------------+-------+
+No clock signals found in this design
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -296,9 +236,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 4.018ns (Maximum Frequency: 248.855MHz)
-   Minimum input arrival time before clock: 3.501ns
-   Maximum output required time after clock: 4.485ns
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -306,92 +246,21 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 4.018ns (frequency: 248.855MHz)
-  Total number of paths / destination ports: 560 / 39
--------------------------------------------------------------------------
-Delay:               4.018ns (Levels of Logic = 2)
-  Source:            micros_count_9 (FF)
-  Destination:       micros_count_0 (FF)
-  Source Clock:      Clk rising
-  Destination Clock: Clk rising
-
-  Data Path: micros_count_9 to micros_count_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q              3   0.447   1.015  micros_count_9 (micros_count_9)
-     LUT6:I0->O            2   0.203   0.845  micros_count[14]_micros_current_state_duration[14]_equal_5_o151 (micros_count[14]_micros_current_state_duration[14]_equal_5_o15)
-     LUT6:I3->O           15   0.205   0.981  _n0045_inv1_cepot (_n0045_inv1_cepot)
-     FDE:CE                    0.322          micros_count_0
-    ----------------------------------------
-    Total                      4.018ns (1.177ns logic, 2.841ns route)
-                                       (29.3% logic, 70.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
-  Total number of paths / destination ports: 24 / 24
--------------------------------------------------------------------------
-Offset:              3.501ns (Levels of Logic = 2)
-  Source:            Rst (PAD)
-  Destination:       ClkOut (FF)
-  Destination Clock: Clk rising
-
-  Data Path: Rst to ClkOut
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            24   1.222   1.172  Rst_IBUF (Rst_IBUF)
-     INV:I->O              1   0.206   0.579  Rst_inv1_INV_0 (Rst_inv)
-     FDE:CE                    0.322          ClkOut
-    ----------------------------------------
-    Total                      3.501ns (1.750ns logic, 1.751ns route)
-                                       (50.0% logic, 50.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.485ns (Levels of Logic = 2)
-  Source:            pres_state (FF)
-  Destination:       Servo (PAD)
-  Source Clock:      Clk rising
-
-  Data Path: pres_state to Servo
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              4   0.447   0.683  pres_state (pres_state)
-     INV:I->O              1   0.206   0.579  Servo1_INV_0 (Servo_OBUF)
-     OBUF:I->O                 2.571          Servo_OBUF (Servo)
-    ----------------------------------------
-    Total                      4.485ns (3.224ns logic, 1.261ns route)
-                                       (71.9% logic, 28.1% route)
-
-=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
-
-Clock to Setup on destination clock Clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-Clk            |    4.018|         |         |         |
----------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.41 secs
+Total CPU time to Xst completion: 4.89 secs
  
 --> 
 
-Total memory usage is 252564 kilobytes
+Total memory usage is 236372 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

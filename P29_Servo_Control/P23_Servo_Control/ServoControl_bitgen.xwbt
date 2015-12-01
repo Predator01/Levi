@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=D:\ProySisDigAva\P23_Servo_Control\ServoControl.ncd
-OUTFILE=D:\ProySisDigAva\P23_Servo_Control\ServoControl.bit
+INFILE=D:\ProySisDigAva\Levi\P29_Servo_Control\P23_Servo_Control\ServoControl.ncd
+OUTFILE=D:\ProySisDigAva\Levi\P29_Servo_Control\P23_Servo_Control\ServoControl.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=D:\ProySisDigAva\P23_Servo_Control
+WORKINGDIR=D:\ProySisDigAva\Levi\P29_Servo_Control\P23_Servo_Control
 LICENSE=WebPack
-USER_INFO=211075565_0_0_270
+USER_INFO=211076419_0_0_317

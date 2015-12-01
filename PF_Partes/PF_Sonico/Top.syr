@@ -1,0 +1,636 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Partes\PF_Sonico\Ultrasonic.vhd" into library work
+Parsing entity <Ultrasonic>.
+Parsing architecture <Behavioral> of entity <ultrasonic>.
+Parsing VHDL file "D:\ProySisDigAva\Levi\PF_Partes\PF_Sonico\Top.vhd" into library work
+Parsing entity <Top>.
+Parsing architecture <Behavioral> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <Top> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Ultrasonic> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\PF_Partes\PF_Sonico\Ultrasonic.vhd" Line 133. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\ProySisDigAva\Levi\PF_Partes\PF_Sonico\Ultrasonic.vhd" Line 146. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top>.
+    Related source file is "D:\ProySisDigAva\Levi\PF_Partes\PF_Sonico\Top.vhd".
+    Summary:
+	no macro.
+Unit <Top> synthesized.
+
+Synthesizing Unit <Ultrasonic>.
+    Related source file is "D:\ProySisDigAva\Levi\PF_Partes\PF_Sonico\Ultrasonic.vhd".
+    Found 2-bit register for signal <pres_state>.
+    Found 20-bit register for signal <SecondCount>.
+    Found 7-bit register for signal <Cont>.
+    Found 1-bit register for signal <TimeBase>.
+    Found 15-bit register for signal <tIN>.
+    Found finite state machine <FSM_0> for signal <pres_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 12                                             |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | Rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | startpulse                                     |
+    | Power Up State     | startpulse                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 21-bit subtractor for signal <GND_4_o_GND_4_o_sub_15_OUT> created at line 97.
+    Found 7-bit adder for signal <Cont[6]_GND_4_o_add_1_OUT> created at line 68.
+    Found 15-bit adder for signal <tIN[14]_GND_4_o_add_8_OUT> created at line 83.
+    Found 20-bit adder for signal <SecondCount[19]_GND_4_o_add_16_OUT> created at line 101.
+    Found 15x9-bit multiplier for signal <tIN[14]_PWR_4_o_MuLt_4_OUT> created at line 75.
+    Found 21-bit comparator equal for signal <GND_4_o_GND_4_o_equal_16_o> created at line 97
+    Found 9-bit comparator greater for signal <out_ultrasonic> created at line 148
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Ultrasonic> synthesized.
+
+Synthesizing Unit <div_24u_15u>.
+    Related source file is "".
+    Found 39-bit adder for signal <GND_6_o_b[14]_add_1_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_6_o_b[14]_add_3_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_6_o_b[14]_add_5_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_6_o_b[14]_add_7_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_6_o_b[14]_add_9_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_6_o_b[14]_add_11_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_6_o_b[14]_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <GND_6_o_b[14]_add_15_OUT> created at line 0.
+    Found 31-bit adder for signal <GND_6_o_b[14]_add_17_OUT> created at line 0.
+    Found 30-bit adder for signal <GND_6_o_b[14]_add_19_OUT> created at line 0.
+    Found 29-bit adder for signal <GND_6_o_b[14]_add_21_OUT> created at line 0.
+    Found 28-bit adder for signal <GND_6_o_b[14]_add_23_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_6_o_b[14]_add_25_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_6_o_b[14]_add_27_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_6_o_b[14]_add_29_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_b[14]_add_31_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_6_o_add_33_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_6_o_add_35_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_6_o_add_37_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_6_o_add_39_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_6_o_add_41_OUT> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_6_o_add_43_OUT[23:0]> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_6_o_add_45_OUT[23:0]> created at line 0.
+    Found 24-bit adder for signal <a[23]_GND_6_o_add_47_OUT[23:0]> created at line 0.
+    Found 39-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 31-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 30-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Summary:
+	inferred  24 Adder/Subtractor(s).
+	inferred  25 Comparator(s).
+	inferred 507 Multiplexer(s).
+Unit <div_24u_15u> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 15x9-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 28
+ 15-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 21-bit subtractor                                     : 1
+ 24-bit adder                                          : 9
+ 25-bit adder                                          : 1
+ 26-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 28-bit adder                                          : 1
+ 29-bit adder                                          : 1
+ 30-bit adder                                          : 1
+ 31-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 33-bit adder                                          : 1
+ 34-bit adder                                          : 1
+ 35-bit adder                                          : 1
+ 36-bit adder                                          : 1
+ 37-bit adder                                          : 1
+ 38-bit adder                                          : 1
+ 39-bit adder                                          : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 15-bit register                                       : 1
+ 20-bit register                                       : 1
+ 7-bit register                                        : 1
+# Comparators                                          : 27
+ 21-bit comparator equal                               : 1
+ 24-bit comparator lessequal                           : 10
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 510
+ 1-bit 2-to-1 multiplexer                              : 504
+ 15-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 1
+ 24-bit 2-to-1 multiplexer                             : 3
+ 7-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Ultrasonic>.
+The following registers are absorbed into counter <Cont>: 1 register on signal <Cont>.
+The following registers are absorbed into counter <SecondCount>: 1 register on signal <SecondCount>.
+The following registers are absorbed into counter <tIN>: 1 register on signal <tIN>.
+Unit <Ultrasonic> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 15x9-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 25
+ 21-bit subtractor                                     : 1
+ 24-bit adder                                          : 24
+# Counters                                             : 3
+ 15-bit up counter                                     : 1
+ 20-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 27
+ 21-bit comparator equal                               : 1
+ 24-bit comparator lessequal                           : 10
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator lessequal                           : 1
+ 31-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 1
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 9-bit comparator greater                              : 1
+# Multiplexers                                         : 507
+ 1-bit 2-to-1 multiplexer                              : 504
+ 24-bit 2-to-1 multiplexer                             : 3
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U4/FSM_0> on signal <pres_state[1:2]> with gray encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ startpulse         | 00
+ waitforresponse    | 01
+ ultrasonicresponse | 11
+ waitfornewstart    | 10
+--------------------------------
+
+Optimizing unit <Top> ...
+
+Optimizing unit <Ultrasonic> ...
+
+Optimizing unit <div_24u_15u> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 5.
+FlipFlop U4/pres_state_FSM_FFd1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 46
+ Flip-Flops                                            : 46
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 698
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 3
+#      LUT2                        : 41
+#      LUT3                        : 96
+#      LUT4                        : 7
+#      LUT5                        : 140
+#      LUT6                        : 49
+#      MUXCY                       : 169
+#      MUXF7                       : 6
+#      VCC                         : 1
+#      XORCY                       : 167
+# FlipFlops/Latches                : 46
+#      FDC                         : 10
+#      FDCE                        : 20
+#      FDE                         : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      OBUF                        : 2
+# DSPs                             : 1
+#      DSP48A1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              46  out of  18224     0%  
+ Number of Slice LUTs:                  354  out of   9112     3%  
+    Number used as Logic:               354  out of   9112     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    355
+   Number with an unused Flip Flop:     309  out of    355    87%  
+   Number with an unused LUT:             1  out of    355     0%  
+   Number of fully used LUT-FF pairs:    45  out of    355    12%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    232     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+in_Clk100MHz                       | BUFGP                  | 46    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.073ns (Maximum Frequency: 245.537MHz)
+   Minimum input arrival time before clock: 3.606ns
+   Maximum output required time after clock: 47.227ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'in_Clk100MHz'
+  Clock period: 4.073ns (frequency: 245.537MHz)
+  Total number of paths / destination ports: 8036 / 81
+-------------------------------------------------------------------------
+Delay:               4.073ns (Levels of Logic = 23)
+  Source:            U4/pres_state_FSM_FFd1 (FF)
+  Destination:       U4/SecondCount_19 (FF)
+  Source Clock:      in_Clk100MHz rising
+  Destination Clock: in_Clk100MHz rising
+
+  Data Path: U4/pres_state_FSM_FFd1 to U4/SecondCount_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             20   0.447   1.093  U4/pres_state_FSM_FFd1 (U4/pres_state_FSM_FFd1)
+     LUT4:I3->O            1   0.205   0.000  U4/Mcompar_GND_4_o_GND_4_o_equal_16_o_lut<6>1 (U4/Mcompar_GND_4_o_GND_4_o_equal_16_o_lut<6>)
+     MUXCY:S->O           23   0.172   1.154  U4/Mcompar_GND_4_o_GND_4_o_equal_16_o_cy<6> (U4/GND_4_o_GND_4_o_equal_16_o)
+     LUT2:I1->O            1   0.205   0.000  U4/Mcount_SecondCount_lut<0> (U4/Mcount_SecondCount_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U4/Mcount_SecondCount_cy<0> (U4/Mcount_SecondCount_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<1> (U4/Mcount_SecondCount_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<2> (U4/Mcount_SecondCount_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<3> (U4/Mcount_SecondCount_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<4> (U4/Mcount_SecondCount_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<5> (U4/Mcount_SecondCount_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<6> (U4/Mcount_SecondCount_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<7> (U4/Mcount_SecondCount_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<8> (U4/Mcount_SecondCount_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<9> (U4/Mcount_SecondCount_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<10> (U4/Mcount_SecondCount_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<11> (U4/Mcount_SecondCount_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<12> (U4/Mcount_SecondCount_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<13> (U4/Mcount_SecondCount_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<14> (U4/Mcount_SecondCount_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<15> (U4/Mcount_SecondCount_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<16> (U4/Mcount_SecondCount_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  U4/Mcount_SecondCount_cy<17> (U4/Mcount_SecondCount_cy<17>)
+     MUXCY:CI->O           0   0.019   0.000  U4/Mcount_SecondCount_cy<18> (U4/Mcount_SecondCount_cy<18>)
+     XORCY:CI->O           1   0.180   0.000  U4/Mcount_SecondCount_xor<19> (U4/Mcount_SecondCount19)
+     FDCE:D                    0.102          U4/SecondCount_19
+    ----------------------------------------
+    Total                      4.073ns (1.825ns logic, 2.248ns route)
+                                       (44.8% logic, 55.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'in_Clk100MHz'
+  Total number of paths / destination ports: 34 / 34
+-------------------------------------------------------------------------
+Offset:              3.606ns (Levels of Logic = 2)
+  Source:            in_Rst (PAD)
+  Destination:       U4/TimeBase (FF)
+  Destination Clock: in_Clk100MHz rising
+
+  Data Path: in_Rst to U4/TimeBase
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            31   1.222   1.277  in_Rst_IBUF (in_Rst_IBUF)
+     INV:I->O              1   0.206   0.579  U4/Rst_inv1_INV_0 (U4/Rst_inv)
+     FDE:CE                    0.322          U4/TimeBase
+    ----------------------------------------
+    Total                      3.606ns (1.750ns logic, 1.856ns route)
+                                       (48.5% logic, 51.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'in_Clk100MHz'
+  Total number of paths / destination ports: 79355757719297 / 2
+-------------------------------------------------------------------------
+Offset:              47.227ns (Levels of Logic = 39)
+  Source:            U4/tIN_14 (FF)
+  Destination:       led (PAD)
+  Source Clock:      in_Clk100MHz rising
+
+  Data Path: U4/tIN_14 to led
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.616  U4/tIN_14 (U4/tIN_14)
+     DSP48A1:B14->M15      6   3.364   1.089  U4/Mmult_tIN[14]_PWR_4_o_MuLt_4_OUT (U4/tIN[14]_PWR_4_o_MuLt_4_OUT<15>)
+     LUT5:I0->O            2   0.203   0.845  U4/tIN[14]_PWR_4_o_div_5/o<9>12 (U4/tIN[14]_PWR_4_o_div_5/o<9>11)
+     LUT6:I3->O           48   0.205   1.748  U4/tIN[14]_PWR_4_o_div_5/o<9>21 (U4/tIN[14]_PWR_4_o_div_5/o<9>)
+     LUT3:I0->O            1   0.205   0.944  U4/tIN[14]_PWR_4_o_div_5/Mmux_a[0]_a[23]_MUX_1016_o161 (U4/tIN[14]_PWR_4_o_div_5/a[15]_a[23]_MUX_1001_o)
+     LUT6:I0->O            2   0.203   0.864  U4/tIN[14]_PWR_4_o_div_5/o<8>22 (U4/tIN[14]_PWR_4_o_div_5/o<8>21)
+     LUT6:I2->O            1   0.203   0.000  U4/tIN[14]_PWR_4_o_div_5/o<8>24_G (N27)
+     MUXF7:I1->O          39   0.140   1.736  U4/tIN[14]_PWR_4_o_div_5/o<8>24 (U4/n0036<8>)
+     LUT5:I0->O            6   0.203   1.109  U4/tIN[14]_PWR_4_o_div_5/Mmux_a[0]_a[23]_MUX_1040_o151 (U4/tIN[14]_PWR_4_o_div_5/a[14]_a[23]_MUX_1026_o)
+     LUT6:I0->O            1   0.203   0.580  U4/tIN[14]_PWR_4_o_div_5/o<7>23 (U4/tIN[14]_PWR_4_o_div_5/o<7>22)
+     LUT6:I5->O            1   0.205   0.808  U4/tIN[14]_PWR_4_o_div_5/o<7>25_SW0_SW0 (N12)
+     LUT6:I3->O            2   0.205   0.981  U4/tIN[14]_PWR_4_o_div_5/o<7>25_SW0 (N10)
+     LUT6:I0->O           51   0.203   1.899  U4/tIN[14]_PWR_4_o_div_5/o<7>25 (U4/n0036<7>)
+     LUT5:I0->O            6   0.203   1.089  U4/tIN[14]_PWR_4_o_div_5/Mmux_a[0]_a[23]_MUX_1064_o131 (U4/tIN[14]_PWR_4_o_div_5/a[12]_a[23]_MUX_1052_o)
+     LUT5:I0->O            1   0.203   0.000  U4/tIN[14]_PWR_4_o_div_5/o<6>24_G (N21)
+     MUXF7:I1->O           1   0.140   0.808  U4/tIN[14]_PWR_4_o_div_5/o<6>24 (U4/tIN[14]_PWR_4_o_div_5/o<6>23)
+     LUT6:I3->O           45   0.205   1.821  U4/tIN[14]_PWR_4_o_div_5/o<6>25 (U4/n0036<6>)
+     LUT5:I0->O            6   0.203   1.089  U4/tIN[14]_PWR_4_o_div_5/Mmux_a[0]_a[23]_MUX_1088_o121 (U4/tIN[14]_PWR_4_o_div_5/a[11]_a[23]_MUX_1077_o)
+     LUT5:I0->O            1   0.203   0.000  U4/tIN[14]_PWR_4_o_div_5/o<5>24_G (N23)
+     MUXF7:I1->O           1   0.140   0.808  U4/tIN[14]_PWR_4_o_div_5/o<5>24 (U4/tIN[14]_PWR_4_o_div_5/o<5>23)
+     LUT6:I3->O           53   0.205   1.912  U4/tIN[14]_PWR_4_o_div_5/o<5>25 (U4/n0036<5>)
+     LUT5:I0->O            6   0.203   1.089  U4/tIN[14]_PWR_4_o_div_5/Mmux_a[0]_a[23]_MUX_1112_o111 (U4/tIN[14]_PWR_4_o_div_5/a[10]_a[23]_MUX_1102_o)
+     LUT5:I0->O            1   0.203   0.000  U4/tIN[14]_PWR_4_o_div_5/o<4>24_G (N25)
+     MUXF7:I1->O           1   0.140   0.808  U4/tIN[14]_PWR_4_o_div_5/o<4>24 (U4/tIN[14]_PWR_4_o_div_5/o<4>23)
+     LUT6:I3->O           52   0.205   1.905  U4/tIN[14]_PWR_4_o_div_5/o<4>25 (U4/n0036<4>)
+     LUT5:I0->O            3   0.203   0.995  U4/tIN[14]_PWR_4_o_div_5/Mmux_a[0]_a[23]_MUX_1136_o1231 (U4/tIN[14]_PWR_4_o_div_5/a[9]_a[23]_MUX_1127_o)
+     LUT5:I0->O            1   0.203   0.808  U4/tIN[14]_PWR_4_o_div_5/o<3>34 (U4/tIN[14]_PWR_4_o_div_5/o<3>33)
+     LUT6:I3->O           42   0.205   1.778  U4/tIN[14]_PWR_4_o_div_5/o<3>35 (U4/n0036<3>)
+     LUT5:I0->O            2   0.203   0.981  U4/tIN[14]_PWR_4_o_div_5/Mmux_n173125 (U4/tIN[14]_PWR_4_o_div_5/n1731<10>)
+     LUT6:I0->O            1   0.203   0.827  U4/tIN[14]_PWR_4_o_div_5/o<2>31 (U4/tIN[14]_PWR_4_o_div_5/o<2>3)
+     LUT6:I2->O           21   0.203   1.218  U4/tIN[14]_PWR_4_o_div_5/o<2>33 (U4/tIN[14]_PWR_4_o_div_5/o<2>32)
+     LUT6:I4->O            2   0.203   0.961  U4/tIN[14]_PWR_4_o_div_5/Mmux_n1735221 (U4/tIN[14]_PWR_4_o_div_5/n1735<7>)
+     LUT5:I0->O            1   0.203   0.000  U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_lut<0> (U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_cy<0> (U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_cy<1> (U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_cy<2> (U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_cy<3> (U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_cy<3>)
+     LUT6:I5->O            1   0.205   0.684  U4/tIN[14]_PWR_4_o_div_5/Mcompar_o<1>_cy<4> (U4/n0036<1>)
+     LUT6:I4->O            1   0.203   0.579  U4/out_ultrasonic1 (led_OBUF)
+     OBUF:I->O                 2.571          led_OBUF (led)
+    ----------------------------------------
+    Total                     47.227ns (13.270ns logic, 33.957ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock in_Clk100MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+in_Clk100MHz   |    4.073|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.88 secs
+ 
+--> 
+
+Total memory usage is 253672 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

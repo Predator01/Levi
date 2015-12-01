@@ -35,17 +35,19 @@ end State_Reg_Ultrasonic;
 
 architecture Behavioral of State_Reg_Ultrasonic is
 	-- Signals 
-  signal micros_count : integer range 0 to MOTOR_TL_MICROS;
+  signal micros_count : integer;
 
 begin 
 
-  	statereg: process (in_clk, in_rst, in_time_base)
+  	statereg: process (in_rst, in_clk, in_time_base)
 	begin
 		if (in_rst='1') then 
 			out_pres_state <= StartPulse;
+			--micros_count <= 0;
     elsif (rising_edge(in_clk) and in_time_base = '1') then
-		if(in_state_duration = micros_count) then 
+		if(in_state_duration-1 = micros_count) then 
 			out_pres_state <= in_next_state;
+			micros_count <= 0;
 		else
 			micros_count <= micros_count + 1;
       end if;

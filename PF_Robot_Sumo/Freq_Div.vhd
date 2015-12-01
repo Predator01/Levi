@@ -33,10 +33,10 @@ end Freq_Div;
 architecture Behavioral of Freq_Div is
 	-- constants
 	constant FOSC : integer := 100_000_000;
-	constant FDIV : integer := 1_000_000; 
+	constant FDIV : integer :=   1_000_000; --1_000_000
 	constant CTAMAX : integer := FOSC / FDIV; 
 	-- internal signals
-	signal cont : integer range 0 to CtaMax;
+	signal cont : integer range 0 to CTAMAX;
 begin
 	
 	Freq_Divider: process (in_Rst, in_Clk)

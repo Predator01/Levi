@@ -1,0 +1,14 @@
+
+NET "in_Clk100MHz" LOC = V10;
+NET "in_Rst"      LOC = B8;
+
+#NET "in_Rx"    LOC = N10;
+#NET "out_Tx"    LOC = P11;
+
+#NET "in_line_top" LOC = V12;
+NET "out_motor_1" LOC = T12;
+#NET "out_motor_2" LOC = V11;
+
+NET "led" LOC= U16;
+NET "switch_1" LOC = T9;
+NET "switch_2" LOC = T10;

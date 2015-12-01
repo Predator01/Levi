@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Nov 25 11:23:01 2015
+Mapped Date    : Mon Nov 30 18:15:07 2015
 
 Mapping design into LUTs...
 Running directed packing...
@@ -52,22 +52,22 @@ Phase 9.8  Global Placement
 ......................
 .....................................................................................................................................
 .....................
-Phase 9.8  Global Placement (Checksum:707e9577) REAL time: 7 secs 
+Phase 9.8  Global Placement (Checksum:707e9577) REAL time: 6 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:707e9577) REAL time: 7 secs 
+Phase 10.5  Local Placement Optimization (Checksum:707e9577) REAL time: 6 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:eb9a5990) REAL time: 13 secs 
+Phase 11.18  Placement Optimization (Checksum:eb9a5990) REAL time: 11 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:eb9a5990) REAL time: 13 secs 
+Phase 12.5  Local Placement Optimization (Checksum:eb9a5990) REAL time: 11 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:eb9a5990) REAL time: 13 secs 
+Phase 13.34  Placement Validation (Checksum:eb9a5990) REAL time: 11 secs 
 
-Total REAL time to Placer completion: 14 secs 
-Total CPU  time to Placer completion: 14 secs 
+Total REAL time to Placer completion: 11 secs 
+Total CPU  time to Placer completion: 11 secs 
 Running post-placement packing...
 Writing output files...
 
@@ -144,8 +144,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                4.65
 
 Peak Memory Usage:  391 MB
-Total REAL time to MAP completion:  14 secs 
-Total CPU time to MAP completion:   14 secs 
+Total REAL time to MAP completion:  11 secs 
+Total CPU time to MAP completion:   11 secs 
 
 Mapping completed.
 See MAP report file "Ultrasonic_map.mrp" for details.
