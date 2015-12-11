@@ -1,0 +1,4 @@
+vhdl work "Ultrasonic.vhd"
+vhdl work "Robot.vhd"
+vhdl work "Motor.vhd"
+vhdl work "Top.vhd"

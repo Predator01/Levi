@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ProySisDigAva\Levi\PF_Partes\PF_Robot\Top.ncd
+OUTFILE=D:\ProySisDigAva\Levi\PF_Partes\PF_Robot\Top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=D:\ProySisDigAva\Levi\PF_Partes\PF_Robot
+LICENSE=WebPack
+USER_INFO=211076419_0_0_317
